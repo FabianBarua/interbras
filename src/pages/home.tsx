@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
+import 'atropos/css'
+import Atropos from 'atropos/react'
 
 interface ProductItemHome {
   name: string | React.ReactNode
@@ -10,8 +12,15 @@ interface ProductItemHome {
 
 const ProductItemCard = ({ name, photo, isMagic }: ProductItemHome): JSX.Element => {
   return (
-    <div className={
-        isMagic ? ' mt-4' : ''
+    <Atropos
+      shadow={false}
+      className={
+        `
+        ${
+        isMagic ? ' mt-4 ' : ''
+        }
+
+        `
     }
     >
 
@@ -22,6 +31,7 @@ const ProductItemCard = ({ name, photo, isMagic }: ProductItemHome): JSX.Element
         }
       >
         <img
+          data-atropos-offset='-5'
           src={
             photo
         } alt=''
@@ -34,7 +44,7 @@ const ProductItemCard = ({ name, photo, isMagic }: ProductItemHome): JSX.Element
           </p>
         )
       }
-    </div>
+    </Atropos>
   )
 }
 
