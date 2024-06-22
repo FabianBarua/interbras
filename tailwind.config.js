@@ -7,7 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        interbrasGreen: '#36A53C'
+        interbrasGreen: '#36A53C',
+        interbrasGray: '#3F4545'
+      },
+      fontFamily: {
+        interbras: ['Inter', 'apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif']
       }
     }
   },
