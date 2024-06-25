@@ -1,6 +1,7 @@
 import { Header } from '../components/HeaderClient'
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import { Footer } from '../components/FooterClient'
 
 export const ClientLayout: React.FC = () => {
   return (
@@ -10,9 +11,7 @@ export const ClientLayout: React.FC = () => {
         <main className=' flex-1 mt-20'>
           <Outlet />
         </main>
-        <footer>
-          <p>Footer</p>
-        </footer>
+        <Footer />
       </div>
     </>
   )

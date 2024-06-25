@@ -176,7 +176,7 @@ export const AnimatedSection: React.FC = () => {
         transition={{ duration: 1, delay: 0.2 }}
         className=' flex  gap-6 h-[30rem]'
       >
-        <div className=' h-full w-full bg-interbrasGreen flex justify-center items-center rounded-3xl  overflow-hidden' ref={emblaRef}>
+        <div className=' h-full w-full  bg-interbrasGray flex justify-center items-center rounded-3xl  overflow-hidden' ref={emblaRef}>
           <div className=' size-full '>
 
             {
