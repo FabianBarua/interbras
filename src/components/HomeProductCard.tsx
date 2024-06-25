@@ -8,7 +8,7 @@ export const HomeProductCard = ({ name, photo, isMagic, url }: ProductItemHome):
       className={
           `
           ${
-          isMagic ? ' mt-4  ' : ''
+          isMagic ? ' mt-4  ' : ' mt-0'
           }
           cursor-pointer 
           
@@ -34,9 +34,9 @@ export const HomeProductCard = ({ name, photo, isMagic, url }: ProductItemHome):
       </a>
       {
           isMagic && (
-            <p className=' text-center mt-3 leading-5 text-lg'>
+            <div className=' text-center mt-3 leading-5 text-lg'>
               {name}
-            </p>
+            </div>
           )
         }
     </Atropos>
