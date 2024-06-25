@@ -3,6 +3,7 @@ import 'atropos/css'
 import { ProductsAnimated } from '../components/ProductsAnimated'
 import { AirFryersSection } from '../components/AirFryersSection'
 import { AnimatedSection } from '../components/AnimatedSection'
+import { MixSection } from '../components/MixSection'
 export const Home: React.FC = () => {
   return (
     <>
@@ -12,6 +13,8 @@ export const Home: React.FC = () => {
         <AirFryersSection />
 
         <AnimatedSection />
+
+        <MixSection />
 
       </main>
     </>
