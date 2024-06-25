@@ -4,7 +4,6 @@ import Autoplay from 'embla-carousel-autoplay'
 import { EmblaCarouselType, EmblaOptionsType } from 'embla-carousel'
 import { useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useHover } from '@uidotdev/usehooks'
 
 interface ProductItemCardProps {
   active: boolean
@@ -25,16 +24,6 @@ const ProductItemCard: React.FC<ProductItemCardProps> = (
     mouseEnter
   }
 ) => {
-  const [hoverRef, isHovered] = useHover()
-
-  useEffect(() => {
-    if (isHovered) {
-      if (mouseEnter != null) {
-        mouseEnter()
-      }
-    }
-  }, [isHovered])
-
   return (
     <>
       <Link
@@ -42,13 +31,15 @@ const ProductItemCard: React.FC<ProductItemCardProps> = (
         to !== null ? to : '/'
 
       }
+        onMouseEnter={
+          mouseEnter
+        }
         className={`
            w-[30rem]  flex-1 text-whiterounded-3xl  transition-colors flex overflow-hidden rounded-3xl
           ${active ? 'bg-interbrasGreen' : 'bg-interbrasGray'}
           `}
       >
         <div
-          ref={hoverRef}
           className='flex justify-center transition-colors items-center h-full w-32 '
         >
           <img src={icon} alt='' className=' size-12 ' />
