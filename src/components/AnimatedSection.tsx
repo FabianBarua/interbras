@@ -36,7 +36,7 @@ const ProductItemCard: React.FC<ProductItemCardProps> = (
         }
         className={`
            w-[30rem]  flex-1 text-whiterounded-3xl  transition-colors flex overflow-hidden rounded-3xl
-          ${active ? 'bg-interbrasGreen' : 'bg-interbrasGray'}
+          ${active ? 'bg-interbrasGreen-500' : 'bg-interbrasGray'}
           `}
       >
         <div

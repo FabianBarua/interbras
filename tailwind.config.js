@@ -7,7 +7,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        interbrasGreen: '#36A53C',
+        interbrasGreen: {
+          50: '#f2fbf2',
+          100: '#e1f7e1',
+          200: '#c3efc5',
+          300: '#95e098',
+          400: '#5fc965',
+          500: '#36a53c',
+          600: '#2a8f2f',
+          700: '#247129',
+          800: '#215a25',
+          900: '#1d4a21',
+          950: '#0b280e'
+        },
+
         interbrasGray: '#3F4545'
       },
       fontFamily: {

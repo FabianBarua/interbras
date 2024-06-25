@@ -7,7 +7,7 @@ const LanguageButton: React.FC<
   onClick?: () => void
 }> = ({ flag, code, onClick }) => {
   return (
-    <button onClick={onClick} className=' rounded-lg bg-interbrasGreen hover:bg-interbrasGreen/80 transition-colors  px-2 py-1 flex justify-center items-center gap-2'>
+    <button onClick={onClick} className=' rounded-lg bg-interbrasGreen-500 hover:bg-interbrasGreen-500/80 transition-colors  px-2 py-1 flex justify-center items-center gap-2'>
       <img src={flag} alt={`bandera de ${code}`} />
       {code}
     </button>

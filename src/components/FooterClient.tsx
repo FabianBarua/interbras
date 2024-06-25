@@ -8,7 +8,7 @@ export const Footer: React.FC = (): JSX.Element => {
       <p>
         Copyright © 2024 Interbras. Todos los derechos reservados.
       </p>
-      <span className=' text-interbrasGreen'>
+      <span className=' text-interbrasGreen-500'>
         <Logo />
       </span>
     </footer>

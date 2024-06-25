@@ -50,7 +50,7 @@ export const Header: React.FC = (): JSX.Element => {
       `
       shadow-xl  fixed w-full z-50  flex flex-col h-20  pt-5  transition-all 
       ${
-        selected !== null ? 'bg-interbrasGreen text-white  h-96' : 'bg-white text-interbrasGreen  '
+        selected !== null ? 'bg-interbrasGreen-500 text-white  h-96' : 'bg-white text-interbrasGreen-500  '
       }
       `
     }
