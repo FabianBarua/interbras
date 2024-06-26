@@ -1,59 +1,10 @@
-import { useHover } from '@uidotdev/usehooks'
 import { SwitchLanguage } from '../components/SwitchLanguage'
 import { Logo } from '../components/Logo'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { DondeEstamos } from './DondeEstamos'
 import { ProductosHeader } from './ProductosHeader'
 import { QuienesSomos } from './QuienesSomos'
-
-const useHeader = (): {
-  dondeEstamosRef: (instance: Element | null) => void
-  productosRef: (instance: Element | null) => void
-  quienesSomosRef: (instance: Element | null) => void
-  selected: String | null
-} => {
-  const [dondeEstamosRef, hoverDondeEstamos] = useHover()
-  const [productosRef, hoverProductos] = useHover()
-  const [quienesSomosRef, hoverQuienesSomos] = useHover()
-
-  const [selected, setSelected] = useState<String | null>(null)
-
-  useEffect(() => {
-    const headerClient = document.getElementById('header-client')
-
-    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-    const headerMouseLeave = () => {
-      setSelected(null)
-    }
-
-    headerClient?.addEventListener('mouseleave', headerMouseLeave)
-    return () => {
-      headerClient?.removeEventListener('mouseleave', headerMouseLeave)
-    }
-  }, [])
-
-  useEffect(() => {
-    if (hoverDondeEstamos) {
-      setSelected('dondeEstamos')
-    } else if (hoverProductos) {
-      setSelected('productos')
-    } else if (hoverQuienesSomos) {
-      setSelected('quienesSomos')
-    }
-  },
-  [
-    hoverDondeEstamos,
-    hoverProductos,
-    hoverQuienesSomos
-  ])
-
-  return {
-    dondeEstamosRef,
-    productosRef,
-    quienesSomosRef,
-    selected
-  }
-}
+import { useHeader } from '../hooks/useHeader'
 
 export const Header: React.FC = (): JSX.Element => {
   const {
@@ -62,6 +13,7 @@ export const Header: React.FC = (): JSX.Element => {
     quienesSomosRef,
     selected
   } = useHeader()
+
   return (
 
     <header
