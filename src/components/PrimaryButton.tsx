@@ -2,13 +2,19 @@ import { Link } from 'react-router-dom'
 
 interface PrimaryButtonProps {
   to: string
+  className?: string
 }
 
-export const PrimaryButton = ({ to }: PrimaryButtonProps): JSX.Element => {
+export const PrimaryButton = ({ to, className }: PrimaryButtonProps): JSX.Element => {
   return (
     <Link
       to={to}
-      className=' text-nowrap shadow-2xl flex mt-2 transition-colors bg-interbrasGreen-500 hover:bg-green-600 text-white  text-lg justify-center items-center rounded-xl py-2 px-4 gap-2 '
+      className={
+        `
+        text-nowrap shadow-2xl flex mt-2 transition-colors bg-interbrasGreen-500 hover:bg-green-600 text-white  text-lg justify-center items-center rounded-xl py-2 px-4 gap-2 
+        ${className !== undefined ? className : ''}
+        `
+      }
     >
       Ver más
       <svg

@@ -4,6 +4,9 @@ import { ProductsAnimated } from '../components/ProductsAnimated'
 import { AirFryersSection } from '../components/AirFryersSection'
 import { AnimatedSection } from '../components/AnimatedSection'
 import { MixSection } from '../components/MixSection'
+import { CocinasSection } from '../components/CocinasSection'
+import { KettleAndCafeterasSection } from '../components/KettleAndCafeterasSection'
+
 export const Home: React.FC = () => {
   return (
     <>
@@ -15,6 +18,10 @@ export const Home: React.FC = () => {
         <AnimatedSection />
 
         <MixSection />
+
+        <CocinasSection />
+
+        <KettleAndCafeterasSection />
 
       </main>
     </>

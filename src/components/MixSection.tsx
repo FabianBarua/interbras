@@ -40,10 +40,10 @@ export const MixSection: React.FC = () => {
           visible: { opacity: 1, y: 0 },
           hidden: { opacity: 0, y: 40 }
         }}
-        transition={{ duration: 0.5, delay: 0.2 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
         className=' bg-interbrasGray  rounded-3xl h-[30rem] flex items-center pl-24 '
       >
-        <div className=' text-white flex flex-col gap-3  w-[50%] '>
+        <div className=' text-white flex flex-col gap-3 text-center w-[50%] '>
           <h2 className=' text-5xl font-semibold '>
             Mixteras &
             <br />
@@ -54,7 +54,7 @@ export const MixSection: React.FC = () => {
             <br />
             sin esfuerzo.
           </p>
-          <div className=' w-min'>
+          <div className=' w-min mx-auto'>
             <PrimaryButton to='/mixteras' />
           </div>
         </div>

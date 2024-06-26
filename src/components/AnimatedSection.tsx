@@ -156,18 +156,20 @@ export const AnimatedSection: React.FC = () => {
   return (
     <>
 
-      <motion.section
-        initial='hidden'
-        whileInView='visible'
-        viewport={{ once: true }}
-        variants={{
-          visible: { opacity: 1, y: 0 },
-          hidden: { opacity: 0, y: 40 }
-        }}
-        transition={{ duration: 0.5, delay: 0.2 }}
+      <section
         className=' flex  gap-6 h-[30rem]'
       >
-        <div className=' h-full w-full  bg-interbrasGray flex justify-center items-center rounded-3xl  overflow-hidden' ref={emblaRef}>
+        <motion.div
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 40 }
+          }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className=' h-full w-full  bg-interbrasGray flex justify-center items-center rounded-3xl  overflow-hidden' ref={emblaRef}
+        >
           <div className=' size-full '>
 
             {
@@ -182,8 +184,18 @@ export const AnimatedSection: React.FC = () => {
             }
           </div>
 
-        </div>
-        <div className='flex flex-col gap-3'>
+        </motion.div>
+        <motion.div
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 40 }
+          }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+          className='flex flex-col gap-3'
+        >
           {
               productsSlide.map((product, index) => (
                 <ProductItemCard
@@ -206,8 +218,8 @@ export const AnimatedSection: React.FC = () => {
               ))
             }
 
-        </div>
-      </motion.section>
+        </motion.div>
+      </section>
 
     </>
   )
