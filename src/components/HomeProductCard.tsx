@@ -17,7 +17,7 @@ export const HomeProductCard = ({ name, photo, isMagic, url }: ProductItemHome):
     >
 
       <a
-        className=' mx-auto sm:size-16 md:size-20 lg:size-28 xl:size-32  md:p-4 p-2  flex justify-center items-center rounded-2xl bg-interbrasGreen-500'
+        className=' mx-auto sm:size-16 md:size-20 lg:size-28 xl:size-32  md:p-4 p-2  flex justify-center items-center rounded-3xl bg-interbrasGreen-500'
         href={
             typeof url === 'string' ? url : '#'
           }

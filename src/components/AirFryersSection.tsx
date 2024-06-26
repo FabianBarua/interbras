@@ -28,7 +28,7 @@ export const AirFryersSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 1.2 }}
             className=' size-64 '
           >
-            <img className=' shadow-2xl size-full rounded-2xl object-cover' src='/home/air2.png' alt='' />
+            <img className=' shadow-2xl size-full rounded-3xl object-cover' src='/home/air2.png' alt='' />
           </motion.div>
         </div>
 
@@ -44,7 +44,7 @@ export const AirFryersSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 1 }}
             className=' size-64 '
           >
-            <img className=' shadow-2xl size-full rounded-2xl object-cover' src='/home/air1.png' alt='' />
+            <img className=' shadow-2xl size-full rounded-3xl object-cover' src='/home/air1.png' alt='' />
           </motion.div>
         </div>
 
@@ -76,7 +76,7 @@ export const AirFryersSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 1.2 }}
             className=' size-64 '
           >
-            <img className='  shadow-2xl size-full rounded-2xl object-cover' src='/home/air3.png' alt='' />
+            <img className='  shadow-2xl size-full rounded-3xl object-cover' src='/home/air3.png' alt='' />
           </motion.div>
         </div>
 
@@ -92,7 +92,7 @@ export const AirFryersSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 1 }}
             className=' size-64 '
           >
-            <img className=' shadow-2xl size-full rounded-2xl object-cover' src='/home/air4.png' alt='' />
+            <img className=' shadow-2xl size-full rounded-3xl object-cover' src='/home/air4.png' alt='' />
           </motion.div>
         </div>
 
