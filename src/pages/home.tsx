@@ -6,13 +6,13 @@ import { AnimatedSection } from '../components/AnimatedSection'
 import { MixSection } from '../components/MixSection'
 import { CocinasSection } from '../components/CocinasSection'
 import { KettleAndCafeterasSection } from '../components/KettleAndCafeterasSection'
-import { OtherProductsSection } from '../components/OtherProductsSection.tsx' // Import the missing component
+import { OtherProductsSection } from '../components/OtherProductsSection.tsx'
 
 export const Home: React.FC = () => {
   return (
     <>
       <ProductsAnimated />
-      <main className='  w-[80%] flex flex-col gap-6 mx-auto'>
+      <main className='  sm:w-[80%] w-[90%] flex flex-col gap-6 mx-auto'>
 
         <AirFryersSection />
 

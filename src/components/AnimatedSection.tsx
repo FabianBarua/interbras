@@ -35,7 +35,7 @@ const ProductItemCard: React.FC<ProductItemCardProps> = (
           mouseEnter
         }
         className={`
-           w-[30rem]  flex-1 text-whiterounded-[40px]  transition-colors flex overflow-hidden rounded-[40px]
+            w-full lg:w-[30rem] justify-center items-center py-6 lg:py-0 flex-1 text-white transition-colors flex overflow-hidden rounded-[40px]
           ${active ? 'bg-interbrasGreen-500' : 'bg-interbrasGray'}
           `}
       >
@@ -53,7 +53,7 @@ const ProductItemCard: React.FC<ProductItemCardProps> = (
           }
           >{name}
           </h3>
-          <p className=' text-white font-light text-lg leading-5'>{description}</p>
+          <p className=' text-white/80 font-light text-lg leading-5'>{description}</p>
         </div>
       </Link>
     </>
@@ -157,7 +157,7 @@ export const AnimatedSection: React.FC = () => {
     <>
 
       <section
-        className=' flex  gap-6 h-[30rem]'
+        className=' flex  flex-col lg:flex-row gap-6 '
       >
         <motion.div
           initial='hidden'
@@ -168,7 +168,7 @@ export const AnimatedSection: React.FC = () => {
             hidden: { opacity: 0, y: 40 }
           }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className=' h-full w-full  bg-interbrasGray flex justify-center items-center rounded-[40px]  overflow-hidden' ref={emblaRef}
+          className=' h-[20rem] md:h-[30rem] w-full  bg-interbrasGray flex justify-center items-center rounded-[40px]  overflow-hidden' ref={emblaRef}
         >
           <div className=' size-full '>
 
@@ -178,13 +178,14 @@ export const AnimatedSection: React.FC = () => {
                 key={product.id}
                 src={product.productPhoto}
                 alt=''
-                className=' h-full mx-auto'
+                className=' h-full mx-auto object-contain'
               />
             ))
             }
           </div>
 
         </motion.div>
+
         <motion.div
           initial='hidden'
           whileInView='visible'
@@ -194,7 +195,7 @@ export const AnimatedSection: React.FC = () => {
             hidden: { opacity: 0, y: 40 }
           }}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className='flex flex-col gap-3'
+          className='flex flex-col gap-2 h-[25rem] md:h-auto'
         >
           {
               productsSlide.map((product, index) => (

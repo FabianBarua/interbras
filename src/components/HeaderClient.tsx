@@ -56,12 +56,12 @@ export const Header: React.FC = (): JSX.Element => {
     }
     >
       <nav className='w-full flex'>
-        <div className='flex-1' />
-        <ul className='flex  justify-center items-center gap-14'>
-          <li ref={dondeEstamosRef} className='dondeEstamos'>
+        <div className='flex-1 lg:block  hidden' />
+        <ul className='flex  mx-auto justify-center items-center gap-14'>
+          <li ref={dondeEstamosRef} className='  lg:block hidden'>
             <a href='#'>Donde estamos</a>
           </li>
-          <li ref={productosRef}>
+          <li ref={productosRef} className='  lg:block hidden'>
             <a href='#' className=''>Productos</a>
           </li>
           <li>
@@ -69,14 +69,14 @@ export const Header: React.FC = (): JSX.Element => {
               <Logo />
             </a>
           </li>
-          <li>
+          <li className='  lg:block hidden'>
             <a href='/'>Inicio</a>
           </li>
-          <li ref={quienesSomosRef}>
+          <li ref={quienesSomosRef} className=' lg:block hidden'>
             <a href='#'>Quienes somos</a>
           </li>
         </ul>
-        <div className='items-center flex-1 flex justify-end pr-12'>
+        <div className='items-center flex-1  lg:flex hidden justify-end pr-12'>
           <SwitchLanguage />
         </div>
       </nav>

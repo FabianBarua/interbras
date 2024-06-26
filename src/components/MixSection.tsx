@@ -41,10 +41,10 @@ export const MixSection: React.FC = () => {
           hidden: { opacity: 0, y: 40 }
         }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className=' bg-interbrasGray  rounded-[40px] h-[30rem] flex items-center pl-24 '
+        className=' bg-interbrasGray  p-12 rounded-[40px] md:h-[30rem] h-[27rem] flex flex-col-reverse xl:flex-row items-center md:pl-24 '
       >
-        <div className=' text-white flex flex-col gap-3 text-center w-[50%] '>
-          <h2 className=' text-5xl font-semibold '>
+        <div className=' text-white flex flex-col gap-3 text-center lg:w-[50%] w-auto '>
+          <h2 className=' text-3xl sm:text-5xl font-semibold '>
             Mixteras &
             <br />
             Parrilla Grill
@@ -58,7 +58,7 @@ export const MixSection: React.FC = () => {
             <PrimaryButton to='/mixteras' />
           </div>
         </div>
-        <div className=' relative  w-full   h-full'>
+        <div className=' scale-50 xl:scale-100 relative  w-[200%]  xl:w-full -translate-y-5   h-full'>
           {mixers.map((mixer) => (
             <a
               href={mixer.url}

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { HomeProductCard } from './HomeProductCard'
 import { ProductItemHome } from '../types'
+import { useMediaQuery } from '@uidotdev/usehooks'
 
 const Titulo: React.FC = () => {
   return (
@@ -86,7 +87,7 @@ const products: ProductItemHome[][] =
     {
       name: <Titulo />,
       url: '/',
-      photo: '/home/logo.svg',
+      photo: '/home/logo.png',
       isMagic: true
     },
     {
@@ -152,13 +153,23 @@ const products: ProductItemHome[][] =
   ]
 ]
 
-const gaps: number[] = [20, 20, 30, 20, 30, 20, 20]
+interface Gaps {
+  mobile: number[]
+  sm: number[]
+}
+
+const gaps: Gaps = {
+  mobile: [10, 10, 10, 20, 10, 10, 10],
+  sm: [20, 20, 30, 20, 30, 20, 20]
+}
 
 export const ProductsAnimated = (): JSX.Element => {
+  const isSmallDevice = useMediaQuery('only screen and (max-width : 768px)')
+
   return (
 
     <div
-      className='  h-full  w-full py-12 hidden sm:flex   justify-center  sm:gap-2 md:gap-4 lg:gap-6 xl:gap-8 '
+      className='  h-full  w-full py-12 flex   justify-center px-5 sm:px-0  gap-3 md:gap-4 lg:gap-6 xl:gap-8 '
     >
 
       {
@@ -167,10 +178,19 @@ export const ProductsAnimated = (): JSX.Element => {
             key={i}
             style={
                 {
-                  gap: `${gaps[i]}px`
+                  gap: `${
+                  isSmallDevice ? gaps.mobile[i] : gaps.sm[i]
+                  }px`
                 }
             }
-            className='flex flex-col  items-center justify-center'
+            className={
+              `
+              flex flex-col items-center justify-center
+              ${
+                (i === 0 || i === 6 || i === 1 || i === 5) ? ' sm:flex hidden' : ''
+              }
+              `
+            }
           >
 
             {
