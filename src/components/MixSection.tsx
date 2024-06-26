@@ -16,7 +16,7 @@ const mixers = [
     image: '/home/mixteraSection/2.png',
     url: '/mixteras',
     hover: ' hover:scale-105 hover:translate-y-[-60%] ',
-    className: ' translate-x-[-50%] left-[50%] z-[99999] top-[40%] -translate-y-1/2 '
+    className: ' translate-x-[-50%] left-[50%] z-10 top-[40%] -translate-y-1/2 '
   },
   {
     id: 'mixteraSection3',
@@ -41,7 +41,7 @@ export const MixSection: React.FC = () => {
           hidden: { opacity: 0, y: 40 }
         }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className=' bg-interbrasGray  rounded-3xl h-[30rem] flex items-center pl-24 '
+        className=' bg-interbrasGray  rounded-[40px] h-[30rem] flex items-center pl-24 '
       >
         <div className=' text-white flex flex-col gap-3 text-center w-[50%] '>
           <h2 className=' text-5xl font-semibold '>
@@ -64,7 +64,7 @@ export const MixSection: React.FC = () => {
               href={mixer.url}
               key={mixer.id} className={
               `
-              absolute transition-all rounded-3xl  shadow-xl  flex justify-center items-center size-64 bg-white hover:bg-interbrasGreen-500 
+              absolute transition-all rounded-[40px]  shadow-xl  flex justify-center items-center size-64 bg-white hover:bg-interbrasGreen-500 
               ${mixer.className}
               ${mixer.hover}
               `
@@ -73,7 +73,7 @@ export const MixSection: React.FC = () => {
               <img
                 src={mixer.image}
                 alt={mixer.tittle}
-                className=' rounded-3xl '
+                className=' rounded-[40px] '
               />
             </a>
           ))}

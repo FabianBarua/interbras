@@ -12,7 +12,7 @@ export const AirFryersSection: React.FC = () => {
         hidden: { opacity: 0, y: 40 }
       }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className=' bg-interbrasGray h-[30rem] flex justify-center items-center  rounded-3xl  text-white'
+      className=' bg-interbrasGray h-[30rem] flex justify-center items-center  rounded-[40px]  text-white'
     >
       <div className=' w-full  h-full relative'>
 
@@ -28,7 +28,7 @@ export const AirFryersSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 1.2 }}
             className=' size-64 '
           >
-            <img className=' shadow-2xl size-full rounded-3xl object-cover' src='/home/air2.png' alt='' />
+            <img className=' shadow-2xl size-full rounded-[40px] object-cover' src='/home/air2.png' alt='' />
           </motion.div>
         </div>
 
@@ -44,7 +44,7 @@ export const AirFryersSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 1 }}
             className=' size-64 '
           >
-            <img className=' shadow-2xl size-full rounded-3xl object-cover' src='/home/air1.png' alt='' />
+            <img className=' shadow-2xl size-full rounded-[40px] object-cover' src='/home/air1.png' alt='' />
           </motion.div>
         </div>
 
@@ -76,7 +76,7 @@ export const AirFryersSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 1.2 }}
             className=' size-64 '
           >
-            <img className='  shadow-2xl size-full rounded-3xl object-cover' src='/home/air3.png' alt='' />
+            <img className='  shadow-2xl size-full rounded-[40px] object-cover' src='/home/air3.png' alt='' />
           </motion.div>
         </div>
 
@@ -92,7 +92,7 @@ export const AirFryersSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 1 }}
             className=' size-64 '
           >
-            <img className=' shadow-2xl size-full rounded-3xl object-cover' src='/home/air4.png' alt='' />
+            <img className=' shadow-2xl size-full rounded-[40px] object-cover' src='/home/air4.png' alt='' />
           </motion.div>
         </div>
 

@@ -35,7 +35,7 @@ const ProductItemCard: React.FC<ProductItemCardProps> = (
           mouseEnter
         }
         className={`
-           w-[30rem]  flex-1 text-whiterounded-3xl  transition-colors flex overflow-hidden rounded-3xl
+           w-[30rem]  flex-1 text-whiterounded-[40px]  transition-colors flex overflow-hidden rounded-[40px]
           ${active ? 'bg-interbrasGreen-500' : 'bg-interbrasGray'}
           `}
       >
@@ -168,7 +168,7 @@ export const AnimatedSection: React.FC = () => {
             hidden: { opacity: 0, y: 40 }
           }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className=' h-full w-full  bg-interbrasGray flex justify-center items-center rounded-3xl  overflow-hidden' ref={emblaRef}
+          className=' h-full w-full  bg-interbrasGray flex justify-center items-center rounded-[40px]  overflow-hidden' ref={emblaRef}
         >
           <div className=' size-full '>
 

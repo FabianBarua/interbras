@@ -12,9 +12,9 @@ export const CocinasSection: React.FC = () => {
         hidden: { opacity: 0, y: 40 }
       }}
       transition={{ duration: 0.5, delay: 0.5 }}
-      className=' bg-interbrasGray  rounded-3xl h-[30rem] flex items-center p-10 '
+      className=' bg-interbrasGray  rounded-[40px] h-[30rem] flex items-center p-10 '
     >
-      <img src='/home/cocinaSection/1.png' alt='Cocinas interbras' className=' rounded-3xl h-full' />
+      <img src='/home/cocinaSection/1.png' alt='Cocinas interbras' className=' rounded-[40px] h-full' />
       <div className='text-center text-white w-full flex flex-col gap-3  '>
         <h2 className=' text-5xl font-semibold '>
           Cocinas
