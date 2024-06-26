@@ -12,6 +12,7 @@ interface ProductItemCardProps {
   icon?: string
   to: string | null
   mouseEnter?: () => void
+  delay?: number
 }
 
 const ProductItemCard: React.FC<ProductItemCardProps> = (
@@ -21,11 +22,22 @@ const ProductItemCard: React.FC<ProductItemCardProps> = (
     description,
     icon,
     to,
-    mouseEnter
+    mouseEnter,
+    delay
   }
 ) => {
   return (
-    <>
+    <motion.div
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ once: true }}
+      variants={{
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 40 }
+      }}
+      transition={{ duration: 0.5, delay: delay !== undefined ? delay : 0.5 }}
+      className=' h-full'
+    >
       <Link
         to={
         to !== null ? to : '/'
@@ -35,7 +47,7 @@ const ProductItemCard: React.FC<ProductItemCardProps> = (
           mouseEnter
         }
         className={`
-            w-full lg:w-[30rem] justify-center items-center py-6 lg:py-0 flex-1 text-white transition-colors flex overflow-hidden rounded-[40px]
+            w-full lg:w-[30rem]  h-full justify-center items-center py-6 lg:py-0 flex-1 text-white transition-colors flex overflow-hidden rounded-[40px]
           ${active ? 'bg-interbrasGreen-500' : 'bg-interbrasGray'}
           `}
       >
@@ -48,7 +60,6 @@ const ProductItemCard: React.FC<ProductItemCardProps> = (
           <h3 className={
             `
             text-2xl    text-white
-            ${active ? 'font-semibold ' : '  font-normal'}
             `
           }
           >{name}
@@ -56,7 +67,7 @@ const ProductItemCard: React.FC<ProductItemCardProps> = (
           <p className=' text-white/80 font-light text-lg leading-5'>{description}</p>
         </div>
       </Link>
-    </>
+    </motion.div>
   )
 }
 
@@ -67,7 +78,8 @@ const productsSlide = [
     description: 'Innovación en pantallas de alta definición.',
     icon: '/home/slideSection/1.svg',
     productPhoto: '/home/slideSection/1.png',
-    to: '/tvs'
+    to: '/tvs',
+    delay: 0.3
   },
   {
     id: 'productSlide2',
@@ -75,7 +87,8 @@ const productsSlide = [
     description: 'La nueva generación en climatización.',
     icon: '/home/slideSection/2.svg',
     productPhoto: '/home/slideSection/2.png',
-    to: '/aires'
+    to: '/aires',
+    delay: 0.5
   },
   {
     id: 'productSlide3',
@@ -83,7 +96,8 @@ const productsSlide = [
     description: 'La evolución en dispensadores de agua.',
     icon: '/home/slideSection/3.svg',
     productPhoto: '/home/slideSection/3.png',
-    to: '/dispensadores'
+    to: '/dispensadores',
+    delay: 0.7
   }
 ]
 
@@ -186,20 +200,15 @@ export const AnimatedSection: React.FC = () => {
 
         </motion.div>
 
-        <motion.div
-          initial='hidden'
-          whileInView='visible'
-          viewport={{ once: true }}
-          variants={{
-            visible: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: 40 }
-          }}
-          transition={{ duration: 0.5, delay: 0.8 }}
+        <div
           className='flex flex-col gap-2 h-[25rem] md:h-auto'
         >
           {
               productsSlide.map((product, index) => (
                 <ProductItemCard
+                  delay={
+                    product.delay
+                  }
                   to={
                     product.to
                   }
@@ -219,7 +228,7 @@ export const AnimatedSection: React.FC = () => {
               ))
             }
 
-        </motion.div>
+        </div>
       </section>
 
     </>

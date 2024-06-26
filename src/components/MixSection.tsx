@@ -44,7 +44,7 @@ export const MixSection: React.FC = () => {
         className=' bg-interbrasGray  p-12 rounded-[40px] md:h-[30rem] h-[27rem] flex flex-col-reverse xl:flex-row items-center md:pl-24 '
       >
         <div className=' text-white flex flex-col gap-3 text-center lg:w-[50%] w-auto '>
-          <h2 className=' text-3xl sm:text-5xl font-semibold '>
+          <h2 className='text-3xl md:text-4xl xl:text-5xl font-semibold '>
             Mixteras &
             <br />
             Parrilla Grill
