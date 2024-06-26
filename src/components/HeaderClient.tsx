@@ -6,7 +6,12 @@ import { DondeEstamos } from './DondeEstamos'
 import { ProductosHeader } from './ProductosHeader'
 import { QuienesSomos } from './QuienesSomos'
 
-export const Header: React.FC = (): JSX.Element => {
+const useHeader = (): {
+  dondeEstamosRef: (instance: Element | null) => void
+  productosRef: (instance: Element | null) => void
+  quienesSomosRef: (instance: Element | null) => void
+  selected: String | null
+} => {
   const [dondeEstamosRef, hoverDondeEstamos] = useHover()
   const [productosRef, hoverProductos] = useHover()
   const [quienesSomosRef, hoverQuienesSomos] = useHover()
@@ -42,6 +47,21 @@ export const Header: React.FC = (): JSX.Element => {
     hoverQuienesSomos
   ])
 
+  return {
+    dondeEstamosRef,
+    productosRef,
+    quienesSomosRef,
+    selected
+  }
+}
+
+export const Header: React.FC = (): JSX.Element => {
+  const {
+    dondeEstamosRef,
+    productosRef,
+    quienesSomosRef,
+    selected
+  } = useHeader()
   return (
 
     <header
