@@ -7,14 +7,15 @@ const mixers = [
     tittle: 'Code',
     image: '/home/mixteraSection/1.png',
     url: '/mixteras',
-    className: ' translate-x-[-50%] left-[30%] top-[55%] -translate-y-1/2  -rotate-12'
-
+    hover: ' hover:scale-105 hover:translate-x-[-70%] ',
+    className: 'translate-x-[-50%] left-[30%] top-[55%] -translate-y-1/2  -rotate-12'
   },
   {
     id: 'mixteraSection2',
     tittle: 'Code',
     image: '/home/mixteraSection/2.png',
     url: '/mixteras',
+    hover: ' hover:scale-105 hover:translate-y-[-60%] ',
     className: ' translate-x-[-50%] left-[50%] z-[99999] top-[40%] -translate-y-1/2 '
   },
   {
@@ -22,7 +23,8 @@ const mixers = [
     tittle: 'Code',
     image: '/home/mixteraSection/3.png',
     url: '/mixteras',
-    className: ' translate-x-[-50%] left-[70%] top-[55%] -translate-y-1/2  rotate-12'
+    hover: 'hover:scale-105 hover:translate-x-[-30%] ',
+    className: 'translate-x-[-50%] left-[70%] top-[55%] -translate-y-1/2  rotate-12'
 
   }
 ]
@@ -58,11 +60,13 @@ export const MixSection: React.FC = () => {
         </div>
         <div className=' relative  w-full   h-full'>
           {mixers.map((mixer) => (
-            <div
+            <a
+              href={mixer.url}
               key={mixer.id} className={
               `
-              absolute rounded-3xl  shadow-xl  bg-white flex justify-center items-center size-64
+              absolute transition-all rounded-3xl  shadow-xl  flex justify-center items-center size-64 bg-white hover:bg-interbrasGreen-500 
               ${mixer.className}
+              ${mixer.hover}
               `
             }
             >
@@ -71,7 +75,7 @@ export const MixSection: React.FC = () => {
                 alt={mixer.tittle}
                 className=' rounded-3xl '
               />
-            </div>
+            </a>
           ))}
         </div>
       </motion.section>

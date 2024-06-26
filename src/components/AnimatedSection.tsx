@@ -53,7 +53,7 @@ const ProductItemCard: React.FC<ProductItemCardProps> = (
           }
           >{name}
           </h3>
-          <p className=' text-white font-light text-lg'>{description}</p>
+          <p className=' text-white font-light text-lg leading-5'>{description}</p>
         </div>
       </Link>
     </>

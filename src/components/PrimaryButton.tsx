@@ -8,7 +8,7 @@ export const PrimaryButton = ({ to }: PrimaryButtonProps): JSX.Element => {
   return (
     <Link
       to={to}
-      className=' text-nowrap shadow-2xl flex mt-2 transition-colors bg-interbrasGreen-500 hover:bg-green-700 text-white  text-lg justify-center items-center rounded-xl py-2 px-4 gap-2 '
+      className=' text-nowrap shadow-2xl flex mt-2 transition-colors bg-interbrasGreen-500 hover:bg-green-600 text-white  text-lg justify-center items-center rounded-xl py-2 px-4 gap-2 '
     >
       Ver más
       <svg
