@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion'
 import { PrimaryButton } from './PrimaryButton'
+import { useTranslation } from 'react-i18next'
 
 export const CocinasSection: React.FC = () => {
+  const { t } = useTranslation('global')
+
   return (
     <motion.section
       initial='hidden'
@@ -16,11 +19,11 @@ export const CocinasSection: React.FC = () => {
     >
       <img src='/home/cocinaSection/1.png' alt='Cocinas interbras' className=' rounded-[40px] h-[15rem]  lg:h-full object-cover' />
       <div className='text-center text-white w-full flex flex-col gap-3  '>
-        <h2 className=' text-3xl md:text-4xl xl:text-5xl font-semibold '>
-          Cocinas
+        <h2 className=' text-3xl md:text-4xl xl:text-5xl font-semibold  w-72  mx-auto'>
+          {t('home.CocinasSection.title')}
         </h2>
-        <p className=' text-xl font-light leading-5   '>
-          Innovación compacta para <br /> tu cocina en tu mesa.
+        <p className=' text-xl font-light leading-5 w-72 mx-auto '>
+          {t('home.CocinasSection.description')}
         </p>
         <div className=' w-min mx-auto'>
           <PrimaryButton to='/cocinas' />

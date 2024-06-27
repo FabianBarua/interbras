@@ -4,6 +4,7 @@ import Autoplay from 'embla-carousel-autoplay'
 import { EmblaCarouselType, EmblaOptionsType } from 'embla-carousel'
 import { useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 interface ProductItemCardProps {
   active: boolean
@@ -57,12 +58,7 @@ const ProductItemCard: React.FC<ProductItemCardProps> = (
           <img src={icon} alt='' className=' size-12 ' />
         </div>
         <div className=' flex-1  justify-center px-6 flex flex-col'>
-          <h3 className={
-            `
-            text-2xl    text-white
-            `
-          }
-          >{name}
+          <h3 className='text-2xl text-white'>{name}
           </h3>
           <p className=' text-white/80 font-light text-lg leading-5'>{description}</p>
         </div>
@@ -74,8 +70,8 @@ const ProductItemCard: React.FC<ProductItemCardProps> = (
 const productsSlide = [
   {
     id: 'productSlide1',
-    name: 'TVs',
-    description: 'Innovación en pantallas de alta definición.',
+    name: 'home.animatedSection.1.name',
+    description: 'home.animatedSection.1.description',
     icon: '/home/slideSection/1.svg',
     productPhoto: '/home/slideSection/1.png',
     to: '/tvs',
@@ -83,8 +79,8 @@ const productsSlide = [
   },
   {
     id: 'productSlide2',
-    name: 'Aires',
-    description: 'La nueva generación en climatización.',
+    name: 'home.animatedSection.2.name',
+    description: 'home.animatedSection.2.description',
     icon: '/home/slideSection/2.svg',
     productPhoto: '/home/slideSection/2.png',
     to: '/aires',
@@ -92,8 +88,8 @@ const productsSlide = [
   },
   {
     id: 'productSlide3',
-    name: 'Bebederos',
-    description: 'La evolución en dispensadores de agua.',
+    name: 'home.animatedSection.3.name',
+    description: 'home.animatedSection.3.description',
     icon: '/home/slideSection/3.svg',
     productPhoto: '/home/slideSection/3.png',
     to: '/dispensadores',
@@ -166,6 +162,7 @@ export const AnimatedSection: React.FC = () => {
   }, [])
 
   const { selectedIndex, onCardClick } = useSlides(emblaApi, onNavButtonClick)
+  const { t } = useTranslation('global')
 
   return (
     <>
@@ -216,8 +213,8 @@ export const AnimatedSection: React.FC = () => {
                   active={
                     index === selectedIndex
                   }
-                  name={product.name}
-                  description={product.description}
+                  name={t(product.name)}
+                  description={t(product.description)}
                   icon={product.icon}
                   mouseEnter={
                     () => {

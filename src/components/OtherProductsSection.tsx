@@ -1,6 +1,7 @@
 import React from 'react'
 import { PrimaryButton } from './PrimaryButton'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 interface OtherProductCardProps {
   name: string
@@ -10,6 +11,8 @@ interface OtherProductCardProps {
 }
 
 const OtherProductCard: React.FC<OtherProductCardProps> = ({ name, image, url, delay }) => {
+  const { t } = useTranslation('global')
+
   return (
     <motion.div
       initial='hidden'
@@ -26,7 +29,9 @@ const OtherProductCard: React.FC<OtherProductCardProps> = ({ name, image, url, d
 
       <div className='text-center w-full flex flex-col  absolute bottom-5 lg:bottom-10  '>
         <h2 className=' text-white text-2xl md:text-4xl xl:text-5xl font-semibold '>
-          {name}
+          {
+            t(name)
+          }
         </h2>
         <div className=' w-min mx-auto'>
           <PrimaryButton to={url} />
@@ -40,15 +45,15 @@ export const OtherProductsSection: React.FC = () => {
   return (
     <>
       <section className=' grid grid-cols-2  lg:grid-cols-4 gap-6 '>
-        <OtherProductCard delay={0.5} name='Planchas' image='/home/otherProductsSection/1.png' url='/planchas' />
-        <OtherProductCard delay={0.7} name='Licuadoras' image='/home/otherProductsSection/2.png' url='/planchas' />
-        <OtherProductCard delay={0.9} name='Beauty' image='/home/otherProductsSection/3.png' url='/planchas' />
-        <OtherProductCard delay={1.2} name='Batidoras' image='/home/otherProductsSection/4.png' url='/planchas' />
+        <OtherProductCard delay={0.5} name='home.OtherProductsSection.1' image='/home/otherProductsSection/1.png' url='/planchas' />
+        <OtherProductCard delay={0.7} name='home.OtherProductsSection.2' image='/home/otherProductsSection/2.png' url='/planchas' />
+        <OtherProductCard delay={0.9} name='home.OtherProductsSection.3' image='/home/otherProductsSection/3.png' url='/planchas' />
+        <OtherProductCard delay={1.2} name='home.OtherProductsSection.4' image='/home/otherProductsSection/4.png' url='/planchas' />
       </section>
 
       <section className=' grid grid-cols-2 gap-6 h-[18rem] lg:h-[30rem] '>
-        <OtherProductCard delay={0.5} name='Arroceras' image='/home/otherProductsSection/5.png' url='/Arroceras' />
-        <OtherProductCard delay={0.7} name='Scooters' image='/home/otherProductsSection/6.png' url='/Scooters' />
+        <OtherProductCard delay={0.5} name='home.OtherProductsSection.5' image='/home/otherProductsSection/5.png' url='/Arroceras' />
+        <OtherProductCard delay={0.7} name='home.OtherProductsSection.6' image='/home/otherProductsSection/6.png' url='/Scooters' />
       </section>
 
     </>

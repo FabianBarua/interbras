@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion'
 import { PrimaryButton } from './PrimaryButton'
+import { useTranslation } from 'react-i18next'
 
 export const AirFryersSection: React.FC = () => {
+  const { t } = useTranslation('global')
+
   return (
     <motion.section
       initial='hidden'
@@ -57,7 +60,7 @@ export const AirFryersSection: React.FC = () => {
         <p
           className=' w-72  text-center text-lg sm:text-xl   font-extralight leading-6'
         >
-          Nueva tendencia en cocina saludable y rápida.
+          {t('home.airFryersSection.text')}
         </p>
         <PrimaryButton to='/air-fryers' />
       </div>
