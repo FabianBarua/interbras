@@ -2,7 +2,7 @@ import i18next from 'i18next'
 import es from './shared/translations/es/global.json'
 import pt from './shared/translations/pt/global.json'
 
-await i18next.init({
+i18next.init({
   interpolation: {
     escapeValue: false
   },
