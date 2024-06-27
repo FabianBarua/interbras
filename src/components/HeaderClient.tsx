@@ -115,7 +115,7 @@ export const Header: React.FC = (): JSX.Element => {
         animate={isOpen ? 'open' : 'closed'}
         custom={height}
         ref={containerRef}
-        className=' nav w-min '
+        className=' nav w-min lg:hidden '
       >
         <motion.div className='background bg-interbrasGreen-500' variants={sidebar} />
         <Navigation isOpen={isOpen} />
