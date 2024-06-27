@@ -5,10 +5,10 @@ export const QuienesSomos: React.FC = () => {
     <motion.div
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      className=' h-full w-full flex justify-center'
+      className=' text-white h-full w-full flex justify-center p-3 lg:p-0'
     >
 
-      <div className='  justify-center text-center  text-3xl flex items-center h-full gap-7'>
+      <div className='  justify-center text-center  text-3xl flex flex-col-reverse lg:flex-row items-center h-full gap-16 lg:gap-7'>
         <p className=' text-left w-full max-w-xl leading-8 font-light'>
           <strong className=' font-bold'>
             Somos una empresa paraguaya
