@@ -77,7 +77,7 @@ export const Header: React.FC = (): JSX.Element => {
             <li ref={productosRef} className='  lg:block hidden'>
               <a href='#' className=''>Productos</a>
             </li>
-            <li c>
+            <li>
               <a href='/'>
                 <Logo />
               </a>
