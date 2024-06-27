@@ -2,12 +2,15 @@ import { motion } from 'framer-motion'
 import { HomeProductCard } from './HomeProductCard'
 import { ProductItemHome } from '../types'
 import { useMediaQuery } from '@uidotdev/usehooks'
+import { useTranslation } from 'react-i18next'
 
 const Titulo: React.FC = () => {
+  const { t } = useTranslation('global')
+
   return (
     <>
-      <p> Tu marca</p>
-      <strong>favorita</strong>
+      <p>{t('home.title.primary')}</p>
+      <strong>{t('home.title.secondary')}</strong>
     </>
   )
 }

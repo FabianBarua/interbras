@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { switchLanguage } from '../shared/utils/translate-utils'
 
 const LanguageButton: React.FC<
 { flag: string
@@ -22,14 +23,33 @@ interface LanguageInterface {
 export const SwitchLanguage: React.FC = () => {
   const languages = [{
     flag: '/paraguay_flag.svg',
-    code: 'PY'
+    code: 'PY',
+    lang: 'es'
   },
   {
     flag: '/brasil_flag.svg',
-    code: 'BR'
+    code: 'BR',
+    lang: 'pt'
   }]
-  const [language, setLanguage] = useState<LanguageInterface>(languages[0])
+  const storedLang = localStorage.getItem('lang')
+  const [language, setLanguage] = useState<LanguageInterface>(
+    languages[
+      storedLang === 'pt' ? 1 : 0
+    ]
+  )
   const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    // check language preference on chrome
+    const lang = navigator.language?.split('-')[0]
+    if (lang === 'pt') {
+      setLanguage(languages[1])
+      switchLanguage('pt')
+    } else {
+      setLanguage(languages[0])
+      switchLanguage('es')
+    }
+  }, [])
 
   return (
     <div className=' relative'>
@@ -56,6 +76,7 @@ export const SwitchLanguage: React.FC = () => {
                   code={lang.code}
                   onClick={() => {
                     setLanguage(lang)
+                    switchLanguage(lang.lang)
                     setOpen(false)
                   }}
                 />
