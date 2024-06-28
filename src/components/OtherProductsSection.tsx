@@ -44,7 +44,7 @@ const OtherProductCard: React.FC<OtherProductCardProps> = ({ name, image, url, d
 export const OtherProductsSection: React.FC = () => {
   return (
     <>
-      <section className=' grid grid-cols-2  lg:grid-cols-4 gap-6 '>
+      <section className=' grid grid-cols-2  lg:grid-cols-4 gap-6 h-[18rem] lg:h-[30rem] '>
         <OtherProductCard delay={0.5} name='home.OtherProductsSection.1' image='/home/otherProductsSection/1.png' url='/planchas' />
         <OtherProductCard delay={0.7} name='home.OtherProductsSection.2' image='/home/otherProductsSection/2.png' url='/licuadoras' />
         <OtherProductCard delay={0.9} name='home.OtherProductsSection.3' image='/home/otherProductsSection/3.png' url='/beauty' />
