@@ -4,6 +4,7 @@ import React from 'react'
 import { DondeEstamos } from './DondeEstamos'
 import { ProductosHeader } from './ProductosHeader'
 import { QuienesSomos } from './QuienesSomos'
+import { SwitchLanguage } from './SwitchLanguage'
 
 const variants = {
   open: {
@@ -46,9 +47,9 @@ export const Navigation: React.FC<NavigationProps> = ({ isOpen }) => {
       pointerEvents: isOpen ? 'all' : 'none'
     }
   }
-        className=' absolute top-24 left-4 w-[calc(100dvw-2rem)] ' variants={variants}
+        className=' absolute top-16 left-4 w-[calc(100dvw-2rem)]  flex flex-col items-center justify-center h-auto ' variants={variants}
       >
-        <ul className=' flex gap-3 text-xl flex-wrap items-center justify-center'>
+        <ul className=' flex gap-3 text-xl w-96 h-min flex-wrap items-center justify-center'>
           {itemIds.map(i => (
             <MenuItem
               key={i.id}
@@ -57,10 +58,16 @@ export const Navigation: React.FC<NavigationProps> = ({ isOpen }) => {
               onClick={() => setSelected(i.id)}
             />
           ))}
+          <motion.div
+            variants={variantsItems}
+            className=' fixed top-5 right-5'
+          >
+            <SwitchLanguage theme='white' />
+          </motion.div>
         </ul>
         <motion.div
           variants={variantsItems}
-          className=' h-[calc(100dvh-180px)]'
+          className=' h-[calc(100dvh-180px)]  mt-5'
         >
           {
             itemIds.map(i => {

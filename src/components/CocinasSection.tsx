@@ -19,7 +19,7 @@ export const CocinasSection: React.FC = () => {
     >
       <img src='/home/cocinaSection/1.png' alt='Cocinas interbras' className=' rounded-[40px] h-[15rem]  lg:h-full object-cover' />
       <div className='text-center text-white w-full flex flex-col gap-3  '>
-        <h2 className=' text-3xl md:text-4xl xl:text-5xl font-semibold  w-72  mx-auto'>
+        <h2 className=' text-3xl md:text-4xl  font-semibold  w-72  mx-auto'>
           {t('home.CocinasSection.title')}
         </h2>
         <p className=' text-xl font-light leading-5 w-72 mx-auto '>

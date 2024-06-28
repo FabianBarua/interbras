@@ -92,7 +92,9 @@ export const Header: React.FC = (): JSX.Element => {
 
           <div className='items-center lg:flex hidden flex-1 justify-end pr-12'>
             <div className=' lg:flex justify-end hidden'>
-              <SwitchLanguage />
+              <SwitchLanguage
+                theme='green'
+              />
             </div>
           </div>
         </nav>

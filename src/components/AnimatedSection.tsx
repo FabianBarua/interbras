@@ -92,7 +92,7 @@ const productsSlide = [
     description: 'home.animatedSection.3.description',
     icon: '/home/slideSection/3.svg',
     productPhoto: '/home/slideSection/3.png',
-    to: '/dispensadores',
+    to: '/scooters',
     delay: 0.7
   }
 ]

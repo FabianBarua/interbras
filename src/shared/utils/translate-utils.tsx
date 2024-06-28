@@ -6,5 +6,6 @@ export const switchLanguage = (lang: string) => {
   if (lang !== lang_) {
     setLang(lang)
     localStorage.setItem('lang', lang)
+    console.log('switched to', lang)
   }
 }

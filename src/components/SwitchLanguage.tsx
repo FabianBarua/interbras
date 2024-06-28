@@ -6,9 +6,21 @@ const LanguageButton: React.FC<
 { flag: string
   code: string
   onClick?: () => void
-}> = ({ flag, code, onClick }) => {
+  theme: {
+    text: string
+    bg: string
+  }
+}> = ({ flag, code, onClick, theme }) => {
   return (
-    <button onClick={onClick} className=' rounded-lg bg-interbrasGreen-500 hover:bg-interbrasGreen-500/80 transition-colors  px-2 py-1 flex justify-center items-center gap-2'>
+    <button
+      onClick={onClick} className={
+      `
+      ${theme.text}
+      ${theme.bg}
+       rounded-lg hover:${theme.bg}/80 transition-colors  px-2 py-1 flex justify-center items-center gap-2
+      `
+    }
+    >
       <img src={flag} alt={`bandera de ${code}`} />
       {code}
     </button>
@@ -20,7 +32,22 @@ interface LanguageInterface {
   code: string
 }
 
-export const SwitchLanguage: React.FC = () => {
+const themes: { [key: string]: { text: string, bg: string } } = {
+  green: {
+    text: 'text-white',
+    bg: 'bg-interbrasGreen-500'
+  },
+  white: {
+    text: 'text-white',
+    bg: 'bg-interbrasGreen-900'
+  }
+}
+
+interface SwitchLanguageProps {
+  theme: string
+}
+
+export const SwitchLanguage: React.FC<SwitchLanguageProps> = ({ theme }) => {
   const languages = [{
     flag: '/paraguay_flag.svg',
     code: 'PY',
@@ -31,18 +58,27 @@ export const SwitchLanguage: React.FC = () => {
     code: 'BR',
     lang: 'pt'
   }]
+
+  const selectedTheme = themes[theme]
+
   const storedLang = localStorage.getItem('lang')
+
+  const navigatorLang = navigator.language?.split('-')[0]
+
   const [language, setLanguage] = useState<LanguageInterface>(
     languages[
-      storedLang === 'pt' ? 1 : 0
+      storedLang === null
+        ? navigatorLang === 'pt' ? 1 : 0
+        : storedLang === 'pt' ? 1 : 0
     ]
   )
-  const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    // check language preference on chrome
-    const lang = navigator.language?.split('-')[0]
-    if (lang === 'pt') {
+    if (storedLang !== null) {
+      return
+    }
+    // set default language to navigator language
+    if (navigatorLang === 'pt') {
       setLanguage(languages[1])
       switchLanguage('pt')
     } else {
@@ -51,10 +87,13 @@ export const SwitchLanguage: React.FC = () => {
     }
   }, [])
 
+  const [open, setOpen] = useState(false)
+
   return (
     <div className=' relative'>
-      <div className=' text-white'>
+      <div className=' '>
         <LanguageButton
+          theme={selectedTheme}
           flag={language.flag}
           code={language.code}
           onClick={() => setOpen(!open)}
@@ -70,16 +109,21 @@ export const SwitchLanguage: React.FC = () => {
           >
             {
               languages.map((lang) => (
-                <LanguageButton
+                <div
                   key={lang.code}
-                  flag={lang.flag}
-                  code={lang.code}
-                  onClick={() => {
-                    setLanguage(lang)
-                    switchLanguage(lang.lang)
-                    setOpen(false)
-                  }}
-                />
+                  className=' '
+                >
+                  <LanguageButton
+                    theme={selectedTheme}
+                    flag={lang.flag}
+                    code={lang.code}
+                    onClick={() => {
+                      setLanguage(lang)
+                      switchLanguage(lang.lang)
+                      setOpen(false)
+                    }}
+                  />
+                </div>
               ))
             }
           </motion.div>

@@ -46,7 +46,7 @@ export const MixSection: React.FC = () => {
         className=' bg-interbrasGray  p-12 rounded-[40px] md:h-[30rem] h-[27rem] flex flex-col-reverse xl:flex-row items-center md:pl-24 '
       >
         <div className=' text-white flex flex-col gap-3 text-center lg:w-[50%] w-auto '>
-          <h2 className='text-3xl md:text-4xl xl:text-5xl w-72 mx-auto text-center font-semibold '>
+          <h2 className='text-3xl md:text-4xl w-72 mx-auto text-center font-semibold '>
             {t('home.MixSection.title')}
           </h2>
           <p className=' text-xl font-light leading-5 mx-auto w-72 '>

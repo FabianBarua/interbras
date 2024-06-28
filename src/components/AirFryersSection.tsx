@@ -54,7 +54,7 @@ export const AirFryersSection: React.FC = () => {
       </div>
 
       <div className=' flex gap-2 sm:gap-4 flex-col justify-center items-center '>
-        <h2 className='  text-2xl md:text-4xl xl:text-5xl font-semibold relative  '>
+        <h2 className='  text-2xl md:text-4xl font-semibold relative  '>
           <p className=' relative '>Air fryers</p>
         </h2>
         <p

@@ -28,7 +28,7 @@ const OtherProductCard: React.FC<OtherProductCardProps> = ({ name, image, url, d
       <img src={image} alt={name} className=' h-full w-full object-cover' />
 
       <div className='text-center w-full flex flex-col  absolute bottom-5 lg:bottom-10  '>
-        <h2 className=' text-white text-2xl md:text-4xl xl:text-5xl font-semibold '>
+        <h2 className=' text-white text-2xl md:text-4xl  mb-2 font-semibold '>
           {
             t(name)
           }
@@ -53,7 +53,7 @@ export const OtherProductsSection: React.FC = () => {
 
       <section className=' grid grid-cols-2 gap-6 h-[18rem] lg:h-[30rem] '>
         <OtherProductCard delay={0.5} name='home.OtherProductsSection.5' image='/home/otherProductsSection/5.png' url='/arroceras' />
-        <OtherProductCard delay={0.7} name='home.OtherProductsSection.6' image='/home/otherProductsSection/6.png' url='/scooters' />
+        <OtherProductCard delay={0.7} name='home.OtherProductsSection.6' image='/home/otherProductsSection/6.png' url='/bebederos' />
       </section>
 
     </>

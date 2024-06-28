@@ -20,7 +20,7 @@ export const KettleAndCafeterasSection: React.FC = () => {
       >
         <img src='/home/KettleAndCafeterasSection/1.png' className='  h-[115%] top-1/2 -translate-y-[55%] absolute right-0' alt='kettle interbras' />
         <div className=' absolute bottom-10 left-10'>
-          <h2 className='text-3xl md:text-4xl xl:text-5xl font-bold text-white'>
+          <h2 className='text-3xl md:text-4xl mb-3 font-bold text-white'>
             {t('home.KettleAndCafeterasSection.1.title')}
           </h2>
           <PrimaryButton
@@ -42,7 +42,7 @@ export const KettleAndCafeterasSection: React.FC = () => {
       >        <img src='/home/KettleAndCafeterasSection/2.png' className='  h-[110%] top-1/2 -translate-y-[52%] absolute left-0' alt='kettle interbras' />
 
         <div className=' absolute bottom-10 right-10 '>
-          <h2 className='text-3xl md:text-4xl xl:text-5xl font-bold text-white'>
+          <h2 className='text-3xl md:text-4xl  mb-3 font-bold text-white'>
             {t('home.KettleAndCafeterasSection.2.title')}
           </h2>
           <PrimaryButton
