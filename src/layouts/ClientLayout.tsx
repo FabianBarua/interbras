@@ -8,7 +8,7 @@ export const ClientLayout: React.FC = () => {
     <>
       <div className='  font-interbras bg-[#F2F2F2] flex flex-col min-h-dvh'>
         <Header />
-        <main className=' flex-1 mt-20'>
+        <main className=' flex-1 mt-20 flex flex-col'>
           <Outlet />
         </main>
         <Footer />

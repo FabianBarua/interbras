@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useDataStore } from '../shared/stores/useData'
 
 interface ProductosHeaderProps {
   clicked?: () => void
@@ -34,6 +35,8 @@ const LinkItem: React.FC<LinkItemProps> = ({ to, children, clicked }) => {
 export const ProductosHeader: React.FC<ProductosHeaderProps> = ({
   clicked
 }) => {
+  const { urls } = useDataStore()
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
@@ -46,61 +49,18 @@ export const ProductosHeader: React.FC<ProductosHeaderProps> = ({
           <h1 className='text-lg  font-bold'>Nuestros productos</h1>
           <div className=' flex gap-16 mt-2'>
             <div className=' flex-col flex'>
-              <LinkItem
-                clicked={clicked} to='/airfryer'
-              > AirFryer
-              </LinkItem>
-              <LinkItem
-                clicked={clicked} to='#'
-              > X-Scooter
-              </LinkItem>
-              <LinkItem
-                clicked={clicked} to='#'
-              > Aire Acondicionado
-              </LinkItem>
-              <LinkItem
-                clicked={clicked} to='#'
-              > Televisores
-              </LinkItem>
-              <LinkItem
-                clicked={clicked} to='#'
-              > Licuadoras
-              </LinkItem>
-              <LinkItem
-                clicked={clicked} to='#'
-              > Batidoras
-              </LinkItem>
-              <LinkItem
-                clicked={clicked} to='#'
-              > Cocinas Electricas
-              </LinkItem>
+              {
+                urls.map(url => (
+                  <LinkItem
+                    clicked={clicked} to={url.url}
+                    key={'id-header-' + url.name}
+                  >
+                    {url.name}
+                  </LinkItem>
+                ))
+              }
             </div>
-            <div className=' flex-col flex'>
-              <LinkItem
-                clicked={clicked} to='#'
-              > Cafeteras
-              </LinkItem>
-              <LinkItem
-                clicked={clicked} to='#'
-              > Hervidoras
-              </LinkItem>
-              <LinkItem
-                clicked={clicked} to='#'
-              > Arroceras & Ollas
-              </LinkItem>
-              <LinkItem
-                clicked={clicked} to='#'
-              > Dispensadores de Agua
-              </LinkItem>
-              <LinkItem
-                clicked={clicked} to='#'
-              > Mixteras & Parrilla Grill
-              </LinkItem>
-              <LinkItem
-                clicked={clicked} to='#'
-              > Beauty
-              </LinkItem>
-            </div>
+            <div className=' flex-col flex' />
           </div>
         </div>
       </div>

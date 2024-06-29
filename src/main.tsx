@@ -9,6 +9,7 @@ import { Home } from './pages/home'
 import { I18nextProvider, useTranslation } from 'react-i18next'
 import i18next from './i18n.ts'
 import { useTranslateStore } from './shared/stores/useTranslate.ts'
+import { ProductPage } from './pages/product.tsx'
 
 const AllRoutes: React.FC = () => {
   const location = useLocation()
@@ -25,6 +26,7 @@ const AllRoutes: React.FC = () => {
   return (
     <Routes location={location}>
       <Route element={<ClientLayout />}>
+        <Route element={<ProductPage />} path='/product/:id' />
         <Route element={<Home />} path='/' />
       </Route>
     </Routes>
