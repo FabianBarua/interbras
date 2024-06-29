@@ -37,7 +37,7 @@ const variantsItems = {
 }
 
 export const Navigation: React.FC<NavigationProps> = ({ isOpen }) => {
-  const [selected, setSelected] = React.useState<string | null>(null)
+  const [selected, setSelected] = React.useState<string | null>(itemIds[0].id)
 
   return (
     <>
@@ -53,6 +53,7 @@ export const Navigation: React.FC<NavigationProps> = ({ isOpen }) => {
           {itemIds.map(i => (
             <MenuItem
               key={i.id}
+              selected={selected === i.id}
               title={i.title}
               variants={variantsItems}
               onClick={() => setSelected(i.id)}
