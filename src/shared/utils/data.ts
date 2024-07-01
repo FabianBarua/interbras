@@ -1,8 +1,8 @@
 export interface Root {
-  products: Product[]
+  products: Category[]
 }
 
-export interface Product {
+export interface Category {
   id: string
   name: string
   children: Children[]
@@ -30,7 +30,7 @@ export interface Variant {
   photos: string[]
 }
 
-const airfryer: Product = {
+const airfryer: Category = {
   id: 'airfryer',
   name: 'Airfryer',
   description: 'Airfryer is a great product.',
@@ -40,15 +40,15 @@ const airfryer: Product = {
       name: 'Airfryer S10',
       popular: true,
       info: {
-        review: 'review and rating',
-        included: 'included items',
-        specs: 'specs and features'
+        review: 'Los scooters eléctricos han revolucionado la movilidad urbana con su diseño ágil, ecológico y práctico. \nEstos vehículos ofrecen una alternativa eficiente a los medios de transporte tradicionales, permitiendo desplazamientos rápidos y sin emisiones nocivas para el medio ambiente.\nCon su versatilidad y facilidad de uso, los scooters eléctricos se han convertido en una opción popular para aquellos que buscan una forma conveniente y sostenible de moverse por la ciudad.',
+        included: '2 - Ruedas de respaldo\n1 - Scooter X Pro',
+        specs: 'Autonomía: 20-30 km\nPotencia máxima: 250-350 W\nVelocidad máxima: 25 km/h\nCapacidad máxima: 120 kg'
       },
       variants: [
         {
           id: 's10-1',
           name: 'Airfryer S10 - 1',
-          color: '#ff0000',
+          color: 'Negro',
           photos: [
             '/products/airfryer/s10-v1-1.jpg',
             '/products/airfryer/s10-v1-2.jpg',
@@ -58,7 +58,7 @@ const airfryer: Product = {
         {
           id: 's10-2',
           name: 'Airfryer S10 - 2',
-          color: '#00ff00',
+          color: 'Blanco',
           photos: [
             '/products/airfryer/s10-v2-1.jpg',
             '/products/airfryer/s10-v2-2.jpg',
@@ -80,7 +80,7 @@ const airfryer: Product = {
         {
           id: 's20-1',
           name: 'Airfryer S20 - 1',
-          color: '#0000ff',
+          color: 'Negro',
           photos: [
             '/products/airfryer/s20-v1-1.jpg',
             '/products/airfryer/s20-v1-2.jpg',
@@ -90,7 +90,7 @@ const airfryer: Product = {
         {
           id: 's20-2',
           name: 'Airfryer S20 - 2',
-          color: '#ffff00',
+          color: 'Gris',
           photos: [
             '/products/airfryer/s20-v2-1.jpg',
             '/products/airfryer/s20-v2-2.jpg',
@@ -112,7 +112,7 @@ const airfryer: Product = {
         {
           id: 's30-1',
           name: 'Airfryer S30 - 1',
-          color: '#00ffff',
+          color: 'Blanco',
           photos: [
             '/products/airfryer/s30-v1-1.jpg',
             '/products/airfryer/s30-v1-2.jpg',
@@ -122,7 +122,7 @@ const airfryer: Product = {
         {
           id: 's30-2',
           name: 'Airfryer S30 - 2',
-          color: '#ff00ff',
+          color: 'Gris',
           photos: [
             '/products/airfryer/s30-v2-1.jpg',
             '/products/airfryer/s30-v2-2.jpg',
@@ -144,7 +144,7 @@ const airfryer: Product = {
         {
           id: 's40-1',
           name: 'Airfryer S40 - 1',
-          color: '#ff00ff',
+          color: 'Inox',
           photos: [
             '/products/airfryer/s40-v1-1.jpg',
             '/products/airfryer/s40-v1-2.jpg',
@@ -154,7 +154,7 @@ const airfryer: Product = {
         {
           id: 's40-2',
           name: 'Airfryer S40 - 2',
-          color: '#00ffff',
+          color: 'Plata',
           photos: [
             '/products/airfryer/s40-v2-1.jpg',
             '/products/airfryer/s40-v2-2.jpg',
@@ -166,7 +166,7 @@ const airfryer: Product = {
   ]
 }
 
-const scooters: Product = {
+const scooters: Category = {
   id: 'scooters',
   name: 'Scooters',
   description: 'Scooters is a great product.',
@@ -262,7 +262,7 @@ const scooters: Product = {
   ]
 }
 
-const aires: Product = {
+const aires: Category = {
   id: 'aires',
   name: 'Aires',
   description: 'Aires is a great product.',
@@ -381,17 +381,16 @@ export const getUrls = (): Urls[] => {
   return urls
 }
 
-export const getCategories = (): string[] => {
-  const categories: string[] = data.products.map(product => product.id)
-  return categories
+export const getCategories = (): Category[] => {
+  return data.products
 }
 
-export const getCategory = ({ id }: { id: string }): Product => {
+export const getCategory = ({ id }: { id: string }): Category => {
   const product = data.products.find(product => product.id === id)
-  return product as Product
+  return product as Category
 }
 
-export const getProductsByCategory = ({ id }: { id: string }): Product => {
+export const getProductsByCategory = ({ id }: { id: string }): Category => {
   const products = data.products.filter(product => product.id === id)[0]
   return products
 }

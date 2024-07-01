@@ -1,9 +1,9 @@
 import { create } from 'zustand'
-import { getCategories, getUrls, Urls } from '../utils/data'
+import { Category, getCategories, getUrls, Urls } from '../utils/data'
 
 interface dataStore {
   urls: Urls[]
-  categories: string[]
+  categories: Category[]
 }
 
 export const useDataStore = create<dataStore>(() => ({

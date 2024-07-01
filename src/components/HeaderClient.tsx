@@ -12,6 +12,7 @@ import { MenuToggle } from './MenuToggle'
 import { Navigation } from './Navigation'
 
 import './style.css'
+import { Link } from 'react-router-dom'
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -60,9 +61,9 @@ export const Header: React.FC = (): JSX.Element => {
         id='header-client'
         className={
         `
-        shadow-xl  fixed w-full z-[999999]  flex flex-col h-20  pt-5  transition-all
+         fixed w-full z-[999999]  flex flex-col h-20  pt-5  transition-all backdrop-blur bg-interbrasGreen-500 text-white 
         ${
-          selected !== null ? 'bg-interbrasGreen-500 text-white  h-96' : 'bg-white text-interbrasGreen-500  '
+          selected !== null ? ' h-96' : ' '
           }
           `
         }
@@ -72,10 +73,10 @@ export const Header: React.FC = (): JSX.Element => {
           <div className='flex-1 lg:block  hidden' />
           <ul className='flex mx-auto justify-center items-center gap-14'>
             <li ref={dondeEstamosRef} className='  lg:block hidden'>
-              <a href='#'>Donde estamos</a>
+              <button>Donde estamos</button>
             </li>
             <li ref={productosRef} className='  lg:block hidden'>
-              <a href='#' className=''>Productos</a>
+              <button>Productos</button>
             </li>
             <li>
               <a href='/'>
@@ -83,10 +84,10 @@ export const Header: React.FC = (): JSX.Element => {
               </a>
             </li>
             <li className='  lg:block hidden'>
-              <a href='/'>Inicio</a>
+              <Link to='/'>Inicio</Link>
             </li>
             <li ref={quienesSomosRef} className=' lg:block hidden'>
-              <a href='#'>Quienes somos</a>
+              <button>Quienes somos</button>
             </li>
           </ul>
 
