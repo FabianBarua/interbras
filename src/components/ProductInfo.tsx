@@ -2,7 +2,8 @@ import { Info } from '../shared/utils/data'
 
 export const ProductInfo: React.FC<Info> = ({ review, included, specs }) => {
   return (
-    <div className='flex flex-col gap-6  mt-28  mx-auto sm:w-[60%] w-[90%]'>
+    // arreglar bud de telefono
+    <div className='flex flex-col gap-6  mt-28   mx-auto sm:w-[60%] w-[100%]'>
       <hr className='  border-black/25' />
       <h2 className=' text-3xl font-semibold'>Información del producto</h2>
       <div className='flex flex-col lg:flex-row mt-5  gap-2 my-3'>

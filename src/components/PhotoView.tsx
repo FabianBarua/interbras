@@ -26,7 +26,7 @@ export const PhotoViewer: React.FC<PhotoViewProps> = ({
         <div className=' flex gap-[6px] overflow-hidden w-full mt-2'>
           {
             photos?.slice(0, 3)
-              .map((photo, index) => (
+              .map((_, index) => (
                 <PhotoView
                   key={index}
                   src='/template.png'
