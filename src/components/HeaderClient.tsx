@@ -61,7 +61,7 @@ export const Header: React.FC = (): JSX.Element => {
         id='header-client'
         className={
         `
-         fixed w-full z-[999999]  flex flex-col h-20  pt-5  transition-all backdrop-blur bg-interbrasGreen-500 text-white 
+         fixed w-full z-[60]  flex flex-col h-20  pt-5  transition-all backdrop-blur bg-interbrasGreen-500 text-white 
         ${
           selected !== null ? ' h-96' : ' '
           }

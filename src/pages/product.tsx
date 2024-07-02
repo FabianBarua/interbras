@@ -5,6 +5,7 @@ import { DownArrow } from '../components/DownArrow'
 import { ProductInfo } from '../components/ProductInfo'
 import { CarrouselCategory } from '../components/CarrouselCategory'
 import { motion } from 'framer-motion'
+import { PhotoViewer } from '../components/PhotoView'
 
 const NotFound: React.FC = () => {
   return (
@@ -82,11 +83,9 @@ export const ProductPage: React.FC = () => {
 
   const [isOpenShowMore, setIsOpenShowMore] = useState<boolean>(false)
   const [childSelected, setChildSelected] = useState<Children>(productSelected.children[0])
-  const [photoSelected, setPhotoSelected] = useState<string>(childSelected.variants[0].photos[0])
 
   useEffect(() => {
     setChildSelected(productSelected.children[0])
-    setPhotoSelected(productSelected.children[0].variants[0].photos[0])
   }, [productSelected])
 
   return (
@@ -99,27 +98,12 @@ export const ProductPage: React.FC = () => {
       >
         <div className=' sm:w-[60%] w-[90%] flex lg:flex-row flex-col justify-center gap-10  mx-auto '>
           <div>
-            <img
-              src='/template.png' alt={productSelected.name} className=' object-contain p-7 size-[400px] bg-white rounded-3xl'
+
+            <PhotoViewer
+              name={productSelected.name}
+              photos={childSelected.variants[0].photos}
             />
-            <div className=' flex gap-2 w-full mt-2'>
-              {
-                productSelected.children[0].variants[0].photos.map((photo, index) => (
-                  <img
-                    key={index}
-                    src='/template.png'
-                    alt={productSelected.name}
-                    className={
-                      `
-                      object-contain p-3 size-24 rounded-3xl border-2 bg-white hover:bg-neutral-200 transition-colors cursor-pointer 
-                      ${photoSelected === photo ? ' border-interbrasGreen-500' : ' '}
-                      `
-                    }
-                    onClick={() => setPhotoSelected(photo)}
-                  />
-                ))
-              }
-            </div>
+
           </div>
           <div className='  flex-1 w-full '>
             <h1 className=' text-4xl font-semibold'>
