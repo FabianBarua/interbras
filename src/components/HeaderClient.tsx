@@ -121,7 +121,12 @@ export const Header: React.FC = (): JSX.Element => {
         className=' nav w-min lg:hidden '
       >
         <motion.div className='background bg-interbrasGreen-500' variants={sidebar} />
-        <Navigation isOpen={isOpen} />
+        <Navigation
+          isOpen={isOpen}
+          toggleOpen={
+            toggleOpen
+          }
+        />
         <MenuToggle toggle={() => toggleOpen()} />
       </motion.nav>
 

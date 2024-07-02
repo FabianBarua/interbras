@@ -28,13 +28,13 @@ const products: ProductItemHome[][] =
   [
     {
       name: 'airfyer',
-      url: '/airfryer',
+      url: '/product/airfryer',
       photo: '/home/5.png',
       isMagic: false
     },
     {
-      name: 'kettle',
-      url: '/kettle',
+      name: 'hervidoras',
+      url: '/product/hervidoras',
       photo: '/home/13.png',
       isMagic: false
     }
@@ -42,19 +42,19 @@ const products: ProductItemHome[][] =
   [
     {
       name: 'airfyer',
-      url: '/airfryer',
+      url: '/product/airfryer',
       photo: '/home/6.png',
       isMagic: false
     },
     {
       name: 'airfyer',
-      url: '/airfryer',
+      url: '/product/airfryer',
       photo: '/home/3.png',
       isMagic: false
     },
     {
       name: 'arrocera',
-      url: '/arrocera',
+      url: '/product/arrocera',
       photo: '/home/11.png',
       isMagic: false
     }
@@ -62,19 +62,19 @@ const products: ProductItemHome[][] =
   [
     {
       name: 'airfyer',
-      url: '/airfyer',
+      url: '/product/airfyer',
       photo: '/home/2.png',
       isMagic: false
     },
     {
       name: 'arrocera',
-      url: '/arrocera',
+      url: '/product/arrocera',
       photo: '/home/10.png',
       isMagic: false
     },
     {
       name: 'licuadora',
-      url: '/licuadora',
+      url: '/product/licuadora',
       photo: '/home/7.png',
       isMagic: false
     }
@@ -82,8 +82,8 @@ const products: ProductItemHome[][] =
   [
 
     {
-      name: 'kettle',
-      url: '/kettle',
+      name: 'hervidoras',
+      url: '/product/hervidoras',
       photo: '/home/13.png',
       isMagic: false
     },
@@ -95,7 +95,7 @@ const products: ProductItemHome[][] =
     },
     {
       name: 'airfyer',
-      url: '/airfryer',
+      url: '/product/airfryer',
       photo: '/home/4.png',
       isMagic: false
     }
@@ -103,19 +103,19 @@ const products: ProductItemHome[][] =
   [
     {
       name: 'licuadora',
-      url: '/licuadora',
+      url: '/product/licuadora',
       photo: '/home/9.png',
       isMagic: false
     },
     {
-      name: 'kettle',
-      url: '/kettle',
+      name: 'hervidoras',
+      url: '/product/hervidoras',
       photo: '/home/12.png',
       isMagic: false
     },
     {
       name: 'airfyer',
-      url: '/airfryer',
+      url: '/product/airfryer',
       photo: '/home/1.png',
       isMagic: false
     }
@@ -123,19 +123,19 @@ const products: ProductItemHome[][] =
   [
     {
       name: 'airfyer',
-      url: '/airfryer',
+      url: '/product/airfryer',
       photo: '/home/3.png',
       isMagic: false
     },
     {
       name: 'arrocera',
-      url: '/arrocera',
+      url: '/product/arrocera',
       photo: '/home/11.png',
       isMagic: false
     },
     {
       name: 'airfyer',
-      url: '/airfryer',
+      url: '/product/airfryer',
       photo: '/home/6.png',
       isMagic: false
     }
@@ -143,13 +143,13 @@ const products: ProductItemHome[][] =
   [
     {
       name: 'licuadora',
-      url: '/licuadora',
+      url: '/product/licuadora',
       photo: '/home/7.png',
       isMagic: false
     },
     {
       name: 'airfyer',
-      url: '/airfryer',
+      url: '/product/airfryer',
       photo: '/home/1.png',
       isMagic: false
     }

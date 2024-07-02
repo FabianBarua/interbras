@@ -188,6 +188,10 @@ const scooters: Category = {
           photos: [
             '/products/scooters/8.5-v1-1.jpg',
             '/products/scooters/8.5-v1-2.jpg',
+            '/products/scooters/8.5-v1-2.jpg',
+            '/products/scooters/8.5-v1-2.jpg',
+            '/products/scooters/8.5-v1-2.jpg',
+            '/products/scooters/8.5-v1-2.jpg',
             '/products/scooters/8.5-v1-3.jpg'
           ]
         }
@@ -362,7 +366,13 @@ export const data: Root = {
   products: [
     airfryer,
     scooters,
-    aires
+    aires,
+    scooters,
+    scooters,
+    scooters,
+    scooters,
+    scooters,
+    scooters
   ]
 }
 

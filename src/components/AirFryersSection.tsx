@@ -62,7 +62,7 @@ export const AirFryersSection: React.FC = () => {
         >
           {t('home.airFryersSection.text')}
         </p>
-        <PrimaryButton to='/air-fryers' />
+        <PrimaryButton to='/product/airfryer' />
       </div>
 
       <div className=' w-full scale-75 xl:scale-100 lg:block hidden  h-full  relative'>

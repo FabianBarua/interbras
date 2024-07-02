@@ -26,7 +26,7 @@ export const CocinasSection: React.FC = () => {
           {t('home.CocinasSection.description')}
         </p>
         <div className=' w-min mx-auto'>
-          <PrimaryButton to='/cocinas' />
+          <PrimaryButton to='/product/cocinas' />
         </div>
       </div>
     </motion.section>

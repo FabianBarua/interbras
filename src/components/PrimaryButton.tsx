@@ -29,6 +29,11 @@ export const PrimaryButton = ({ to, className }: PrimaryButtonProps): JSX.Elemen
   return (
     <Link
       to={to}
+      onClick={
+        () => {
+          window.scrollTo(0, 0)
+        }
+      }
       className={
         `
         text-nowrap shadow-2xl flex mt-1 transition-colors bg-interbrasGreen-500 hover:bg-green-600 text-white  text-lg justify-center items-center rounded-xl py-1  px-4 gap-2 

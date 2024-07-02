@@ -2,13 +2,13 @@ import { useDataStore } from '../shared/stores/useData'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export const CarrouselCategory: React.FC = () => {
   const { categories } = useDataStore()
 
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
-    duration: 100
+    loop: true
   }, [Autoplay()])
   const [selectedIndex, setSelectedIndex] = useState(0)
 
@@ -19,23 +19,33 @@ export const CarrouselCategory: React.FC = () => {
 
   return (
     <>
-      <h3 className=' text-center text-3xl mt-16 mb-8 text-black/80 font-light'>Tambien te puede interesar</h3>
+      <h3 className=' text-center text-3xl mt-36 mb-8 text-black/80 font-light'>Tambien te puede interesar</h3>
       <div
         ref={emblaRef}
-        className='  w-full flex overflow-hidden '
+        className={
+          `
+          w-full relative flex overflow-hidden scroller
+          lg:after:w-96 after:absolute after:z-50 after:h-full after:bg-[linear-gradient(to_left,transparent_10%,#f2f2f2_80%)]
+          lg:before:w-96 before:absolute before:z-50 before:h-full before:bg-[linear-gradient(to_right,transparent_10%,#f2f2f2_80%)] before:right-0
+          `
+        }
       >
-        <div className=' flex items-center w-full justify-center'>
+        <div className=' flex w-full'>
           {
     categories.map((item, index) => (
       <div
-        key={item.id}
-        className=' py-4'
+        key={item.id.toString() + index.toString()}
+        className={
+          `
+          py-4  mx-5
+          `
+        }
       >
         <div className={
             ` 
             ${
             index === selectedIndex
-              ? ' bg-interbrasGray  scale-105 border-interbrasGreen-500'
+              ? ' bg-interbrasGray scale-110 border-interbrasGreen-500'
               : 'bg-[#E7E7E7]'
             }
              
@@ -67,17 +77,25 @@ export const CarrouselCategory: React.FC = () => {
           >
             {item.description}
           </p>
-          <button className={
-            `
-            ${
-                index === selectedIndex ? ' bg-interbrasGreen-500' : 'bg-[#A2A2A2]'
+          <Link
+            to={`/product/${item.id}`}
+            onClick={
+              () => {
+                window.scrollTo(0, 0)
+              }
             }
-            transition-colors  buttonMore bg-interbrasGreen-500 w-min font-light text-nowrap mt-2 mx-auto text-white px-4 py-1 rounded-xl
-            `
-          }
+            className={
+              `
+              ${
+                index === selectedIndex ? ' bg-interbrasGreen-500' : 'bg-[#A2A2A2]'
+                }
+                transition-colors  buttonMore bg-interbrasGreen-500 w-min font-light text-nowrap mt-2 mx-auto text-white px-4 py-1 rounded-xl
+                `
+              }
           >
             Más información
-          </button>
+
+          </Link>
         </div>
 
       </div>

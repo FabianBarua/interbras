@@ -1,14 +1,17 @@
-import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
 import { Children, getProductsByCategory } from '../shared/utils/data'
 import { DownArrow } from '../components/DownArrow'
 import { ProductInfo } from '../components/ProductInfo'
 import { CarrouselCategory } from '../components/CarrouselCategory'
+import { motion } from 'framer-motion'
 
 const NotFound: React.FC = () => {
   return (
-    <main className='  sm:w-[80%] w-[90%] flex flex-col gap-6 mx-auto bg-red-400'>
-      <p>product not found</p>
+    <main className='  sm:w-[80%] w-[90%] flex flex-col gap-3 mx-auto flex-1 justify-center items-center'>
+      <h1 className=' text-4xl font-semibold'>Producto no encontrado</h1>
+      <p className=' text-lg font-light'>El producto que buscas no existe</p>
+      <Link to='/' className=' text-lg text-white bg-interbrasGreen-500 p-2 rounded-3xl px-8'>Volver al inicio</Link>
     </main>
   )
 }
@@ -76,14 +79,25 @@ export const ProductPage: React.FC = () => {
   if (productSelected === undefined) {
     return <NotFound />
   }
+
   const [isOpenShowMore, setIsOpenShowMore] = useState<boolean>(false)
   const [childSelected, setChildSelected] = useState<Children>(productSelected.children[0])
   const [photoSelected, setPhotoSelected] = useState<string>(childSelected.variants[0].photos[0])
 
+  useEffect(() => {
+    setChildSelected(productSelected.children[0])
+    setPhotoSelected(productSelected.children[0].variants[0].photos[0])
+  }, [productSelected])
+
   return (
     <>
-      <main className=' w-full flex flex-col mx-auto flex-1 pt-16'>
-        <div className=' sm:w-[60%] w-[90%] flex justify-center gap-10  mx-auto '>
+      <motion.main
+        className=' w-full flex flex-col mx-auto flex-1 pt-16'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className=' sm:w-[60%] w-[90%] flex lg:flex-row flex-col justify-center gap-10  mx-auto '>
           <div>
             <img
               src='/template.png' alt={productSelected.name} className=' object-contain p-7 size-[400px] bg-white rounded-3xl'
@@ -157,7 +171,7 @@ export const ProductPage: React.FC = () => {
                   display: productSelected.children.length > 3 ? 'block' : 'none'
                 }
               }
-                className=' z-20  transition-allflex gap-3 justify-center items-center text-lg rounded-full absolute transition-all left-1/2 -translate-x-1/2  border-2 bg-interbrasGreen-200 border-interbrasGreen-500 h-9  px-5  text-interbrasGreen-500'
+                className=' z-20  transition-all  text-nowrap flex gap-3 justify-center items-center text-lg rounded-full absolute  left-1/2 -translate-x-1/2  border-2 bg-interbrasGreen-200 border-interbrasGreen-500 h-9  px-5  text-interbrasGreen-500'
               >
 
                 Mostrar {isOpenShowMore ? 'menos' : 'más'}
@@ -172,7 +186,7 @@ export const ProductPage: React.FC = () => {
         </div>
         <CarrouselCategory />
         <ProductInfo {...childSelected.info} />
-      </main>
+      </motion.main>
     </>
   )
 }

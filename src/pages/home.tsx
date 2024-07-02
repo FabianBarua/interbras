@@ -5,28 +5,36 @@ import { AirFryersSection } from '../components/AirFryersSection'
 import { AnimatedSection } from '../components/AnimatedSection'
 import { MixSection } from '../components/MixSection'
 import { CocinasSection } from '../components/CocinasSection'
-import { KettleAndCafeterasSection } from '../components/KettleAndCafeterasSection'
+import { HervidorasAndCafeterasSection } from '../components/HervidorasAndCafeterasSection'
 import { OtherProductsSection } from '../components/OtherProductsSection.tsx'
+import { motion } from 'framer-motion'
 
 export const Home: React.FC = () => {
   return (
     <>
-      <ProductsAnimated />
-      <main className='  sm:w-[80%] w-[90%] flex flex-col gap-6 mx-auto'>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+      >
 
-        <AirFryersSection />
+        <ProductsAnimated />
+        <main className='  sm:w-[80%] w-[90%] flex flex-col gap-6 mx-auto'>
 
-        <AnimatedSection />
+          <AirFryersSection />
 
-        <MixSection />
+          <AnimatedSection />
 
-        <CocinasSection />
+          <MixSection />
 
-        <KettleAndCafeterasSection />
+          <CocinasSection />
 
-        <OtherProductsSection />
+          <HervidorasAndCafeterasSection />
 
-      </main>
+          <OtherProductsSection />
+
+        </main>
+      </motion.div>
     </>
   )
 }

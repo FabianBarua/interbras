@@ -2,10 +2,10 @@ import { Info } from '../shared/utils/data'
 
 export const ProductInfo: React.FC<Info> = ({ review, included, specs }) => {
   return (
-    <div className='flex flex-col gap-6 mt-20  mx-auto sm:w-[60%] w-[90%]'>
+    <div className='flex flex-col gap-6  mt-28  mx-auto sm:w-[60%] w-[90%]'>
       <hr className='  border-black/25' />
       <h2 className=' text-3xl font-semibold'>Información del producto</h2>
-      <div className='flex mt-5  gap-2 my-3'>
+      <div className='flex flex-col lg:flex-row mt-5  gap-2 my-3'>
         <h2 className=' w-96 text-2xl '>Review</h2>
         <p className=' flex-1 leading-5'>{
             review.split('\n').map((item, i) => (
@@ -18,7 +18,7 @@ export const ProductInfo: React.FC<Info> = ({ review, included, specs }) => {
         </p>
       </div>
       <hr className='  border-black/25' />
-      <div className='flex  gap-2 my-3'>
+      <div className='flex flex-col lg:flex-row gap-2 my-3'>
         <h2 className=' w-96 text-2xl'>¿Que hay en la caja?</h2>
         <p className=' flex-1'>{
                 included.split('\n').map((item, i) => (
@@ -31,7 +31,7 @@ export const ProductInfo: React.FC<Info> = ({ review, included, specs }) => {
         </p>
       </div>
       <hr className='  border-black/25' />
-      <div className='flex  gap-2 my-3'>
+      <div className='flex flex-col lg:flex-row gap-2 my-3'>
         <h2 className=' w-96 text-2xl'>Especificaciones</h2>
         <p className=' flex-1'>{
                     specs.split('\n').map((item, i) => (

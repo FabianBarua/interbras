@@ -40,9 +40,11 @@ const ProductItemCard: React.FC<ProductItemCardProps> = (
       className=' h-full'
     >
       <Link
-        to={
-        to !== null ? to : '/'
-
+        to={to !== null ? to : '/'}
+        onClick={
+        () => {
+          window.scrollTo(0, 0)
+        }
       }
         onMouseEnter={
           mouseEnter
@@ -74,7 +76,7 @@ const productsSlide = [
     description: 'home.animatedSection.1.description',
     icon: '/home/slideSection/1.svg',
     productPhoto: '/home/slideSection/1.png',
-    to: '/tvs',
+    to: '/product/tvs',
     delay: 0.3
   },
   {
@@ -83,7 +85,7 @@ const productsSlide = [
     description: 'home.animatedSection.2.description',
     icon: '/home/slideSection/2.svg',
     productPhoto: '/home/slideSection/2.png',
-    to: '/aires',
+    to: '/product/aire',
     delay: 0.5
   },
   {
@@ -92,7 +94,7 @@ const productsSlide = [
     description: 'home.animatedSection.3.description',
     icon: '/home/slideSection/3.svg',
     productPhoto: '/home/slideSection/3.png',
-    to: '/scooters',
+    to: '/product/scooters',
     delay: 0.7
   }
 ]

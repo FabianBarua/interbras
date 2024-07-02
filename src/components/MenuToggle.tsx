@@ -4,7 +4,7 @@ interface MenuToggleProps {
   toggle: () => void
 }
 
-const Path = (props: any) => (
+const Path = (props: any): JSX.Element => (
   <motion.path
     fill='transparent'
     strokeWidth='3'

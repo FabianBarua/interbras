@@ -10,6 +10,7 @@ import { I18nextProvider, useTranslation } from 'react-i18next'
 import i18next from './i18n.ts'
 import { useTranslateStore } from './shared/stores/useTranslate.ts'
 import { ProductPage } from './pages/product.tsx'
+import { AnimatePresence } from 'framer-motion'
 
 const AllRoutes: React.FC = () => {
   const location = useLocation()
@@ -24,12 +25,14 @@ const AllRoutes: React.FC = () => {
   }, [lang])
 
   return (
-    <Routes location={location}>
-      <Route element={<ClientLayout />}>
-        <Route element={<ProductPage />} path='/product/:id' />
-        <Route element={<Home />} path='/' />
-      </Route>
-    </Routes>
+    <AnimatePresence mode='wait'>
+      <Routes location={location}>
+        <Route element={<ClientLayout />}>
+          <Route element={<ProductPage />} path='/product/:id' />
+          <Route element={<Home />} path='/' />
+        </Route>
+      </Routes>
+    </AnimatePresence>
   )
 }
 

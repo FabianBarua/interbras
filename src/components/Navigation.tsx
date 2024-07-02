@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { Cycle, motion } from 'framer-motion'
 import { MenuItem } from './MenuItem'
 import React from 'react'
 import { DondeEstamos } from './DondeEstamos'
@@ -17,6 +17,7 @@ const variants = {
 
 interface NavigationProps {
   isOpen: boolean
+  toggleOpen: Cycle
 }
 
 const variantsItems = {
@@ -36,7 +37,7 @@ const variantsItems = {
   }
 }
 
-export const Navigation: React.FC<NavigationProps> = ({ isOpen }) => {
+export const Navigation: React.FC<NavigationProps> = ({ isOpen, toggleOpen }) => {
   const [selected, setSelected] = React.useState<string | null>(itemIds[0].id)
 
   return (
@@ -56,7 +57,9 @@ export const Navigation: React.FC<NavigationProps> = ({ isOpen }) => {
               selected={selected === i.id}
               title={i.title}
               variants={variantsItems}
-              onClick={() => setSelected(i.id)}
+              onClick={
+                () => setSelected(i.id)
+              }
             />
           ))}
           <motion.div
@@ -81,7 +84,10 @@ export const Navigation: React.FC<NavigationProps> = ({ isOpen }) => {
                     transition={{ duration: 0.3 }}
                     key={i.id}
                   >
-                    <i.Component />
+                    <i.Component
+                      toggle={toggleOpen}
+                    />
+
                   </motion.div>
                 )
               }
@@ -104,11 +110,14 @@ const itemIds = [
   {
     id: 'headerSectionMobile2',
     title: 'Productos',
-    Component: () => {
+    Component: ({ toggle }: { toggle: Cycle }) => {
       return (
-        <ProductosHeader clicked={() => {
-          console.log('clicked')
-        }}
+        <ProductosHeader
+          clicked={
+            () => {
+              toggle()
+            }
+          }
         />
       )
     }
