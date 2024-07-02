@@ -38,6 +38,7 @@ export const CarrouselCategory: React.FC = () => {
         className={
           `
           py-4  mx-5
+          no-select 
           `
         }
       >
@@ -57,7 +58,7 @@ export const CarrouselCategory: React.FC = () => {
 
           <h1 className={
             `
-             text-2xl transition-colors font-medium text-center
+             text-2xl transition-colors font-medium text-center 
              ${
                 index === selectedIndex ? ' text-white' : 'text-[#636363]'
              }

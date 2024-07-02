@@ -97,7 +97,7 @@ export const ProductPage: React.FC = () => {
         transition={{ duration: 0.5 }}
       >
         <div className=' sm:w-[60%] w-[90%] flex lg:flex-row flex-col justify-center gap-10  mx-auto '>
-          <div>
+          <div className=' no-select '>
 
             <PhotoViewer
               name={productSelected.name}
