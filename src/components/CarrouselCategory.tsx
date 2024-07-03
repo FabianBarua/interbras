@@ -19,7 +19,7 @@ export const CarrouselCategory: React.FC = () => {
 
   return (
     <>
-      <h3 className=' text-center text-3xl mt-28 mb-8 text-black/80 font-light'>Tambien te puede interesar</h3>
+      <h3 className=' text-center text-3xl mt-12 mb-8 text-black/80 font-light'>Tambien te puede interesar</h3>
       <div
         ref={emblaRef}
         className={

@@ -194,8 +194,8 @@ export const ProductPage: React.FC = () => {
             </div>
           </div>
         </div>
-        <CarrouselCategory />
         <ProductInfo {...childSelected.info} />
+        <CarrouselCategory />
       </motion.main>
     </>
   )

@@ -140,7 +140,7 @@ const scooters: Category = {
   id: 'scooters',
   name: 'Scooters',
   description: 'Movilidad urbana eficiente y ecológica.',
-  shortDescription: 'Movilidad mas ecológica',
+  shortDescription: 'Movilidad mas ecológica.',
   children: [
     {
       id: '8.5',
@@ -663,7 +663,7 @@ const hervidoras: Category = {
   id: 'hervidoras',
   name: 'Hervidoras',
   description: 'Ideales para cualquier cocina moderna.',
-  shortDescription: 'Seguras y fáciles de usar',
+  shortDescription: 'Seguras y fáciles de usar.',
   children: [
     {
       id: 'T10',
@@ -678,7 +678,7 @@ const hervidoras: Category = {
         {
           id: 'T10',
           name: 'T10',
-          color: 'Blanco',
+          color: 'Inox',
           photos: [
             '/product/hervidoras/T10-1.png'
           ]
@@ -716,9 +716,143 @@ const hervidoras: Category = {
         {
           id: 'T30',
           name: 'T30',
-          color: 'Blanco',
+          color: ' Negro',
           photos: [
             '/product/hervidoras/T30-1.png'
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+const cafeteras: Category = {
+  id: 'cafeteras',
+  name: 'Cafeteras',
+  description: 'Disfruta de una taza de café perfecta cada mañana.',
+  shortDescription: 'Calidad en cada taza.',
+  children: [
+    {
+      id: 'E10',
+      name: 'Cafetera E10',
+      popular: false,
+      info: {
+        review: 'La cafetera E10 de Interbras es la elección perfecta para los amantes del café que buscan versatilidad y calidad en cada taza.\nCon su capacidad para utilizar tanto cápsulas como café molido, esta cafetera se adapta a tus preferencias y te permite disfrutar de una amplia variedad de bebidas.',
+        included: null,
+        specs: 'Café en cápsulas\nCafé en polvo\nPotencia: 1500W\nTanque de agua: 1.24 litros\nSelección de tamaño de taza: 80 ml a 420 ml\nSistema de calefacción instantánea\nApagado automático en 2 minutos\nIndicador de limpieza\nAccesorios removibles\nPrograma de limpieza automatizado\nProtección contra sobrecalentamiento'
+      },
+      variants: [
+        {
+          id: 'E10',
+          name: 'E10',
+          color: 'Inox',
+          photos: [
+            '/product/cafeteras/E10-1.png'
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+const planchas: Category = {
+  id: 'planchas',
+  name: 'Planchas',
+  description: 'Planchado perfecto en cada prenda.',
+  shortDescription: 'Planchado perfecto.',
+  children: [
+    {
+      id: 'F10',
+      name: 'Plancha F10',
+      popular: false,
+      info: {
+        review: 'La Plancha a Vapor Eléctrica F10 de Interbras está diseñada para facilitar tu día a día. \nCon un depósito de agua de 270 ml, esta plancha ofrece un rendimiento confiable y efectivo para todas tus necesidades de planchado.\nSu base de cerámica asegura un deslizamiento suave y uniforme, mientras que su  capacidad de vapor vertical permite eliminar arrugas de prendas colgadas.',
+        included: null,
+        specs: 'Potencia: 1200W\nDepósito de agua: 270 ml\nBase: Cerámica\nFunciones: Rociador de agua, vapor vertical'
+      },
+      variants: [
+        {
+          id: 'F10',
+          name: 'F10',
+          color: 'Rojo - Negro',
+          photos: [
+            '/product/planchas/F10-1.png'
+          ]
+        }
+      ]
+    }, {
+      id: 'F20',
+      name: 'Plancha F20',
+      popular: false,
+      info: {
+        review: 'La Plancha a Vapor Eléctrica F20 de Interbras es ideal para quienes buscan eficiencia y comodidad en el planchado. \nCon una capacidad de depósito de 270 ml y una base de cerámica, esta plancha proporciona resultados excepcionales.\nSu función de vapor vertical es perfecta para eliminar arrugas en prendas colgadas, ofreciendo versatilidad en su uso.',
+        included: null,
+        specs: 'Potencia: 1200W\nDepósito de agua: 270 ml\nBase: Cerámica\nFunciones: Rociador de agua, vapor vertical'
+      },
+      variants: [
+        {
+          id: 'F20',
+          name: 'F20',
+          color: 'Rojo - Negro',
+          photos: [
+            '/product/planchas/F20-1.png'
+          ]
+        }
+      ]
+    }, {
+      id: 'F30',
+      name: 'Plancha F30',
+      popular: false,
+      info: {
+        review: 'La Plancha a Vapor Eléctrica F30 de Interbras ofrece un rendimiento excepcional con la fuerza del vapor. \nCon control de vapor variable, permite ajustar la cantidad de vapor según tus necesidades./nSu depósito de agua de 270 ml y su base de cerámica garantizan un deslizamiento suave y resultados de alta calidad en cada pasada.',
+        included: null,
+        specs: 'Potencia: 1200W\nDepósito de agua: 270 ml\nBase: Cerámica\nFunciones: Control de vapor variable, rociador de agua,\nvapor vertical'
+      },
+      variants: [
+        {
+          id: 'F30',
+          name: 'F30',
+          color: 'Azul - Blanco',
+          photos: [
+            '/product/planchas/F30-1.png'
+          ]
+        }
+      ]
+    }, {
+      id: 'F40',
+      name: 'Plancha F40',
+      popular: false,
+      info: {
+        review: 'La Plancha a Vapor Eléctrica F40 de Interbras está equipada con una base de cerámica de alta calidad que proporciona un deslizamiento suave y eficiente. \nSu diseño ergonómico y su capacidad de vapor vertical permiten un uso cómodo y versátil. \nCon una potencia de 2200W, esta plancha ofrece un rendimiento superior para todas tus necesidades de planchado.',
+        included: null,
+        specs: 'Potencia: 2200W\nDepósito de agua: 330 ml\nBase: Cerámica con punta de precisión doble\nFunciones: Rociador de agua, vapor vertical, \ngolpe de vapor'
+      },
+      variants: [
+        {
+          id: 'F40',
+          name: 'F40',
+          color: 'Gris - Bronce',
+          photos: [
+            '/product/planchas/F40-1.png'
+          ]
+        }
+      ]
+    }, {
+      id: 'F50',
+      name: 'Plancha F50',
+      popular: false,
+      info: {
+        review: 'La Plancha a Vapor Eléctrica F50 de Interbras es perfecta para quienes buscan un rendimiento excepcional en el planchado. \nCon un depósito de agua de 270 ml y una base de cerámica, esta plancha asegura un deslizamiento suave y resultados impecables. \nSu capacidad de vapor continuo y funciones avanzadas la hacen ideal para eliminar arrugas de manera eficiente.',
+        included: null,
+        specs: 'Potencia: 2200W\nDepósito de agua: 270 ml\nBase: Cerámica\nFunciones: Rociador de agua, vapor vertical,\nvapor continuo'
+      },
+      variants: [
+        {
+          id: 'F50',
+          name: 'F50',
+          color: 'Negro',
+          photos: [
+            '/product/planchas/F50-1.png'
           ]
         }
       ]
@@ -734,7 +868,9 @@ export const data: Root = {
     tvs,
     mixteras,
     cocinas,
-    hervidoras
+    hervidoras,
+    cafeteras,
+    planchas
   ]
 }
 
