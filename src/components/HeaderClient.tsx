@@ -39,7 +39,8 @@ export const Header: React.FC = (): JSX.Element => {
     dondeEstamosRef,
     productosRef,
     quienesSomosRef,
-    selected
+    selected,
+    setSelected
   } = useHeader()
 
   const [isOpen, toggleOpen] = useCycle(false, true)
@@ -105,7 +106,7 @@ export const Header: React.FC = (): JSX.Element => {
 
         }
           {
-          selected === 'productos' && <ProductosHeader />
+          selected === 'productos' && <ProductosHeader clicked={() => setSelected(null)} />
         }
           {
           selected === 'quienesSomos' && <QuienesSomos />

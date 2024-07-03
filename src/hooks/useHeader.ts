@@ -6,6 +6,7 @@ export const useHeader = (): {
   productosRef: (instance: Element | null) => void
   quienesSomosRef: (instance: Element | null) => void
   selected: String | null
+  setSelected: React.Dispatch<React.SetStateAction<String | null>>
 } => {
   const [dondeEstamosRef, hoverDondeEstamos] = useHover()
   const [productosRef, hoverProductos] = useHover()
@@ -46,6 +47,7 @@ export const useHeader = (): {
     dondeEstamosRef,
     productosRef,
     quienesSomosRef,
-    selected
+    selected,
+    setSelected
   }
 }
