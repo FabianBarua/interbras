@@ -659,6 +659,73 @@ const cocinas: Category = {
   ]
 }
 
+const hervidoras: Category = {
+  id: 'hervidoras',
+  name: 'Hervidoras',
+  description: 'Ideales para cualquier cocina moderna.',
+  shortDescription: 'Seguras y fáciles de usar',
+  children: [
+    {
+      id: 'T10',
+      name: 'Hervidora T10',
+      popular: false,
+      info: {
+        review: 'La Hervidora Eléctrica Clásica de Interbras con una capacidad de 1.8 litros y 1500W de potencia es ideal para cualquier cocina moderna.\nSu diseño ergonómico y funcional permite un manejo fácil y seguro.\nCalienta el agua rápidamente, perfecta para preparar té, café y otras bebidas calientes.',
+        included: null,
+        specs: 'Capacidad: 1.8L\nPotencia: 1500W\nRápido\nPráctico\nVersátil'
+      },
+      variants: [
+        {
+          id: 'T10',
+          name: 'T10',
+          color: 'Blanco',
+          photos: [
+            '/product/hervidoras/T10-1.png'
+          ]
+        }
+      ]
+    }, {
+      id: 'T20',
+      name: 'Hervidora T20',
+      popular: false,
+      info: {
+        review: 'La Hervidora Eléctrica T20 de Interbras ofrece una solución rápida y eficiente para calentar agua. \nCon una capacidad de 1.8 litros y una potencia de 1500W, esta hervidora se destaca por su durabilidad y diseño elegante.\nMantiene el calor por más tiempo, lo que la hace perfecta para cualquier hogar o oficina.',
+        included: null,
+        specs: 'Capacidad: 1.8L\nPotencia: 1500W\nRápido\nPráctico\nVersátil\nMantiene el calor'
+      },
+      variants: [
+        {
+          id: 'T20',
+          name: 'T20',
+          color: 'Blanco',
+          photos: [
+            '/product/hervidoras/T20-1.png'
+          ]
+        }
+      ]
+    }, {
+      id: 'T30',
+      name: 'Hervidora T30',
+      popular: false,
+      info: {
+        review: 'La Hervidora Eléctrica T30 de Interbras ofrece una solución rápida y eficiente para calentar agua. \nCon una capacidad de 1.8 litros y una potencia de 1500W, esta hervidora se destaca por su durabilidad y diseño elegante.\nMantiene el calor por más tiempo, lo que la hace perfecta para cualquier hogar o oficina.',
+        included: null,
+        specs: 'Capacidad: 1.8L\nPotencia: 1500W\nRápido\nPráctico\nVersátil\nMantiene el calor'
+      },
+      variants: [
+        {
+          id: 'T30',
+          name: 'T30',
+          color: 'Blanco',
+          photos: [
+            '/product/hervidoras/T30-1.png'
+          ]
+        }
+      ]
+    }
+  ]
+}
+
 export const data: Root = {
   products: [
     airfryer,
@@ -666,7 +733,8 @@ export const data: Root = {
     aires,
     tvs,
     mixteras,
-    cocinas
+    cocinas,
+    hervidoras
   ]
 }
 
