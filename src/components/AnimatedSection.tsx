@@ -85,7 +85,7 @@ const productsSlide = [
     description: 'home.animatedSection.2.description',
     icon: '/home/slideSection/2.svg',
     productPhoto: '/home/slideSection/2.png',
-    to: '/product/aire',
+    to: '/product/aires',
     delay: 0.5
   },
   {

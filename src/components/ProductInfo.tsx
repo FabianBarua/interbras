@@ -18,19 +18,25 @@ export const ProductInfo: React.FC<Info> = ({ review, included, specs }) => {
         }
         </p>
       </div>
-      <hr className='  border-black/25' />
-      <div className='flex flex-col lg:flex-row gap-2 my-3'>
-        <h2 className=' w-96 text-2xl'>¿Que hay en la caja?</h2>
-        <p className=' flex-1'>{
-                included.split('\n').map((item, i) => (
+      {
+        included !== null && (
+          <>
+            <hr className='  border-black/25' />
+            <div className='flex flex-col lg:flex-row gap-2 my-3'>
+              <h2 className=' w-96 text-2xl'>¿Que hay en la caja?</h2>
+              <p className=' flex-1'>{
+                included?.split('\n').map((item, i) => (
                   <span key={i.toString() + '-included'}>
                     {item}
                     <br />
                   </span>
                 ))
             }
-        </p>
-      </div>
+              </p>
+            </div>
+          </>
+        )
+      }
       <hr className='  border-black/25' />
       <div className='flex flex-col lg:flex-row gap-2 my-3'>
         <h2 className=' w-96 text-2xl'>Especificaciones</h2>

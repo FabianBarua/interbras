@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useLocation, useParams } from 'react-router-dom'
 import { Children, getProductsByCategory } from '../shared/utils/data'
 import { DownArrow } from '../components/DownArrow'
 import { ProductInfo } from '../components/ProductInfo'
@@ -30,7 +30,7 @@ const ProductCard: React.FC<{ child: Children, active: boolean, change: (child: 
       onClick={() => change(child)}
     >
       <img
-        src='/template.png' className=' size-20 p-3 object-contain rounded-3xl ' alt=''
+        src={child.variants[0].photos[0]} className=' size-20 p-3 object-contain rounded-3xl ' alt=''
       />
 
       <div className={
@@ -84,9 +84,26 @@ export const ProductPage: React.FC = () => {
   const [isOpenShowMore, setIsOpenShowMore] = useState<boolean>(false)
   const [childSelected, setChildSelected] = useState<Children>(productSelected.children[0])
 
+  const location = useLocation()
+
+  useEffect(() => {
+    setIsOpenShowMore(false)
+  }, [location])
+
   useEffect(() => {
     setChildSelected(productSelected.children[0])
   }, [productSelected])
+
+  const getAllPhotosOfAllVariants = (): string[] => {
+    const photos: string[] = []
+    childSelected.variants.forEach((variant) => {
+      variant.photos.forEach((photo) => {
+        photos.push(photo)
+      })
+    }
+    )
+    return photos
+  }
 
   return (
     <>
@@ -101,7 +118,9 @@ export const ProductPage: React.FC = () => {
 
             <PhotoViewer
               name={productSelected.name}
-              photos={childSelected.variants[0].photos}
+              photos={
+              getAllPhotosOfAllVariants()
+              }
             />
 
           </div>
@@ -109,16 +128,23 @@ export const ProductPage: React.FC = () => {
             <h1 className=' text-4xl font-semibold'>
               {productSelected.name}
             </h1>
-            <p className=' text-lg  font-light'>
-              {productSelected.description}
+            <p className=' text-lg  mt-1 font-light leading-5'>
+              {productSelected.description.split('\n').map((line, index) => (
+                <span key={index}>
+                  {line}
+                  <br />
+                </span>
+              ))}
             </p>
             <h3 className=' mt-4  text-lg font-medium text-black/3'>¿Que modelo deseas?</h3>
             <div className=' relative mt-3'>
               <div
                 style={
               {
-                height: isOpenShowMore ? 'auto' : '23rem',
-                overflow: isOpenShowMore ? '' : 'hidden'
+                height: isOpenShowMore
+                  ? (105 * productSelected.children.length).toString() + 'px'
+                  : '23rem',
+                overflow: 'hidden'
               }
             }
                 className=' transition-all w-full  flex flex-col gap-1 relative'

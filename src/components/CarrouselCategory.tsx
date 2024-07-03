@@ -72,11 +72,11 @@ export const CarrouselCategory: React.FC = () => {
             ${
               index === selectedIndex ? ' text-white' : 'text-[#787878]'
             }
-            text-xl  transition-colors duration-100   font-light text-center
+            text-xl  transition-colors duration-100 font-light text-center
             `
           }
           >
-            {item.description}
+            {item.shortDescription}
           </p>
           <Link
             to={`/product/${item.id}`}
