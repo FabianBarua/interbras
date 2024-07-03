@@ -597,98 +597,61 @@ const cocinas: Category = {
   shortDescription: 'Innovación compacta.',
   children: [
     {
-      id: 'G10',
-      name: 'Mixtera G10',
+      id: 'C10',
+      name: 'Cocina electrica C10',
       popular: false,
       info: {
-        review: 'La Mixtera G10 de Interbras es ideal para transformar ingredientes simples en bocadillos increíbles.\nPerfecta para preparar sándwiches deliciosos de forma rápida y práctica, asegurando resultados crujientes y sabrosos en cada uso.',
+        review: 'La cocina eléctrica C10 de Interbras es la solución ideal para quienes buscan una forma eficiente y práctica de calentar alimentos. \nCon una placa de operación y múltiples opciones de calentamiento, esta cocina es perfecta para el uso diario en cualquier hogar.',
         included: null,
-        specs: 'Potencia: 750W\nIndicadores: de Encendido y Listo\nTamaño: Compacta y Fácil de Almacenar\nDiseño: Acabado Elegante'
+        specs: 'Potencia: 1000W\nCaracterísticas destacadas: \nProtección contra sobrecalentamiento\nOperación sencilla \nFácil limpieza.'
       },
       variants: [
         {
-          id: 'G10',
-          name: 'G10',
-          color: 'Negro',
+          id: 'C10',
+          name: 'C10',
+          color: 'Blanco',
           photos: [
-            '/product/mixteras/G10-1.png'
+            '/product/cocinas/C10-1.png'
           ]
         }
       ]
     },
     {
-      id: 'G20',
-      name: 'Mixtera G20',
+      id: 'C20',
+      name: 'Cocina electrica C20',
       popular: false,
       info: {
-        review: 'La Mixtera G20 de Interbras está diseñada para aquellos que buscan conveniencia en la preparación de sándwiches.\nOfrece un calentamiento rápido y uniforme para resultados dorados y crujientes, con una operación fácil y almacenamiento compacto.',
+        review: 'La cocina eléctrica C20 de Interbras proporciona una excelente opción para cocinar con rapidez y eficiencia. \nCon su diseño compacto y elegante, es perfecta para cualquier espacio de cocina, brindando múltiples opciones de calentamiento.',
         included: null,
-        specs: 'Potencia: 750W\nIndicadores: Encendido y Listo\nTamaño: Compacta y Fácil de Almacenar\nDiseño: Acabado Elegante'
+        specs: 'Potencia: 1000W\nCaracterísticas destacadas: \nProtección contra sobrecalentamiento\nOperación sencilla \nFácil limpieza'
       },
       variants: [
         {
-          id: 'G20',
-          name: 'G20',
+          id: 'C20',
+          name: 'C20',
           color: 'Negro',
           photos: [
-            '/product/mixteras/G20-1.png'
+            '/product/cocinas/C20-1.png'
           ]
         }
       ]
-    }, {
-      id: 'G30',
-      name: 'Mixtera G30',
+    },
+    {
+      id: 'C30',
+      name: 'Cocina electrica C30',
       popular: false,
       info: {
-        review: 'La Mixtera G30 de Interbras es perfecta para preparar sándwiches crujientes y calientes rápidamente.\nSu diseño compacto y elegante facilita su uso y almacenamiento, proporcionando resultados deliciosos con facilidad.',
+        review: 'La cocina eléctrica C30 de Interbras es perfecta para quienes necesitan más capacidad de cocción. \nCon dos placas de operación y luz indicadora, ofrece una versatilidad superior para preparar una amplia variedad de alimentos de manera rápida y eficiente.',
         included: null,
-        specs: 'Potencia: 1400W\nIndicadores: Encendido y Listo\nTamaño: Compacta y Fácil de Almacenar\nDiseño: Acabado Elegante'
+        specs: 'Potencia: 1000W por placa\nCaracterísticas destacadas: \nProtección contra sobrecalentamiento\nOperación sencilla\nFácil limpieza'
       },
       variants: [
         {
-          id: 'G30',
-          name: 'G30',
+          id: 'C30',
+          name: 'C30',
           color: 'Negro',
           photos: [
-            '/product/mixteras/G30-1.png'
-          ]
-        }
-      ]
-    }, {
-      id: 'G40',
-      name: 'Mixtera G40',
-      popular: false,
-      info: {
-        review: 'La Mixtera 3 en 1 G40 de Interbras es la elección perfecta para quienes buscan versatilidad en la cocina. \nIncluye 3 placas intercambiables para preparar diferentes tipos de alimentos: grill, sándwich y waffle.\nIdeal para variar tus recetas y obtener siempre resultados deliciosos.',
-        included: null,
-        specs: 'Potencia: 800W\nIndicadores: Encendido y Listo\nTamaño: Compacta y Fácil de Guardar\nFuncionalidad: 3 en 1: grill, sándwich y waffle'
-      },
-      variants: [
-        {
-          id: 'G40',
-          name: 'G40',
-          color: 'Negro',
-          photos: [
-            '/product/mixteras/G40-1.png'
-          ]
-        }
-      ]
-    }, {
-      id: 'G50',
-      name: 'Mixtera G50',
-      popular: false,
-      info: {
-        review: 'La Mixtera 4 en 1, G50 de Interbras ofrece una versatilidad inigualable en la preparación de bocadillos.\nCon 4 placas intercambiables, permite preparar diferentes tipos de alimentos: \ngrill, sándwich, nutty y waffle, garantizando siempre un resultado perfecto y sabroso.',
-        included: null,
-        specs: 'Potencia: 800W\nIndicadores: Encendido y Listo\nTamaño: Compacta y Fácil de Guardar\nFuncionalidad: 4 en 1: grill, sándwich, nutty y waffle'
-      },
-      variants: [
-        {
-          id: 'G50',
-          name: 'G50',
-          color: 'Negro',
-          photos: [
-            '/product/mixteras/G50-1.png'
+            '/product/cocinas/C30-1.png'
           ]
         }
       ]
