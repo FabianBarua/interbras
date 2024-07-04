@@ -1150,6 +1150,84 @@ const batidoras: Category = {
   ]
 }
 
+const arroceras: Category = {
+  id: 'arroceras',
+  name: 'Arroceras',
+  description: 'Diseñadas para hacer tu vida más fácil y sabrosa.',
+  shortDescription: 'Cocinar mas facil.',
+  children: [
+    {
+      id: 'A10',
+      name: 'Arrocera A10',
+      popular: false,
+      info: {
+        review: 'La Olla Multicooker Interbras A10 es la solución perfecta para una cocina rápida, versátil y de gran capacidad. \nCon una capacidad de 5 litros y una potencia de 900W, esta olla multifuncional te permite preparar una amplia variedad de comidas con facilidad.\nSus 11 opciones diferentes de cocción y la función de mantener caliente aseguran que tus platos siempre estén en su punto justo, mientras que su diseño moderno y pantalla LCD facilitan su uso diario.',
+        included: 'Arrocera A10\nCucharón de plástico\nEspátula para arroz\nCesta de almacenamiento\nTaza medidora\nManual',
+        specs: 'Capacidad: 5L\nPotencia: 900W\n11 opciones diferentes de cocción\nFunción de mantener caliente\nPantalla LCD'
+      },
+      variants: [
+        {
+          id: 'A10',
+          name: 'A10',
+          color: 'Inox',
+          photos: [
+            '/product/arroceras/A10-1.png'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'P10',
+      name: 'Olla a presión Electrica P10',
+      popular: false,
+      info: {
+        review: 'Descubre una nueva forma de cocinar con la Olla a Presión Eléctrica Interbras P10. \nCon una potencia máxima de 1000W y una capacidad de 6 litros, esta olla multifuncional te permite preparar tus comidas favoritas de manera rápida y eficiente. \nSu diseño moderno y sus múltiples funciones programables hacen que cocinar sea más fácil que nunca, permitiéndote disfrutar de platos deliciosos con el mínimo esfuerzo.',
+        included: null,
+        specs: 'Potencia: 1000W máxima\nCapacidad: 6 litros\nMultifuncional\nDispositivo de Protección de Temperatura\nFunción Mantener Caliente'
+      },
+      variants: [
+        {
+          id: 'P10',
+          name: 'P10',
+          color: 'Inox',
+          photos: [
+            '/product/arroceras/P10-1.png'
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+const bebederos: Category = {
+  id: 'bebederos',
+  name: 'Bebederos',
+  description: 'Agua pura y fresca en todo momento.',
+  shortDescription: 'Agua pura.',
+  children: [
+    {
+      id: 'W10',
+      name: 'Bebedero W10',
+      popular: false,
+      info: {
+        review: 'El Dispensador de Agua Interbras W10 ofrece una conveniente y versátil solución para tu hogar o oficina.\nCon la capacidad de dispensar agua caliente y fría, es perfecto para preparar bebidas instantáneas o refrescarte en cualquier momento.\nSu diseño compacto y moderno se adapta fácilmente a cualquier espacio, mientras que su funcionamiento eficiente asegura un uso económico y fiable.',
+        included: null,
+        specs: 'Peso Neto: 4.0 kg\nPeso Bruto: 4.8 kg\nDimensiones: 260 x 280 x 320 mm\nTemperatura del Agua Caliente: 85°C – 95°C\nTemperatura del Agua Fría: 5°C – 10°C'
+      },
+      variants: [
+        {
+          id: 'W10',
+          name: 'W10',
+          color: 'Blanco',
+          photos: [
+            '/product/bebederos/W10-1.png'
+          ]
+        }
+      ]
+    }
+  ]
+}
+
 export const data: Root = {
   products: [
     airfryer,
@@ -1163,7 +1241,9 @@ export const data: Root = {
     planchas,
     licuadoras,
     beauty,
-    batidoras
+    batidoras,
+    arroceras,
+    bebederos
   ]
 }
 

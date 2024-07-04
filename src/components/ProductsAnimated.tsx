@@ -53,8 +53,8 @@ const products: ProductItemHome[][] =
       isMagic: false
     },
     {
-      name: 'arrocera',
-      url: '/product/arrocera',
+      name: 'arroceras',
+      url: '/product/arroceras',
       photo: '/home/11.png',
       isMagic: false
     }
@@ -67,8 +67,8 @@ const products: ProductItemHome[][] =
       isMagic: false
     },
     {
-      name: 'arrocera',
-      url: '/product/arrocera',
+      name: 'arroceras',
+      url: '/product/arroceras',
       photo: '/home/10.png',
       isMagic: false
     },
@@ -128,8 +128,8 @@ const products: ProductItemHome[][] =
       isMagic: false
     },
     {
-      name: 'arrocera',
-      url: '/product/arrocera',
+      name: 'arroceras',
+      url: '/product/arroceras',
       photo: '/home/11.png',
       isMagic: false
     },
