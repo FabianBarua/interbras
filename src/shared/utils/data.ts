@@ -397,7 +397,10 @@ const tvs: Category = {
           name: 'IN4300TV - 1',
           color: 'Negro',
           photos: [
-            '/product/aires/general.png'
+            '/product/tvs/IN4300TV-1.png',
+            '/product/tvs/IN4300TV-2.png',
+            '/product/tvs/IN4300TV-3.png',
+            '/product/tvs/IN4300TV-4.png'
           ]
         }
       ]
@@ -417,7 +420,10 @@ const tvs: Category = {
           name: 'IN5000TV - 1',
           color: 'Negro',
           photos: [
-            '/product/aires/general.png'
+            '/product/tvs/IN5000TV-1.png',
+            '/product/tvs/IN5000TV-2.png',
+            '/product/tvs/IN5000TV-3.png',
+            '/product/tvs/IN5000TV-4.png'
           ]
         }
       ]
@@ -437,7 +443,10 @@ const tvs: Category = {
           name: 'IN5500TV - 1',
           color: 'Negro',
           photos: [
-            '/product/aires/general.png'
+            '/product/tvs/IN5500TV-1.png',
+            '/product/tvs/IN5500TV-2.png',
+            '/product/tvs/IN5500TV-3.png',
+            '/product/tvs/IN5500TV-4.png'
           ]
         }
       ]
@@ -457,7 +466,33 @@ const tvs: Category = {
           name: 'IN6500TV - 1',
           color: 'Negro',
           photos: [
-            '/product/aires/general.png'
+            '/product/tvs/IN6500TV-1.png',
+            '/product/tvs/IN6500TV-2.png',
+            '/product/tvs/IN6500TV-3.png',
+            '/product/tvs/IN6500TV-4.png'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'IN7500TV',
+      name: 'Tv IN7500TV',
+      popular: false,
+      info: {
+        review: 'La Smart TV de 85 pulgadas modelo IN8500TV SQLED de Interbras lleva el entretenimiento en casa a otro nivel con su gran tamaño y calidad de imagen superior. La tecnología SQLED garantiza colores vibrantes y detalles nítidos, ideales para una experiencia cinematográfica. \nCon acceso a plataformas de streaming como Netflix y Prime Video, tendrás todo el contenido que amas al alcance de un botón. \nSu diseño elegante y sin marco  aporta un toque de sofisticación a cualquier sala.',
+        included: null,
+        specs: 'Tamaño de pantalla: 85 pulgadas\nResolución: SQLED\nFunciones adicionales: Acceso a una vasta biblioteca\nde películas y series con Xplus Prime y Cinema Prime\nConectividad: HDMI, USB, WiFi, Bluetooth\nServicios de streaming compatibles: Netflix, YouTube,\nHBO Max, Prime Video, Spotify, YouTube Kids\nSistema operativo: Android\nTecnología de imagen: Frameless (sin marco),\nTrue Colors, Smart\nSintonizador: ISDB-T'
+      },
+      variants: [
+        {
+          id: 'IN7500TV-1',
+          name: 'IN7500TV - 1',
+          color: 'Negro',
+          photos: [
+            '/product/tvs/IN7500TV-1.png',
+            '/product/tvs/IN7500TV-2.png',
+            '/product/tvs/IN7500TV-3.png',
+            '/product/tvs/IN7500TV-4.png'
           ]
         }
       ]
@@ -477,7 +512,10 @@ const tvs: Category = {
           name: 'IN8500TV - 1',
           color: 'Negro',
           photos: [
-            '/product/aires/general.png'
+            '/product/tvs/IN8500TV-1.png',
+            '/product/tvs/IN8500TV-2.png',
+            '/product/tvs/IN8500TV-3.png',
+            '/product/tvs/IN8500TV-4.png'
           ]
         }
       ]
