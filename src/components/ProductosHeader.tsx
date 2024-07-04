@@ -50,7 +50,7 @@ export const ProductosHeader: React.FC<ProductosHeaderProps> = ({
           <div className=' flex gap-16 mt-2'>
             <div className=' flex-col flex'>
               {
-                urls.map(url => (
+                urls.slice(0, 8).map(url => (
                   <LinkItem
                     clicked={clicked} to={url.url}
                     key={'id-header-' + url.name}
@@ -60,7 +60,18 @@ export const ProductosHeader: React.FC<ProductosHeaderProps> = ({
                 ))
               }
             </div>
-            <div className=' flex-col flex' />
+            <div className=' flex-col flex'>
+              {
+                urls.slice(8, urls.length).map(url => (
+                  <LinkItem
+                    clicked={clicked} to={url.url}
+                    key={'id-header-' + url.name}
+                  >
+                    {url.name}
+                  </LinkItem>
+                ))
+              }
+            </div>
           </div>
         </div>
       </div>
