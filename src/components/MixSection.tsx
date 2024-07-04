@@ -6,7 +6,7 @@ const mixers = [
   {
     id: 'mixteraSection1',
     tittle: 'Code',
-    image: '/home/mixteraSection/1.png',
+    image: '/home/mixteraSection/1.webp',
     url: '/product/mixteras',
     hover: ' hover:scale-105 hover:translate-x-[-70%] ',
     className: 'translate-x-[-50%] left-[30%] top-[55%] -translate-y-1/2  -rotate-12'
@@ -14,7 +14,7 @@ const mixers = [
   {
     id: 'mixteraSection2',
     tittle: 'Code',
-    image: '/home/mixteraSection/2.png',
+    image: '/home/mixteraSection/2.webp',
     url: '/product/mixteras',
     hover: ' hover:scale-105 hover:translate-y-[-60%] ',
     className: ' translate-x-[-50%] left-[50%] z-10 top-[40%] -translate-y-1/2 '
@@ -22,7 +22,7 @@ const mixers = [
   {
     id: 'mixteraSection3',
     tittle: 'Code',
-    image: '/home/mixteraSection/3.png',
+    image: '/home/mixteraSection/3.webp',
     url: '/product/mixteras',
     hover: 'hover:scale-105 hover:translate-x-[-30%] ',
     className: 'translate-x-[-50%] left-[70%] top-[55%] -translate-y-1/2  rotate-12'

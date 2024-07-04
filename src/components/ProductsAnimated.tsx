@@ -29,13 +29,13 @@ const products: ProductItemHome[][] =
     {
       name: 'airfyer',
       url: '/product/airfryer',
-      photo: '/home/5.png',
+      photo: '/home/5.webp',
       isMagic: false
     },
     {
       name: 'hervidoras',
       url: '/product/hervidoras',
-      photo: '/home/13.png',
+      photo: '/home/13.webp',
       isMagic: false
     }
   ],
@@ -43,19 +43,19 @@ const products: ProductItemHome[][] =
     {
       name: 'airfyer',
       url: '/product/airfryer',
-      photo: '/home/6.png',
+      photo: '/home/6.webp',
       isMagic: false
     },
     {
       name: 'airfyer',
       url: '/product/airfryer',
-      photo: '/home/3.png',
+      photo: '/home/3.webp',
       isMagic: false
     },
     {
       name: 'arroceras',
       url: '/product/arroceras',
-      photo: '/home/11.png',
+      photo: '/home/11.webp',
       isMagic: false
     }
   ],
@@ -63,19 +63,19 @@ const products: ProductItemHome[][] =
     {
       name: 'airfyer',
       url: '/product/airfyer',
-      photo: '/home/2.png',
+      photo: '/home/2.webp',
       isMagic: false
     },
     {
       name: 'arroceras',
       url: '/product/arroceras',
-      photo: '/home/10.png',
+      photo: '/home/10.webp',
       isMagic: false
     },
     {
       name: 'licuadora',
       url: '/product/licuadora',
-      photo: '/home/7.png',
+      photo: '/home/7.webp',
       isMagic: false
     }
   ],
@@ -84,19 +84,19 @@ const products: ProductItemHome[][] =
     {
       name: 'hervidoras',
       url: '/product/hervidoras',
-      photo: '/home/13.png',
+      photo: '/home/13.webp',
       isMagic: false
     },
     {
       name: <Titulo />,
       url: '/',
-      photo: '/home/logo.png',
+      photo: '/home/logo.webp',
       isMagic: true
     },
     {
       name: 'airfyer',
       url: '/product/airfryer',
-      photo: '/home/4.png',
+      photo: '/home/4.webp',
       isMagic: false
     }
   ],
@@ -104,19 +104,19 @@ const products: ProductItemHome[][] =
     {
       name: 'licuadora',
       url: '/product/licuadora',
-      photo: '/home/9.png',
+      photo: '/home/9.webp',
       isMagic: false
     },
     {
       name: 'hervidoras',
       url: '/product/hervidoras',
-      photo: '/home/12.png',
+      photo: '/home/12.webp',
       isMagic: false
     },
     {
       name: 'airfyer',
       url: '/product/airfryer',
-      photo: '/home/1.png',
+      photo: '/home/1.webp',
       isMagic: false
     }
   ],
@@ -124,19 +124,19 @@ const products: ProductItemHome[][] =
     {
       name: 'airfyer',
       url: '/product/airfryer',
-      photo: '/home/3.png',
+      photo: '/home/3.webp',
       isMagic: false
     },
     {
       name: 'arroceras',
       url: '/product/arroceras',
-      photo: '/home/11.png',
+      photo: '/home/11.webp',
       isMagic: false
     },
     {
       name: 'airfyer',
       url: '/product/airfryer',
-      photo: '/home/6.png',
+      photo: '/home/6.webp',
       isMagic: false
     }
   ],
@@ -144,13 +144,13 @@ const products: ProductItemHome[][] =
     {
       name: 'licuadora',
       url: '/product/licuadora',
-      photo: '/home/7.png',
+      photo: '/home/7.webp',
       isMagic: false
     },
     {
       name: 'airfyer',
       url: '/product/airfryer',
-      photo: '/home/1.png',
+      photo: '/home/1.webp',
       isMagic: false
     }
   ]

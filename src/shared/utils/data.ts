@@ -52,7 +52,7 @@ const airfryer: Category = {
           name: 'Airfryer S10 - 1',
           color: 'Negro',
           photos: [
-            '/product/airfryer/s10-v1-1.png'
+            '/product/airfryer/s10-v1-1.webp'
           ]
         },
         {
@@ -60,7 +60,7 @@ const airfryer: Category = {
           name: 'Airfryer S10 - 2',
           color: 'Blanco',
           photos: [
-            '/product/airfryer/s10-v2-1.png'
+            '/product/airfryer/s10-v2-1.webp'
           ]
         }
       ]
@@ -80,7 +80,7 @@ const airfryer: Category = {
           name: 'Airfryer S20 - 1',
           color: 'Negro',
           photos: [
-            '/product/airfryer/s20-v1-1.png'
+            '/product/airfryer/s20-v1-1.webp'
           ]
         },
         {
@@ -88,7 +88,7 @@ const airfryer: Category = {
           name: 'Airfryer S20 - 2',
           color: 'Blanco',
           photos: [
-            '/product/airfryer/s20-v2-1.png'
+            '/product/airfryer/s20-v2-1.webp'
           ]
         }
       ]
@@ -108,7 +108,7 @@ const airfryer: Category = {
           name: 'Airfryer S30 - 1',
           color: 'Inox',
           photos: [
-            '/product/airfryer/s30-v1-1.png'
+            '/product/airfryer/s30-v1-1.webp'
           ]
         }
       ]
@@ -128,7 +128,7 @@ const airfryer: Category = {
           name: 'Airfryer S40 - 1',
           color: 'Negro',
           photos: [
-            '/product/airfryer/s40-v1-1.png'
+            '/product/airfryer/s40-v1-1.webp'
           ]
         }
       ]
@@ -157,7 +157,7 @@ const scooters: Category = {
           name: 'Scooter 8.5 - 1',
           color: 'Negro',
           photos: [
-            '/product/scooters/8.5-v1-1.png'
+            '/product/scooters/8.5-v1-1.webp'
           ]
         }
       ]
@@ -177,7 +177,7 @@ const scooters: Category = {
           name: 'Scooter 10.5 Pro - 1',
           color: 'Negro',
           photos: [
-            '/product/scooters/10.5pro-v1-1.png'
+            '/product/scooters/10.5pro-v1-1.webp'
           ]
         }
       ]
@@ -197,7 +197,7 @@ const scooters: Category = {
           name: 'Scooter Cross - 1',
           color: 'Negro',
           photos: [
-            '/product/scooters/cross-v1-1.png'
+            '/product/scooters/cross-v1-1.webp'
           ]
         }
       ]
@@ -217,7 +217,7 @@ const scooters: Category = {
           name: 'Scooter Cross Pro - 1',
           color: 'Negro',
           photos: [
-            '/product/scooters/crosspro-v1-1.png'
+            '/product/scooters/crosspro-v1-1.webp'
           ]
         }
       ]
@@ -246,7 +246,7 @@ const aires: Category = {
           name: 'ITB 12000IV - 1',
           color: 'Blanco',
           photos: [
-            '/product/aires/general.png'
+            '/product/aires/general.webp'
           ]
         }
       ]
@@ -266,7 +266,7 @@ const aires: Category = {
           name: 'ITP 12000IV - 1',
           color: 'Blanco',
           photos: [
-            '/product/aires/general.png'
+            '/product/aires/general.webp'
           ]
         }
       ]
@@ -286,7 +286,7 @@ const aires: Category = {
           name: 'ITB 12000OF - 1',
           color: 'Blanco',
           photos: [
-            '/product/aires/general.png'
+            '/product/aires/general.webp'
           ]
         }
       ]
@@ -306,7 +306,7 @@ const aires: Category = {
           name: 'ITP 12000OF - 1',
           color: 'Blanco',
           photos: [
-            '/product/aires/general.png'
+            '/product/aires/general.webp'
           ]
         }
       ]
@@ -326,7 +326,7 @@ const aires: Category = {
           name: 'ITP 12000OF - 1',
           color: 'Blanco',
           photos: [
-            '/product/aires/general.png'
+            '/product/aires/general.webp'
           ]
         }
       ]
@@ -346,7 +346,7 @@ const aires: Category = {
           name: 'ITP 24000IV - 1',
           color: 'Blanco',
           photos: [
-            '/product/aires/general.png'
+            '/product/aires/general.webp'
           ]
         }
       ]
@@ -375,9 +375,9 @@ const tvs: Category = {
           name: 'IN3200TV - 1',
           color: 'Negro',
           photos: [
-            '/product/tvs/IN3200TV-1.png',
-            '/product/tvs/IN3200TV-2.png',
-            '/product/tvs/IN3200TV-3.png'
+            '/product/tvs/IN3200TV-1.webp',
+            '/product/tvs/IN3200TV-2.webp',
+            '/product/tvs/IN3200TV-3.webp'
           ]
         }
       ]
@@ -397,10 +397,10 @@ const tvs: Category = {
           name: 'IN4300TV - 1',
           color: 'Negro',
           photos: [
-            '/product/tvs/IN4300TV-1.png',
-            '/product/tvs/IN4300TV-2.png',
-            '/product/tvs/IN4300TV-3.png',
-            '/product/tvs/IN4300TV-4.png'
+            '/product/tvs/IN4300TV-1.webp',
+            '/product/tvs/IN4300TV-2.webp',
+            '/product/tvs/IN4300TV-3.webp',
+            '/product/tvs/IN4300TV-4.webp'
           ]
         }
       ]
@@ -420,10 +420,10 @@ const tvs: Category = {
           name: 'IN5000TV - 1',
           color: 'Negro',
           photos: [
-            '/product/tvs/IN5000TV-1.png',
-            '/product/tvs/IN5000TV-2.png',
-            '/product/tvs/IN5000TV-3.png',
-            '/product/tvs/IN5000TV-4.png'
+            '/product/tvs/IN5000TV-1.webp',
+            '/product/tvs/IN5000TV-2.webp',
+            '/product/tvs/IN5000TV-3.webp',
+            '/product/tvs/IN5000TV-4.webp'
           ]
         }
       ]
@@ -443,10 +443,10 @@ const tvs: Category = {
           name: 'IN5500TV - 1',
           color: 'Negro',
           photos: [
-            '/product/tvs/IN5500TV-1.png',
-            '/product/tvs/IN5500TV-2.png',
-            '/product/tvs/IN5500TV-3.png',
-            '/product/tvs/IN5500TV-4.png'
+            '/product/tvs/IN5500TV-1.webp',
+            '/product/tvs/IN5500TV-2.webp',
+            '/product/tvs/IN5500TV-3.webp',
+            '/product/tvs/IN5500TV-4.webp'
           ]
         }
       ]
@@ -466,10 +466,10 @@ const tvs: Category = {
           name: 'IN6500TV - 1',
           color: 'Negro',
           photos: [
-            '/product/tvs/IN6500TV-1.png',
-            '/product/tvs/IN6500TV-2.png',
-            '/product/tvs/IN6500TV-3.png',
-            '/product/tvs/IN6500TV-4.png'
+            '/product/tvs/IN6500TV-1.webp',
+            '/product/tvs/IN6500TV-2.webp',
+            '/product/tvs/IN6500TV-3.webp',
+            '/product/tvs/IN6500TV-4.webp'
           ]
         }
       ]
@@ -489,10 +489,10 @@ const tvs: Category = {
           name: 'IN7500TV - 1',
           color: 'Negro',
           photos: [
-            '/product/tvs/IN7500TV-1.png',
-            '/product/tvs/IN7500TV-2.png',
-            '/product/tvs/IN7500TV-3.png',
-            '/product/tvs/IN7500TV-4.png'
+            '/product/tvs/IN7500TV-1.webp',
+            '/product/tvs/IN7500TV-2.webp',
+            '/product/tvs/IN7500TV-3.webp',
+            '/product/tvs/IN7500TV-4.webp'
           ]
         }
       ]
@@ -512,10 +512,10 @@ const tvs: Category = {
           name: 'IN8500TV - 1',
           color: 'Negro',
           photos: [
-            '/product/tvs/IN8500TV-1.png',
-            '/product/tvs/IN8500TV-2.png',
-            '/product/tvs/IN8500TV-3.png',
-            '/product/tvs/IN8500TV-4.png'
+            '/product/tvs/IN8500TV-1.webp',
+            '/product/tvs/IN8500TV-2.webp',
+            '/product/tvs/IN8500TV-3.webp',
+            '/product/tvs/IN8500TV-4.webp'
           ]
         }
       ]
@@ -543,7 +543,7 @@ const mixteras: Category = {
           name: 'G10',
           color: 'Negro',
           photos: [
-            '/product/mixteras/G10-1.png'
+            '/product/mixteras/G10-1.webp'
           ]
         }
       ]
@@ -563,7 +563,7 @@ const mixteras: Category = {
           name: 'G20',
           color: 'Negro',
           photos: [
-            '/product/mixteras/G20-1.png'
+            '/product/mixteras/G20-1.webp'
           ]
         }
       ]
@@ -582,7 +582,7 @@ const mixteras: Category = {
           name: 'G30',
           color: 'Negro',
           photos: [
-            '/product/mixteras/G30-1.png'
+            '/product/mixteras/G30-1.webp'
           ]
         }
       ]
@@ -601,7 +601,7 @@ const mixteras: Category = {
           name: 'G40',
           color: 'Negro',
           photos: [
-            '/product/mixteras/G40-1.png'
+            '/product/mixteras/G40-1.webp'
           ]
         }
       ]
@@ -620,7 +620,7 @@ const mixteras: Category = {
           name: 'G50',
           color: 'Negro',
           photos: [
-            '/product/mixteras/G50-1.png'
+            '/product/mixteras/G50-1.webp'
           ]
         }
       ]
@@ -649,7 +649,7 @@ const cocinas: Category = {
           name: 'C10',
           color: 'Blanco',
           photos: [
-            '/product/cocinas/C10-1.png'
+            '/product/cocinas/C10-1.webp'
           ]
         }
       ]
@@ -669,7 +669,7 @@ const cocinas: Category = {
           name: 'C20',
           color: 'Negro',
           photos: [
-            '/product/cocinas/C20-1.png'
+            '/product/cocinas/C20-1.webp'
           ]
         }
       ]
@@ -689,7 +689,7 @@ const cocinas: Category = {
           name: 'C30',
           color: 'Negro',
           photos: [
-            '/product/cocinas/C30-1.png'
+            '/product/cocinas/C30-1.webp'
           ]
         }
       ]
@@ -718,7 +718,7 @@ const hervidoras: Category = {
           name: 'T10',
           color: 'Inox',
           photos: [
-            '/product/hervidoras/T10-1.png'
+            '/product/hervidoras/T10-1.webp'
           ]
         }
       ]
@@ -737,7 +737,7 @@ const hervidoras: Category = {
           name: 'T20',
           color: 'Blanco',
           photos: [
-            '/product/hervidoras/T20-1.png'
+            '/product/hervidoras/T20-1.webp'
           ]
         }
       ]
@@ -756,7 +756,7 @@ const hervidoras: Category = {
           name: 'T30',
           color: ' Negro',
           photos: [
-            '/product/hervidoras/T30-1.png'
+            '/product/hervidoras/T30-1.webp'
           ]
         }
       ]
@@ -785,7 +785,7 @@ const cafeteras: Category = {
           name: 'E10',
           color: 'Inox',
           photos: [
-            '/product/cafeteras/E10-1.png'
+            '/product/cafeteras/E10-1.webp'
           ]
         }
       ]
@@ -814,7 +814,7 @@ const planchas: Category = {
           name: 'F10',
           color: 'Rojo - Negro',
           photos: [
-            '/product/planchas/F10-1.png'
+            '/product/planchas/F10-1.webp'
           ]
         }
       ]
@@ -833,7 +833,7 @@ const planchas: Category = {
           name: 'F20',
           color: 'Rojo - Negro',
           photos: [
-            '/product/planchas/F20-1.png'
+            '/product/planchas/F20-1.webp'
           ]
         }
       ]
@@ -852,7 +852,7 @@ const planchas: Category = {
           name: 'F30',
           color: 'Azul - Blanco',
           photos: [
-            '/product/planchas/F30-1.png'
+            '/product/planchas/F30-1.webp'
           ]
         }
       ]
@@ -871,7 +871,7 @@ const planchas: Category = {
           name: 'F40',
           color: 'Gris - Bronce',
           photos: [
-            '/product/planchas/F40-1.png'
+            '/product/planchas/F40-1.webp'
           ]
         }
       ]
@@ -890,7 +890,7 @@ const planchas: Category = {
           name: 'F50',
           color: 'Negro',
           photos: [
-            '/product/planchas/F50-1.png'
+            '/product/planchas/F50-1.webp'
           ]
         }
       ]
@@ -919,7 +919,7 @@ const licuadoras: Category = {
           name: 'L10',
           color: 'Blanco',
           photos: [
-            '/product/licuadoras/L10-1.png'
+            '/product/licuadoras/L10-1.webp'
           ]
         }
       ]
@@ -939,9 +939,9 @@ const licuadoras: Category = {
           name: 'L20',
           color: 'Blanco',
           photos: [
-            '/product/licuadoras/L20-1.png',
-            '/product/licuadoras/L20-2.png',
-            '/product/licuadoras/L20-3.png'
+            '/product/licuadoras/L20-1.webp',
+            '/product/licuadoras/L20-2.webp',
+            '/product/licuadoras/L20-3.webp'
           ]
         }
       ]
@@ -961,7 +961,7 @@ const licuadoras: Category = {
           name: 'L30',
           color: 'Blanco',
           photos: [
-            '/product/licuadoras/L30-1.png'
+            '/product/licuadoras/L30-1.webp'
           ]
         }
       ]
@@ -981,9 +981,9 @@ const licuadoras: Category = {
           name: 'L40',
           color: 'Blanco',
           photos: [
-            '/product/licuadoras/L40-1.png',
-            '/product/licuadoras/L40-2.png',
-            '/product/licuadoras/L40-3.png'
+            '/product/licuadoras/L40-1.webp',
+            '/product/licuadoras/L40-2.webp',
+            '/product/licuadoras/L40-3.webp'
           ]
         }
       ]
@@ -1013,7 +1013,7 @@ const beauty: Category = {
           name: '603D',
           color: 'Negro',
           photos: [
-            '/product/beauty/603D-1.png'
+            '/product/beauty/603D-1.webp'
           ]
         }
       ]
@@ -1033,7 +1033,7 @@ const beauty: Category = {
           name: 'HB40',
           color: 'Negro',
           photos: [
-            '/product/beauty/HB40-1.png'
+            '/product/beauty/HB40-1.webp'
           ]
         }
       ]
@@ -1053,7 +1053,7 @@ const beauty: Category = {
           name: 'HD008',
           color: 'Negro',
           photos: [
-            '/product/beauty/HD008-1.png'
+            '/product/beauty/HD008-1.webp'
           ]
         }
       ]
@@ -1073,7 +1073,7 @@ const beauty: Category = {
           name: 'RFCD865',
           color: 'Dorado',
           photos: [
-            '/product/beauty/RFCD865-1.png'
+            '/product/beauty/RFCD865-1.webp'
           ]
         }
       ]
@@ -1102,7 +1102,7 @@ const batidoras: Category = {
           name: 'B10',
           color: 'Negro y Blanco',
           photos: [
-            '/product/batidoras/B10-1.png'
+            '/product/batidoras/B10-1.webp'
           ]
         }
       ]
@@ -1122,7 +1122,7 @@ const batidoras: Category = {
           name: 'B20',
           color: 'Negro y Gris',
           photos: [
-            '/product/batidoras/B20-1.png'
+            '/product/batidoras/B20-1.webp'
           ]
         }
       ]
@@ -1142,7 +1142,7 @@ const batidoras: Category = {
           name: 'B30',
           color: 'Negro',
           photos: [
-            '/product/batidoras/B30-1.png'
+            '/product/batidoras/B30-1.webp'
           ]
         }
       ]
@@ -1171,7 +1171,7 @@ const arroceras: Category = {
           name: 'A10',
           color: 'Inox',
           photos: [
-            '/product/arroceras/A10-1.png'
+            '/product/arroceras/A10-1.webp'
           ]
         }
       ]
@@ -1191,7 +1191,7 @@ const arroceras: Category = {
           name: 'P10',
           color: 'Inox',
           photos: [
-            '/product/arroceras/P10-1.png'
+            '/product/arroceras/P10-1.webp'
           ]
         }
       ]
@@ -1220,7 +1220,7 @@ const bebederos: Category = {
           name: 'W10',
           color: 'Blanco',
           photos: [
-            '/product/bebederos/W10-1.png'
+            '/product/bebederos/W10-1.webp'
           ]
         }
       ]

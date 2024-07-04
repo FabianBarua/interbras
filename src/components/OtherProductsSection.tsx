@@ -45,15 +45,15 @@ export const OtherProductsSection: React.FC = () => {
   return (
     <>
       <section className=' grid grid-cols-2  lg:grid-cols-4 gap-6 '>
-        <OtherProductCard delay={0.5} name='home.OtherProductsSection.1' image='/home/otherProductsSection/1.png' url='/product/planchas' />
-        <OtherProductCard delay={0.7} name='home.OtherProductsSection.2' image='/home/otherProductsSection/2.png' url='/product/licuadoras' />
-        <OtherProductCard delay={0.9} name='home.OtherProductsSection.3' image='/home/otherProductsSection/3.png' url='/product/beauty' />
-        <OtherProductCard delay={1.2} name='home.OtherProductsSection.4' image='/home/otherProductsSection/4.png' url='/product/batidoras' />
+        <OtherProductCard delay={0.5} name='home.OtherProductsSection.1' image='/home/otherProductsSection/1.webp' url='/product/planchas' />
+        <OtherProductCard delay={0.7} name='home.OtherProductsSection.2' image='/home/otherProductsSection/2.webp' url='/product/licuadoras' />
+        <OtherProductCard delay={0.9} name='home.OtherProductsSection.3' image='/home/otherProductsSection/3.webp' url='/product/beauty' />
+        <OtherProductCard delay={1.2} name='home.OtherProductsSection.4' image='/home/otherProductsSection/4.webp' url='/product/batidoras' />
       </section>
 
       <section className=' grid grid-cols-2 gap-6  '>
-        <OtherProductCard delay={0.5} name='home.OtherProductsSection.5' image='/home/otherProductsSection/5.png' url='/product/arroceras' />
-        <OtherProductCard delay={0.7} name='home.OtherProductsSection.6' image='/home/otherProductsSection/6.png' url='/product/bebederos' />
+        <OtherProductCard delay={0.5} name='home.OtherProductsSection.5' image='/home/otherProductsSection/5.webp' url='/product/arroceras' />
+        <OtherProductCard delay={0.7} name='home.OtherProductsSection.6' image='/home/otherProductsSection/6.webp' url='/product/bebederos' />
       </section>
 
     </>

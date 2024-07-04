@@ -31,7 +31,7 @@ export const AirFryersSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 1.2 }}
             className=' size-64 '
           >
-            <img className=' shadow-2xl size-full rounded-[40px] object-cover' src='/home/air2.png' alt='' />
+            <img className=' shadow-2xl size-full rounded-[40px] object-cover' src='/home/air2.webp' alt='' />
           </motion.div>
         </div>
 
@@ -47,7 +47,7 @@ export const AirFryersSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 1 }}
             className=' size-64 '
           >
-            <img className=' shadow-2xl size-full rounded-[40px] object-cover' src='/home/air1.png' alt='' />
+            <img className=' shadow-2xl size-full rounded-[40px] object-cover' src='/home/air1.webp' alt='' />
           </motion.div>
         </div>
 
@@ -79,7 +79,7 @@ export const AirFryersSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 1.2 }}
             className=' size-64 '
           >
-            <img className='  shadow-2xl size-full rounded-[40px] object-cover' src='/home/air3.png' alt='' />
+            <img className='  shadow-2xl size-full rounded-[40px] object-cover' src='/home/air3.webp' alt='' />
           </motion.div>
         </div>
 
@@ -95,7 +95,7 @@ export const AirFryersSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 1 }}
             className=' size-64 '
           >
-            <img className=' shadow-2xl size-full rounded-[40px] object-cover' src='/home/air4.png' alt='' />
+            <img className=' shadow-2xl size-full rounded-[40px] object-cover' src='/home/air4.webp' alt='' />
           </motion.div>
         </div>
 
@@ -111,7 +111,7 @@ export const AirFryersSection: React.FC = () => {
             hidden: { y: 40, opacity: 0 }
           }}
           transition={{ duration: 0.5, delay: 0.7 }}
-          className='w-full shadow-2xl h-full object-cover' src='/home/air1.png' alt=''
+          className='w-full shadow-2xl h-full object-cover' src='/home/air1.webp' alt=''
         />
         <motion.img
           initial='hidden'
@@ -122,7 +122,7 @@ export const AirFryersSection: React.FC = () => {
             hidden: { y: 0, opacity: 0 }
           }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className='w-full shadow-2xl h-full object-cover -translate-y-10' src='/home/air2.png' alt=''
+          className='w-full shadow-2xl h-full object-cover -translate-y-10' src='/home/air2.webp' alt=''
         />
         <motion.img
           initial='hidden'
@@ -133,7 +133,7 @@ export const AirFryersSection: React.FC = () => {
             hidden: { y: 40, opacity: 0 }
           }}
           transition={{ duration: 0.5, delay: 0.9 }}
-          className='w-full shadow-2xl h-full object-cover' src='/home/air3.png' alt=''
+          className='w-full shadow-2xl h-full object-cover' src='/home/air3.webp' alt=''
         />
 
       </div>

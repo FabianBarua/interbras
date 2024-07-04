@@ -18,7 +18,7 @@ export const HervidorasAndCafeterasSection: React.FC = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
         className=' w-full h-[20rem] lg:h-full relative bg-interbrasGray rounded-[40px] overflow-hidden'
       >
-        <img src='/home/KettleAndCafeterasSection/1.png' className='  h-[115%] top-1/2 -translate-y-[55%] absolute right-0' alt='hervidoras interbras' />
+        <img src='/home/KettleAndCafeterasSection/1.webp' className='  h-[115%] top-1/2 -translate-y-[55%] absolute right-0' alt='hervidoras interbras' />
         <div className=' absolute bottom-10 left-10'>
           <h2 className='text-3xl md:text-4xl mb-3 font-bold text-white'>
             {t('home.HervidorasAndCafeterasSection.1.title')}
@@ -39,7 +39,7 @@ export const HervidorasAndCafeterasSection: React.FC = () => {
         }}
         transition={{ duration: 0.5, delay: 0.7 }}
         className=' w-full h-[20rem] lg:h-full relative bg-interbrasGray rounded-[40px] overflow-hidden'
-      >        <img src='/home/KettleAndCafeterasSection/2.png' className='  h-[110%] top-1/2 -translate-y-[52%] absolute left-0' alt='hervidoras interbras' />
+      >        <img src='/home/KettleAndCafeterasSection/2.webp' className='  h-[110%] top-1/2 -translate-y-[52%] absolute left-0' alt='hervidoras interbras' />
 
         <div className=' absolute bottom-10 right-10 '>
           <h2 className='text-3xl md:text-4xl  mb-3 font-bold text-white'>

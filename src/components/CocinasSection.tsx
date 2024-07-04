@@ -17,7 +17,7 @@ export const CocinasSection: React.FC = () => {
       transition={{ duration: 0.5, delay: 0.5 }}
       className=' bg-interbrasGray relative rounded-[40px] lg:h-[30rem] flex flex-col lg:flex-row items-center p-10  gap-5'
     >
-      <img src='/home/cocinaSection/1.png' alt='Cocinas interbras' className=' rounded-[40px] h-[15rem]  lg:h-full object-cover' />
+      <img src='/home/cocinaSection/1.webp' alt='Cocinas interbras' className=' rounded-[40px] h-[15rem]  lg:h-full object-cover' />
       <div className='text-center text-white w-full flex flex-col gap-3  '>
         <h2 className=' text-3xl md:text-4xl  font-semibold  w-72  mx-auto'>
           {t('home.CocinasSection.title')}

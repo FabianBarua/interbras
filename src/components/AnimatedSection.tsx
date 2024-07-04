@@ -75,7 +75,7 @@ const productsSlide = [
     name: 'home.animatedSection.1.name',
     description: 'home.animatedSection.1.description',
     icon: '/home/slideSection/1.svg',
-    productPhoto: '/home/slideSection/1.png',
+    productPhoto: '/home/slideSection/1.webp',
     to: '/product/tvs',
     delay: 0.3
   },
@@ -84,7 +84,7 @@ const productsSlide = [
     name: 'home.animatedSection.2.name',
     description: 'home.animatedSection.2.description',
     icon: '/home/slideSection/2.svg',
-    productPhoto: '/home/slideSection/2.png',
+    productPhoto: '/home/slideSection/2.webp',
     to: '/product/aires',
     delay: 0.5
   },
@@ -93,7 +93,7 @@ const productsSlide = [
     name: 'home.animatedSection.3.name',
     description: 'home.animatedSection.3.description',
     icon: '/home/slideSection/3.svg',
-    productPhoto: '/home/slideSection/3.png',
+    productPhoto: '/home/slideSection/3.webp',
     to: '/product/scooters',
     delay: 0.7
   }
