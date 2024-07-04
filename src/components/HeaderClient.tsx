@@ -80,9 +80,9 @@ export const Header: React.FC = (): JSX.Element => {
               <button>Productos</button>
             </li>
             <li>
-              <a href='/'>
+              <Link className=' cursor-pointer' to='/'>
                 <Logo />
-              </a>
+              </Link>
             </li>
             <li className='  lg:block hidden'>
               <Link to='/'>Inicio</Link>

@@ -7,6 +7,7 @@ export const Logo: React.FC = (props) => (
     viewBox='0 0 196 36'
     fill='currentColor'
     xmlns='http://www.w3.org/2000/svg'
+    className=' cursor-pointer'
     {...props}
   >
     <g clipPath='url(#clip0_1_360)'>

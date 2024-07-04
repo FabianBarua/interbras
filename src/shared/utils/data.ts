@@ -992,6 +992,95 @@ const licuadoras: Category = {
   ]
 }
 
+const beauty: Category = {
+  id: 'beauty',
+  name: 'Beauty',
+  description: 'Cuidado personal y belleza.',
+  shortDescription: 'Cuidado personal.',
+  children: [
+    {
+      id: '603D',
+      name: 'Planchita 603D',
+      popular: false,
+      info: {
+        review: 'La Plancha de Cabello de Interbras proporciona un alisado rápido y sin dañar el cabello. \nCon un diseño elegante y características avanzadas, esta plancha es perfecta para obtener resultados profesionales en casa.',
+        included: null,
+        specs: 'Potencia: 1500W\nFunción 2 en 1: Secador y cepillo\nVelocidades: 3 ajustes de velocidad/calor\nRotación: 360° para un manejo fácil\nDiseño Ergonómico: Para una cómoda manipulación\nCalentamiento Rápido: Listo para usar en minutos\nCerdas Suaves: Para un peinado sin tirones\nCable Giratorio: 360° para mayor comodidad'
+      },
+      variants: [
+        {
+          id: '603D',
+          name: '603D',
+          color: 'Negro',
+          photos: [
+            '/product/beauty/603D-1.png'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'HB40',
+      name: 'Cepillo secador HB40',
+      popular: false,
+      info: {
+        review: 'El Spin 1500 Dryer Brush de Interbras combina la potencia de un secador con la conveniencia de un cepillo, proporcionando  un peinado rápido y eficaz.\nIdeal para alisar, dar volumen y crear rizos suaves con un solo dispositivo.',
+        included: null,
+        specs: 'Potencia: 1500W\nFunción 2 en 1: Secador y cepillo\nVelocidades: 3 ajustes de velocidad/calor\nRotación: 360° para un manejo fácil\nDiseño Ergonómico: Para una cómoda manipulación\nCalentamiento Rápido: Listo para usar en minutos\nCerdas Suaves: Para un peinado sin tirones\nCable Giratorio: 360° para mayor comodidad'
+      },
+      variants: [
+        {
+          id: 'HB40',
+          name: 'HB40',
+          color: 'Negro',
+          photos: [
+            '/product/beauty/HB40-1.png'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'HD008',
+      name: 'Secador de cabello HD008',
+      popular: false,
+      info: {
+        review: 'El secador de pelo Hair Style PRO 2200 de Interbras es la herramienta definitiva para lograr resultados profesionales en el peinado.\nCon una potencia de 2200W, este secador proporciona un secado rápido y eficaz, mientras su  tecnología iónica ayuda a eliminar el frizz, dejando el cabello suave y brillante.',
+        included: null,
+        specs: 'Potencia: 2200W\nFunción Iónica: Ideal para eliminar el frizz y suavizar el cabello\nConfiguraciones: 3 ajustes de temperatura y 2 de velocidad\nFunción de Aire Frío: Para fijar el peinado\nAccesorios: Con concentrador y difusor'
+      },
+      variants: [
+        {
+          id: 'HD008',
+          name: 'HD008',
+          color: 'Negro',
+          photos: [
+            '/product/beauty/HD008-1.png'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'RFCD865',
+      name: 'Recortadora de Barba RFCD865',
+      popular: false,
+      info: {
+        review: 'Recortadora De Barba Recargable PRO VINTAGE de Interbras combina estilo y funcionalidad para ofrecer un corte de pelo profesional en la comodidad de tu hogar.\nCon una lámina profesional de titanio y un diseño sin cables, esta maquina proporciona precisión y comodidad en cada uso.',
+        included: null,
+        specs: 'Lámina: Profesional de Titanio\nTiempo de Uso: 120 minutos de uso continuo\nSin Cables: Recargable con USB-C\nIndicador: LED de batería\nPeines Guía: 5 peines (1, 2, 3, 4, 5 mm)'
+      },
+      variants: [
+        {
+          id: 'RFCD865',
+          name: 'RFCD865',
+          color: 'Dorado',
+          photos: [
+            '/product/beauty/RFCD865-1.png'
+          ]
+        }
+      ]
+    }
+  ]
+}
+
 export const data: Root = {
   products: [
     airfryer,
@@ -1003,7 +1092,8 @@ export const data: Root = {
     hervidoras,
     cafeteras,
     planchas,
-    licuadoras
+    licuadoras,
+    beauty
   ]
 }
 
