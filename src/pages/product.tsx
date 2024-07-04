@@ -1,72 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useLocation, useParams } from 'react-router-dom'
+import { useLocation, useParams } from 'react-router-dom'
 import { Children, getProductsByCategory } from '../shared/utils/data'
 import { DownArrow } from '../components/DownArrow'
 import { ProductInfo } from '../components/ProductInfo'
 import { CarrouselCategory } from '../components/CarrouselCategory'
 import { motion } from 'framer-motion'
 import { PhotoViewer } from '../components/PhotoView'
-
-const NotFound: React.FC = () => {
-  return (
-    <main className='  sm:w-[80%] w-[90%] flex flex-col gap-3 mx-auto flex-1 justify-center items-center'>
-      <h1 className=' text-4xl font-semibold'>Producto no encontrado</h1>
-      <p className=' text-lg font-light'>El producto que buscas no existe</p>
-      <Link to='/' className=' text-lg text-white bg-interbrasGreen-500 p-2 rounded-3xl px-8'>Volver al inicio</Link>
-    </main>
-  )
-}
-
-const ProductCard: React.FC<{ child: Children, active: boolean, change: (child: Children) => void }> = ({ child, active, change }) => {
-  return (
-
-    <button
-      className={
-      `
-        w-full text-lg flex p-2 py-2 rounded-3xl transition-colors border-2
-      ${active ? '  bg-neutral-200' : 'hover:bg-neutral-200 '}
-      `
-    }
-      onClick={() => change(child)}
-    >
-      <img
-        src={child.variants[0].photos[0]} className=' size-20 p-3 object-contain rounded-3xl ' alt=''
-      />
-
-      <div className={
-      `
-      flex-1 ml-3 text-left my-auto
-      ${active ? 'text-black ' : 'text-black/50'}
-      `
-    }
-      >
-        <p className={
-        `
-         text-xl font-medium
-        `
-      }
-        >
-          {child.name}
-        </p>
-        <div className=' flex '>
-          {
-          child.variants.length > 1 ? 'Colores:' : 'Color:'
-        }
-          <div className=' flex gap-1 items-center ml-1'>
-            {
-          child.variants.map((variant) => (
-            <p key={variant.color.toString() + variant.id.toString()}>
-              {variant.color}{child.variants.length > 1 && variant !== child.variants[child.variants.length - 1] ? ',' : ''}
-            </p>
-          ))
-          }
-          </div>
-        </div>
-      </div>
-    </button>
-
-  )
-}
+import { NotFound } from '../components/NotFound'
+import { ProductCard } from '../components/ProductCard'
 
 export const ProductPage: React.FC = () => {
   const { id } = useParams<{ id: string }>()
