@@ -860,6 +860,100 @@ const planchas: Category = {
   ]
 }
 
+const licuadoras: Category = {
+  id: 'licuadoras',
+  name: 'Licuadoras',
+  description: 'Licuadoras rápidas, potentes y multifuncionales para todas tus recetas.',
+  shortDescription: 'Potentes y rapidas.',
+  children: [
+    {
+      id: 'L10',
+      name: 'Licuadora L10',
+      popular: false,
+      info: {
+        review: 'La Licuadora L10 de Interbras es ideal para preparar jugos frescos todos los días. \nCon una potencia de 1000W y cuatro cuchillas de acero inoxidable, garantiza una mezcla eficiente y rápida.\nSu vaso de plástico de 1.5L es perfecto para preparar grandes cantidades de batidos y otras bebidas.\nAdemás, cuenta con cuatro velocidades y modo pulso, permitiendo un control preciso de la textura deseada.',
+        included: 'Vaso medidor removible\nIncluye 1 vaso',
+        specs: 'Potencia: 1000W\nCuchillas: 4 de acero inoxidable\nCapacidad del vaso: 1.5L (plástico)\nVelocidades: 4 + modo pulso'
+      },
+      variants: [
+        {
+          id: 'L10',
+          name: 'L10',
+          color: 'Blanco',
+          photos: [
+            '/product/licuadoras/L10-1.png'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'L20',
+      name: 'Licuadora L20',
+      popular: false,
+      info: {
+        review: 'La Licuadora L20 de Interbras combina potencia y eficiencia en un diseño compacto. \nCon 350W de potencia y seis cuchillas de acero inoxidable, es ideal para preparar tus bebidas favoritas rápidamente.\nSu vaso de plástico de 1.5L es resistente y fácil de limpiar.\nDos velocidades y modo pulso para ajustar la mezcla a tus preferencias.',
+        included: 'Vaso medidor removible\n1 Procesador',
+        specs: 'Potencia: 350W\nCuchillas: 6 de acero inoxidable\nCapacidad del vaso: 1.5L (plástico)\nVelocidades: 2 + modo pulso'
+      },
+      variants: [
+        {
+          id: 'L20',
+          name: 'L20',
+          color: 'Blanco',
+          photos: [
+            '/product/licuadoras/L20-1.png',
+            '/product/licuadoras/L20-2.png',
+            '/product/licuadoras/L20-3.png'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'L30',
+      name: 'Licuadora L30',
+      popular: false,
+      info: {
+        review: 'La Licuadora L30 de Interbras está diseñada para ofrecer un rendimiento superior en la preparación de jugos y batidos.\nCon una potencia de 350W y seis cuchillas de acero inoxidable, esta licuadora es capaz de mezclar ingredientes con facilidad.\nSu vaso de plástico de 1.5L es duradero y apto para preparar grandes cantidades. Ofrece dos velocidades y modo pulso para un control preciso.',
+        included: 'Vaso medidor removible\n1 Procesador',
+        specs: 'Potencia: 350W\nCuchillas: 6 de acero inoxidable\nCapacidad del vaso: 1.5L (plástico)\nVelocidades: 2 + modo pulso'
+      },
+      variants: [
+        {
+          id: 'L30',
+          name: 'L30',
+          color: 'Blanco',
+          photos: [
+            '/product/licuadoras/L30-1.png'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'L40',
+      name: 'Licuadora L40',
+      popular: false,
+      info: {
+        review: 'La Licuadora 3 en 1, L40 de Interbras es la herramienta definitiva para tu cocina. \nCon 350W de potencia y seis cuchillas de acero inoxidable, esta licuadora ofrece un rendimiento excepcional. \nSu vaso de plástico de 1.5L es ideal para preparar jugos y batidos, mientras que sus accesorios adicionales permiten moler y triturar una variedad de alimentos.\nIncluye dos velocidades y modo pulso para una mezcla perfecta.',
+        included: '3 envases de acero inoxidable\nMotor de licuadora\nFácil de usar y lavar',
+        specs: 'Potencia: 350W\nCuchillas: 6 de acero inoxidable\nCapacidad del vaso: 1.5L (plástico)\nAccesorios: Vaso de molienda, vaso de carne\nVelocidades: 2 + modo pulso\nVaso medidor removible: Sí'
+      },
+      variants: [
+        {
+          id: 'L40',
+          name: 'L40',
+          color: 'Blanco',
+          photos: [
+            '/product/licuadoras/L40-1.png',
+            '/product/licuadoras/L40-2.png',
+            '/product/licuadoras/L40-3.png'
+          ]
+        }
+      ]
+    }
+
+  ]
+}
+
 export const data: Root = {
   products: [
     airfryer,
@@ -870,7 +964,8 @@ export const data: Root = {
     cocinas,
     hervidoras,
     cafeteras,
-    planchas
+    planchas,
+    licuadoras
   ]
 }
 
