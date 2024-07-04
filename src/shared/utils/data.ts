@@ -42,7 +42,7 @@ const airfryer: Category = {
       name: 'Airfryer S10',
       popular: true,
       info: {
-        review: 'La Air Fryer S10 de Interbras es perfecta para el uso familiar,\npermitiendo cocinar de manera saludable con una reducción del 80%\nen el uso de aceite. Con una potencia de 1200W y una capacidad de 4 litros,\nesta freidora ofrece siete funciones de cocción diferentes, adaptándose a tus necesidades culinarias.\nSu control de temperatura ajustable de 80°C a 200°C y su temporizador facilitan la preparación de tus platos favoritos con resultados perfectos.',
+        review: 'La Air Fryer S10 de Interbras es perfecta para el uso familiar, permitiendo cocinar de manera saludable con una reducción del 80% en el uso de aceite. Con una potencia de 1200W y una capacidad de 4 litros, esta freidora ofrece siete funciones de cocción diferentes, adaptándose a tus necesidades culinarias.\nSu control de temperatura ajustable de 80°C a 200°C y su temporizador facilitan la preparación de tus platos favoritos con resultados perfectos.',
         included: null,
         specs: 'Potencia: 1200W\nReducción de aceite: 80%\nRango de temperatura: 80°C - 200°C\nFunciones de cocción: 7\nCapacidad: 4L\nControl de temperatura: Sí\nTemporizador: Sí\nVisor: Sí\nCesta: Extraíble'
       },
