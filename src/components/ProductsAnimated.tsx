@@ -74,7 +74,7 @@ const products: ProductItemHome[][] =
     },
     {
       name: 'licuadora',
-      url: '/product/licuadora',
+      url: '/product/licuadoras',
       photo: '/home/7.webp',
       isMagic: false
     }
@@ -103,7 +103,7 @@ const products: ProductItemHome[][] =
   [
     {
       name: 'licuadora',
-      url: '/product/licuadora',
+      url: '/product/licuadoras',
       photo: '/home/9.webp',
       isMagic: false
     },
@@ -143,7 +143,7 @@ const products: ProductItemHome[][] =
   [
     {
       name: 'licuadora',
-      url: '/product/licuadora',
+      url: '/product/licuadoras',
       photo: '/home/7.webp',
       isMagic: false
     },
