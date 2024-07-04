@@ -1081,6 +1081,75 @@ const beauty: Category = {
   ]
 }
 
+const batidoras: Category = {
+  id: 'batidoras',
+  name: 'Batidoras',
+  description: 'Batidoras potentes y versátiles para todas tus recetas.',
+  shortDescription: 'Potentes y versátiles.',
+  children: [
+    {
+      id: 'B10',
+      name: 'Batidora B10',
+      popular: false,
+      info: {
+        review: 'La Batidora de Mano B10 de Interbras es la solución perfecta para una mezcla eficiente y rápida.\nCon una velocidad de 19500 rpm y una potencia de 250W, esta batidora ofrece siete velocidades para adaptarse a tus necesidades.\nSu tazón de 2.0 litros es ideal para preparar diversas recetas.\nIncluye dos ganchos y dos batidores para diferentes tipos de mezclas.',
+        included: null,
+        specs: 'Potencia: 250W\nVelocidades: 7\nCapacidad del tazón: 2.0 litros\nAccesorios: 2 ganchos, 2 batidores\nVelocidad máxima: 19500 rpm'
+      },
+      variants: [
+        {
+          id: 'B10',
+          name: 'B10',
+          color: 'Negro y Blanco',
+          photos: [
+            '/product/batidoras/B10-1.png'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'B20',
+      name: 'Batidora B20',
+      popular: false,
+      info: {
+        review: 'La Batidora de Mano B20 de Interbras destaca por su alta velocidad de 15000 rpm y una potencia de 350W, ideal para realizar preparaciones rápidamente. \nCon tres velocidades y una capacidad de 2.3 litros, es perfecta para diversas recetas. \nIncluye dos ganchos y dos batidores para mayor versatilidad en la cocina. \nSu diseño fácil de limpiar y operación suave la hacen una opción práctica y eficiente.',
+        included: null,
+        specs: 'Potencia: 350W\nVelocidades: 3\nCapacidad del tazón: 2.3 litros\nAccesorios: 2 ganchos, 2 batidores\nVelocidad máxima: 15000 rpm'
+      },
+      variants: [
+        {
+          id: 'B20',
+          name: 'B20',
+          color: 'Negro y Gris',
+          photos: [
+            '/product/batidoras/B20-1.png'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'B30',
+      name: 'Batidora B30',
+      popular: false,
+      info: {
+        review: 'La Batidora Planetaria B30 de Interbras es perfecta para quienes buscan versatilidad y potencia en la cocina. \nCon una potencia de 250W y cinco velocidades de operación, esta batidora ofrece un rendimiento eficiente para mezclar, batir y amasar. \nSu tazón de 3.5 litros permite preparar grandes cantidades de mezcla de manera fácil y rápida.\nAdemás, su diseño ergonómico y operación suave garantizan una experiencia de uso cómoda.',
+        included: null,
+        specs: 'Potencia: 250W\nVelocidades: 5\nCapacidad del tazón: 3.5 litros\nProtección anti-salpicaduras: Sí\nOperación suave: Sí'
+      },
+      variants: [
+        {
+          id: 'B30',
+          name: 'B30',
+          color: 'Negro',
+          photos: [
+            '/product/batidoras/B30-1.png'
+          ]
+        }
+      ]
+    }
+  ]
+}
+
 export const data: Root = {
   products: [
     airfryer,
@@ -1093,7 +1162,8 @@ export const data: Root = {
     cafeteras,
     planchas,
     licuadoras,
-    beauty
+    beauty,
+    batidoras
   ]
 }
 
