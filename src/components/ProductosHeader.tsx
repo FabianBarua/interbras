@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useDataStore } from '../shared/stores/useData'
+import { useTranslation } from 'react-i18next'
 
 interface ProductosHeaderProps {
   clicked?: () => void
@@ -37,6 +38,8 @@ export const ProductosHeader: React.FC<ProductosHeaderProps> = ({
 }) => {
   const { urls } = useDataStore()
 
+  const { t } = useTranslation('global')
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
@@ -46,7 +49,9 @@ export const ProductosHeader: React.FC<ProductosHeaderProps> = ({
       <div className=' mt-5 lg:mt-auto mx-3  lg:mx-0 text-white flex lg:my-auto lg:flex-row flex-col gap-6 '>
         <img src='/productosHeader.webp' className='  h-64 ' alt='Arrow' />
         <div className=' flex flex-col items-left'>
-          <h1 className='text-lg  font-bold'>Nuestros productos</h1>
+          <h1 className='text-lg  font-bold'>
+            {t('header.products.text')}
+          </h1>
           <div className=' flex gap-16 mt-2'>
             <div className=' flex-col flex'>
               {

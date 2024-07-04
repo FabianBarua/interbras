@@ -33,24 +33,24 @@ export interface Variant {
 
 const airfryer: Category = {
   id: 'airfryer',
-  name: 'Airfryer',
-  description: 'Cocina de manera saludable y sin\naceite con nuestras freidoras de aire.',
-  shortDescription: 'Cocina mas saludable.',
+  name: 'airfryer.name',
+  description: 'airfryer.description',
+  shortDescription: 'airfryer.shortDescription',
   children: [
     {
       id: 's10',
-      name: 'Airfryer S10',
+      name: 'airfryer.children.s10.name',
       popular: true,
       info: {
-        review: 'La Air Fryer S10 de Interbras es perfecta para el uso familiar, permitiendo cocinar de manera saludable con una reducción del 80% en el uso de aceite. Con una potencia de 1200W y una capacidad de 4 litros, esta freidora ofrece siete funciones de cocción diferentes, adaptándose a tus necesidades culinarias.\nSu control de temperatura ajustable de 80°C a 200°C y su temporizador facilitan la preparación de tus platos favoritos con resultados perfectos.',
+        review: 'airfryer.children.s10.info.review',
         included: null,
-        specs: 'Potencia: 1200W\nReducción de aceite: 80%\nRango de temperatura: 80°C - 200°C\nFunciones de cocción: 7\nCapacidad: 4L\nControl de temperatura: Sí\nTemporizador: Sí\nVisor: Sí\nCesta: Extraíble'
+        specs: 'airfryer.children.s10.info.specs'
       },
       variants: [
         {
           id: 's10-1',
           name: 'Airfryer S10 - 1',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/airfryer/s10-v1-1.webp'
           ]
@@ -58,7 +58,7 @@ const airfryer: Category = {
         {
           id: 's10-2',
           name: 'Airfryer S10 - 2',
-          color: 'Blanco',
+          color: 'colors.white',
           photos: [
             '/product/airfryer/s10-v2-1.webp'
           ]
@@ -67,18 +67,18 @@ const airfryer: Category = {
     },
     {
       id: 's20',
-      name: 'Airfryer S20',
+      name: 'airfryer.children.s20.name',
       popular: false,
       info: {
-        review: 'Esta freidora de aire es tu aliado perfecto en la cocina, diseñada para preparar platos crujientes y jugosos sin la necesidad de usar grandes cantidades de aceite. \nIdeal para aquellos que buscan una opción más saludable sin sacrificar el sabor ni la textura de sus comidas favoritas. \nCon esta freidora, podrás disfrutar de patatas fritas, pollo, pescado y mucho más, todo con un 80% menos de aceite. \nSu capacidad de 7 litros y su potente rendimiento de 1500W aseguran una cocción uniforme y rápida, permitiéndote preparar comidas deliciosas para toda la familia. \nAdemás, su rango de temperatura ajustable de 80°C a 200°C te da el control total sobre el proceso de cocción, adaptándose a diferentes recetas y preferencias.',
+        review: 'airfryer.children.s20.info.review',
         included: null,
-        specs: '1500w de potencia\n80% menos aceite\n80°C hasta 200°C\n7 Litros'
+        specs: 'airfryer.children.s20.info.specs'
       },
       variants: [
         {
           id: 's20-1',
           name: 'Airfryer S20 - 1',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/airfryer/s20-v1-1.webp'
           ]
@@ -86,7 +86,7 @@ const airfryer: Category = {
         {
           id: 's20-2',
           name: 'Airfryer S20 - 2',
-          color: 'Blanco',
+          color: 'colors.white',
           photos: [
             '/product/airfryer/s20-v2-1.webp'
           ]
@@ -95,18 +95,18 @@ const airfryer: Category = {
     },
     {
       id: 's30',
-      name: 'Airfryer S30',
+      name: 'airfryer.children.s30.name',
       popular: false,
       info: {
-        review: 'El airfryer Inerbras puede cocinar una gran variedad de alimentos de forma saludable, utilizando tecnología de aire caliente para preparar platos sin necesidad de aceite. \nEs ideal para quienes desean disfrutar de comidas crujientes y jugosas sin el uso excesivo de grasas. \nDesde patatas fritas hasta pollo y vegetales, esta freidora de aire te permite preparar tus recetas favoritas de manera rápida y eficiente. \nAdemás, su diseño moderno y fácil de usar garantiza una experiencia de cocina cómoda y placentera, ayudándote a mantener una alimentación balanceada sin sacrificar el sabor.',
+        review: 'airfryer.children.s30.info.review',
         included: null,
-        specs: '1700W\n80% menos aceite\n80°C hasta 200°C\n8 Litros\nCajones con ventana y luz interna'
+        specs: 'airfryer.children.s30.info.specs'
       },
       variants: [
         {
           id: 's30-1',
           name: 'Airfryer S30 - 1',
-          color: 'Inox',
+          color: 'colors.inox',
           photos: [
             '/product/airfryer/s30-v1-1.webp'
           ]
@@ -115,18 +115,18 @@ const airfryer: Category = {
     },
     {
       id: 's40',
-      name: 'Airfryer S40',
+      name: 'airfryer.children.s40.name',
       popular: false,
       info: {
-        review: 'Maximiza tu cocina con la AirFryer Interbras Doble, que ofrece alta eficiencia con una reducción significativa en el uso de aceite. \nCon una capacidad de 8 litros distribuidos en dos cestas de 4 litros cada una, permite la preparación simultánea de varios platos, optimizando tiempo y energía. \nEste innovador electrodoméstico es ideal para familias grandes o para quienes disfrutan de preparar comidas variadas en una sola sesión. \nLa tecnología avanzada de aire caliente asegura una cocción uniforme, conservando el sabor y la textura de los alimentos sin necesidad de añadir grasa. \nAdemás, su diseño moderno y funcional se adapta perfectamente a cualquier cocina, proporcionando una experiencia de usuario cómoda y eficiente. \nCon la AirFryer Interbras Doble, disfrutarás de una alimentación más saludable sin renunciar a tus platos favoritos, haciendo de cada comida una ocasión especial.',
+        review: 'airfryer.children.s40.info.review',
         included: null,
-        specs: '1000+1000W\nReducción del 80% en el uso de aceite\n80° Hasta 200° C\nCocina simultánea\n4L + 4L'
+        specs: 'airfryer.children.s40.info.specs'
       },
       variants: [
         {
           id: 's40-1',
           name: 'Airfryer S40 - 1',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/airfryer/s40-v1-1.webp'
           ]
@@ -138,24 +138,24 @@ const airfryer: Category = {
 
 const scooters: Category = {
   id: 'scooters',
-  name: 'Scooters',
-  description: 'Movilidad urbana eficiente y ecológica.',
-  shortDescription: 'Movilidad mas ecológica.',
+  name: 'scooters.name',
+  description: 'scooters.description',
+  shortDescription: 'scooters.shortDescription',
   children: [
     {
       id: '8.5',
-      name: 'Scooter 8.5',
+      name: 'scooters.children.85.name',
       popular: true,
       info: {
-        review: 'El X-Scooter Pro 8.5 de Interbras es ideal para quienes buscan una mezcla de elegancia y funcionalidad.\nEquipado con un motor de 350W y una batería de 36V/10.4Ah, este scooter asegura una conducción estable y eficiente.\nSu suspensión avanzada y el sistema de frenos E-ABS te ofrecen un viaje cómodo y seguro.\nAdemás, puedes controlar todas sus funciones a través de la aplicación móvil, asegurándote de tener siempre una experiencia personalizada y conveniente.',
+        review: 'scooters.children.85.info.review',
         included: null,
-        specs: 'Motor: 350W\nBatería: 36V/10.4Ah, autonomía extendida\nVelocidad: Estable y controlada\nSuspensión avanzada: Para mayor comodidad\nFrenos: E-ABS, sistema de frenos electrónicos\nConectividad: Control mediante aplicación móvil\nIluminación LED: Seguridad nocturna mejorada'
+        specs: 'scooters.children.85.info.specs'
       },
       variants: [
         {
           id: '8.5-1',
           name: 'Scooter 8.5 - 1',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/scooters/8.5-v1-1.webp'
           ]
@@ -164,18 +164,18 @@ const scooters: Category = {
     },
     {
       id: '10.5pro',
-      name: 'Scooter 10.5 Pro',
+      name: 'scooters.children.10pro.name',
       popular: false,
       info: {
-        review: 'El X-Scooter Pro 10.5 de Interbras es la solución definitiva para los entusiastas del transporte eléctrico urbano.\nCon su motor optimizado de 350W y una batería potente de 36V/10.5Ah, este scooter ofrece una autonomía extendida para aventuras más largas.\nSu sistema de recuperación de energía cinética y los frenos E-ABS garantizan máxima eficiencia y seguridad.\nEl diseño plegable en tres segundos permite un almacenamiento rápido y conveniente, ideal para la vida urbana acelerada.',
+        review: 'scooters.children.10pro.info.review',
         included: null,
-        specs: 'Motor: 350W\nBatería: 36V/10.4Ah, \nVelocidad: Estable y eficiente\nRecuperación de energía: Sistema cinético\nFrenos: E-ABS, sistema de frenos electrónicos\nConectividad: Control mediante aplicación móvil\nDiseño plegable: Almacenamiento rápido y sencillo\nSuspensión avanzada: Mayor confort y seguridad\nIluminación LED: Seguridad nocturna mejorada'
+        specs: 'scooters.children.10pro.info.specs'
       },
       variants: [
         {
           id: '10.5pro-1',
           name: 'Scooter 10.5 Pro - 1',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/scooters/10.5pro-v1-1.webp'
           ]
@@ -184,18 +184,18 @@ const scooters: Category = {
     },
     {
       id: 'cross',
-      name: 'Scooter Cross',
+      name: 'scotters.children.cross.name',
       popular: false,
       info: {
-        review: 'El X-Scooter Cross de Interbras es perfecto para los entusiastas de la vida urbana que buscan un scooter robusto y confiable.\nEquipado con un motor de 500W, este scooter puede alcanzar una velocidad máxima de 45 km/h, ofreciendo un rendimiento impresionante en cualquier trayecto.\nLa batería de 48V 10Ah proporciona una autonomía de hasta 50 km, ideal para desplazamientos largos sin preocuparse por la recarga.\nSu suspensión delantera y trasera garantiza una conducción suave y estable, mientras que los neumáticos de 10 pulgadas aseguran una excelente tracción en diversas superficies. ',
+        review: 'scooters.children.cross.info.review',
         included: null,
-        specs: 'Velocidad máxima: 45 km/h\nMotor: 500W\nBatería: 48V 10Ah\nAplicación móvil: Minirobot App\nSuspensión: Delantera + trasera\nNeumáticos: 10 pulgadas\nAutonomía: 45-50 km\nResistencia al agua: IP54\nIluminación LED: Seguridad nocturna mejorada'
+        specs: 'scooters.children.cross.info.specs'
       },
       variants: [
         {
           id: 'cross-1',
           name: 'Scooter Cross - 1',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/scooters/cross-v1-1.webp'
           ]
@@ -204,18 +204,18 @@ const scooters: Category = {
     },
     {
       id: 'crosspro',
-      name: 'Scooter Cross Pro',
+      name: 'scooters.children.crosspro.name',
       popular: false,
       info: {
-        review: 'El X-Scooter Cross Pro de Interbras combina tecnología avanzada y diseño robusto para ofrecer una experiencia de conducción superior. \nCon un motor de 500W, alcanza una velocidad máxima de 45 km/h, permitiendo desplazamientos rápidos y eficientes.\nSu batería de 48V 12.5Ah ofrece una autonomía extendida de hasta 50 km, ideal para largas distancias.\nEquipado con suspensión delantera y trasera, garantiza un viaje cómodo y seguro en cualquier terreno.',
+        review: 'scooters.children.crosspro.info.review',
         included: null,
-        specs: 'Velocidad máxima: 45 km/h\nMotor: 500W\nBatería: 48V 12.5Ah\nAplicación móvil: Minirobot App\nSuspensión: Delantera + trasera\nNeumáticos: 10 pulgadas\nAutonomía: 45-50 km\nResistencia al agua: IP54\nIluminación LED: Seguridad nocturna mejorada'
+        specs: 'scooters.children.crosspro.info.specs'
       },
       variants: [
         {
           id: 'crosspro-1',
           name: 'Scooter Cross Pro - 1',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/scooters/crosspro-v1-1.webp'
           ]
@@ -227,18 +227,18 @@ const scooters: Category = {
 
 const aires: Category = {
   id: 'aires',
-  name: 'Aires',
-  description: 'Eficientes, silenciosos y elegantes.\nPerfectos para climatizar tu hogar u oficina.',
-  shortDescription: 'Eficientes y elegantes.',
+  name: 'aires.name',
+  description: 'aires.description',
+  shortDescription: 'aires.shortDescription',
   children: [
     {
       id: 'itb-12000iv',
-      name: 'ITB 12000IV',
+      name: 'aires.children.1.name',
       popular: false,
       info: {
-        review: 'El aire acondicionado ITB 12000IV de 12000 BTU es perfecto para mantener tu hogar fresco y confortable todo el año.\nGracias a su tecnología Inverter, ajusta el uso de energía para máxima eficiencia, ayudándote a reducir costos. ',
+        review: 'aires.children.1.info.review',
         included: null,
-        specs: 'Modelo: ITB 12000IV\nTipo: Inverter\nCapacidad de Enfriamiento: 12,000 BTU (2700~13000)\nCapacidad de Calefacción: 12,000 BTU (2700~13000)\nConsumo de Energía (Enfriamiento): 1295W (150~1650W)\nConsumo de Energía (Calefacción): 1200W (150~1650W)\nCorriente Nominal (Enfriamiento): 6.0A (0.7~8.5A)\nCorriente Nominal (Calefacción): 5.6A (0.7~8.5A)\nConsumo Máximo: 1650W\nCorriente Máxima: 8.5A\nCompresor: Tipo rotativo, marca GMCC\nRefrigerante: R410A, carga de 600g\nDimensiones Unidad Interior (Ancho x Alto x Profundidad):\n800 x 292 x 190 mm\nPeso Neto Unidad Interior: 7.3 kg\nNivel de Ruido Unidad Interior: 39/37/34 dB (Hi/Mi/Lo)\nDimensiones Unidad Exterior (Ancho x Alto x Profundidad): \n700 x 276 x 550 mm\nPeso Neto Unidad Exterior: 24 kg\nNivel de Ruido Unidad Exterior: 49 dB\nTemperatura de Operación: -7°C a 43°C\nTemperatura Ambiental de Operación: -7°C a 48°C\nAlimentación Eléctrica: 220-240V / 60Hz\nÁrea de Aplicación: 14~21 m²'
+        specs: 'aires.children.1.info.specs'
       },
       variants: [
         {
@@ -253,12 +253,12 @@ const aires: Category = {
     },
     {
       id: 'itp-12000iv',
-      name: 'ITP 12000IV',
+      name: 'aires.children.2.name',
       popular: false,
       info: {
-        review: 'El ITP 12000IV es un aire acondicionado de 12000 BTU que ofrece una climatización eficiente y confortable para cualquier espacio. \nSu tecnología Inverter permite  un ajuste preciso de la temperatura, asegurando un  ambiente agradable todo el año.',
+        review: 'aires.children.2.info.review',
         included: null,
-        specs: 'Modelo: ITP 12000IV\nTipo: Inverter\nCapacidad de Enfriamiento: 12,000 BTU (2700~13000)\nCapacidad de Calefacción: 12,000 BTU (2700~13000)\nConsumo de Energía (Enfriamiento): 1295W (150~1650W)\nConsumo de Energía (Calefacción): 1200W (150~1650W)\nCorriente Nominal (Enfriamiento): 6.0A (0.7~8.5A)\nCorriente Nominal (Calefacción): 5.6A (0.7~8.5A)\nConsumo Máximo: 1650W\nCorriente Máxima: 8.5A\nCompresor: Tipo rotativo, marca GMCC\nRefrigerante: R410A, carga de 600g\nDimensiones Unidad Interior (Ancho x Alto x Profundidad):\n800 x 292 x 190 mm\nPeso Neto Unidad Interior: 7.3 kg\nNivel de Ruido Unidad Interior: 39/37/34 dB (Hi/Mi/Lo)\nDimensiones Unidad Exterior (Ancho x Alto x Profundidad):\n700 x 276 x 550 mm\nPeso Neto Unidad Exterior: 24 kg\nNivel de Ruido Unidad Exterior: 49 dB\nTemperatura de Operación: -7°C a 43°C\nTemperatura Ambiental de Operación: -7°C a 48°C\nAlimentación Eléctrica: 220-240V / 50Hz\nÁrea de Aplicación: 14~21 m²'
+        specs: 'aires.children.2.info.specs'
       },
       variants: [
         {
@@ -273,12 +273,12 @@ const aires: Category = {
     },
     {
       id: 'itb-12000of',
-      name: 'ITB 12000OF',
+      name: 'aires.children.3.name',
       popular: false,
       info: {
-        review: 'El aire acondicionado ITB 12000OF, con capacidad de 12000 BTU,\nes una excelente opción para quienes buscan una solución de climatización eficiente y directa.\nSu diseño On/Off proporciona un control simple y efectivo, ideal para aquellos que valoran la practicidad.\nCon un funcionamiento silencioso y un diseño elegante, es perfecto para áreas de 13 a 27 m2.\nAdemás, su tecnología avanzada asegura un enfriamiento rápido y uniforme, \nmientras que su modo de ahorro de energía contribuye a reducir los costos de electricidad.\nEste aire acondicionado también cuenta con un filtro de aire lavable que mejora la calidad del aire interior,\nhaciendo que el ambiente sea más saludable y confortable.\nSu instalación es sencilla y su mantenimiento, mínimo, lo que lo convierte en una opción práctica y conveniente para cualquier hogar.',
+        review: 'aires.children.3.info.review',
         included: null,
-        specs: 'Modelo: ITB 12000OF\nTipo: On/Off\nCapacidad de Enfriamiento: 12,000 BTU\nCapacidad de Calefacción: 12,000 BTU\nConsumo de Energía (Enfriamiento): 1165W\nConsumo de Energía (Calefacción): 1050W\nCorriente Nominal (Enfriamiento): 5.46A\nCorriente Nominal (Calefacción): 4.92A\nConsumo Máximo: 1650W\nCorriente Máxima: 7.89A\nCompresor: Tipo rotativo, marca GREE\nRefrigerante: R410A, carga de 575g\nDimensiones Unidad Interior (Ancho x Alto x Profundidad): \n800 x 292 x 190 mm\nPeso Neto Unidad Interior: 7.6 kg\nNivel de Ruido Unidad Interior: 39/37/34 dB (Hi/Mi/Lo)\nDimensiones Unidad Exterior (Ancho x Alto x Profundidad): \n700 x 276 x 550 mm\nPeso Neto Unidad Exterior: 26 kg\nNivel de Ruido Unidad Exterior: 49 dB\nTemperatura de Operación: -7°C a 43°C\nTemperatura Ambiental de Operación: -7°C a 48°C\nAlimentación Eléctrica: 220-240V / 60Hz\nÁrea de Aplicación: 13~27 m²'
+        specs: 'aires.children.3.info.specs'
       },
       variants: [
         {
@@ -293,12 +293,12 @@ const aires: Category = {
     },
     {
       id: 'itp-12000of',
-      name: 'ITP 12000OF',
+      name: 'aires.children.4.name',
       popular: false,
       info: {
-        review: 'El aire acondicionado ITP 12000OF de 12000 BTU es ideal para quienes necesitan una climatización efectiva y sin complicaciones.\nCon su sistema On/Off, proporciona una experiencia de uso sencilla y directa, manteniendo tu espacio a la temperatura deseada tanto en verano como en invierno.\nEste modelo es perfecto para aquellos que buscan comodidad y eficiencia, ya que su tecnología avanzada asegura un enfriamiento rápido y uniforme.\nAdemás, su modo de ahorro de energía ayuda a reducir los costos de electricidad, convirtiéndolo en una opción económica y sostenible.\nEl diseño elegante y discreto del ITP 12000OF se adapta a cualquier decoración, mientras que su funcionamiento silencioso garantiza un ambiente tranquilo y confortable.\nIdeal para habitaciones de tamaño mediano a grande, este aire acondicionado es fácil de instalar y mantener, lo que lo hace una opción práctica y conveniente para el hogar o la oficina.',
+        review: 'aires.children.4.info.review',
         included: null,
-        specs: 'Modelo: ITP 12000OF\nTipo: On/Off\nCapacidad de Enfriamiento: 12,000 BTU\nCapacidad de Calefacción: 12,000 BTU\nConsumo de Energía (Enfriamiento): 1165W\nConsumo de Energía (Calefacción): 1050W\nCorriente Nominal (Enfriamiento): 5.46A\nCorriente Nominal (Calefacción): 4.92A\nConsumo Máximo: 1650W\nCorriente Máxima: 7.89A\nCompresor: Tipo rotativo, marca GMCC\nRefrigerante: R410A, carga de 575g\nDimensiones Unidad Interior (Ancho x Alto x Profundidad): \n800 x 292 x 190 mm\nPeso Neto Unidad Interior: 7.6 kg\nNivel de Ruido Unidad Interior: 39/37/34 dB (Hi/Mi/Lo)\nDimensiones Unidad Exterior (Ancho x Alto x Profundidad): \n700 x 276 x 550 mm\nPeso Neto Unidad Exterior: 26 kg\nNivel de Ruido Unidad Exterior: 49 dB\nTemperatura de Operación: -7°C a 43°C\nTemperatura Ambiental de Operación: -7°C a 48°C\nAlimentación Eléctrica: 220-240V / 50Hz\nÁrea de Aplicación: 13~27 m²'
+        specs: 'aires.children.4.info.specs'
       },
       variants: [
         {
@@ -313,12 +313,12 @@ const aires: Category = {
     },
     {
       id: 'itb-18000iv',
-      name: 'ITB 18000IV',
+      name: 'aires.children.5.name',
       popular: false,
       info: {
-        review: 'El modelo ITB 18000IV, con una capacidad de 18000 BTU, combina eficiencia y rendimiento para ofrecerte un ambiente siempre confortable. \nSu tecnología Inverter asegura un uso eficiente de la energía, mientras que su diseño elegante facilita la instalación y mantenimiento.',
+        review: 'aires.children.5.info.review',
         included: null,
-        specs: 'Modelo: ITB 18000IV\nTipo: Inverter\nCapacidad de Enfriamiento: 18,000 BTU (2700~19000)\nCapacidad de Calefacción: 18,000 BTU (2700~19000)\nConsumo de Energía (Enfriamiento): 2000W (150~2500W)\nConsumo de Energía (Calefacción): 1850W (150~2500W)\nCorriente Nominal (Enfriamiento): 9.3A (0.7~11.6A)\nCorriente Nominal (Calefacción): 8.12A (0.7~11.6A)\nCompresor: Tipo rotativo, marca SANYO\nRefrigerante: R410A, carga de 1160g\nDimensiones Unidad Interior (Ancho x Alto x Profundidad): \n850 x 292 x 190 mm\nPeso Neto Unidad Interior: 8.5 kg\nNivel de Ruido Unidad Interior: 45/42/39 dB (Hi/Mi/Lo)\nDimensiones Unidad Exterior (Ancho x Alto x Profundidad): \n760 x 276 x 550 mm\nPeso Neto Unidad Exterior: 28.5 kg\nNivel de Ruido Unidad Exterior: 55 dB\nTemperatura de Operación: -7°C a 43°C\nAlimentación Eléctrica: 220-240V / 60Hz\nÁrea de Aplicación: 20～40 m²'
+        specs: 'aires.children.5.info.specs'
       },
       variants: [
         {
@@ -333,12 +333,12 @@ const aires: Category = {
     },
     {
       id: 'itp-24000iv',
-      name: 'ITP 24000IV',
+      name: 'aires.children.6.name',
       popular: false,
       info: {
-        review: 'Descripción: El ITB 24000IV es un aire acondicionado potente con 24000 BTU, diseñado para mantener grandes espacios frescos y cómodos. \nLa tecnología Inverter ajusta el uso de energía para mayor eficiencia y ahorro.',
+        review: 'aires.children.6.info.review',
         included: null,
-        specs: 'Modelo: ITB 24000IV\nTipo: Inverter\nCapacidad de Enfriamiento: 24,000 BTU (2700~25000)\nCapacidad de Calefacción: 24,000 BTU (2700~25000)\nConsumo de Energía (Enfriamiento): 2880W (300~3000W)\nConsumo de Energía (Calefacción): 2650W (300~3000W)\nCorriente Nominal (Enfriamiento): 13.3A (1.4~14.35A)\nCorriente Nominal (Calefacción): 12.3A (1.4~14.35A)\nConsumo Máximo: 3000W\nCorriente Máxima: 14.35A\nCompresor: Tipo rotativo, marca SANYO\nRefrigerante: R410A, carga de 1500g\nDimensiones Unidad Interior (Ancho x Alto x Profundidad):\n970 x 310 x 230 mm\nPeso Neto Unidad Interior: 12.5 kg\nNivel de Ruido Unidad Interior: 49/47/45 dB (Hi/Mi/Lo)\nDimensiones Unidad Exterior (Ancho x Alto x Profundidad): \n820 x 318 x 597 mm\nPeso Neto Unidad Exterior: 36 kg\nNivel de Ruido Unidad Exterior: 57 dB\nTemperatura de Operación: -7°C a 43°C\nTemperatura Ambiental de Operación: -7°C a 48°C\nAlimentación Eléctrica: 220-240V / 60Hz\nÁrea de Aplicación: 30～55 m²'
+        specs: 'aires.children.6.info.specs'
       },
       variants: [
         {

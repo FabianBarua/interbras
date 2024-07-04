@@ -1,6 +1,8 @@
+import { useTranslation } from 'react-i18next'
 import { Children } from '../shared/utils/data'
 
 export const ProductCard: React.FC<{ child: Children, active: boolean, change: (child: Children) => void }> = ({ child, active, change }) => {
+  const { t } = useTranslation('products')
   return (
 
     <button
@@ -29,17 +31,19 @@ export const ProductCard: React.FC<{ child: Children, active: boolean, change: (
           `
         }
         >
-          {child.name}
+          {t(child.name)}
         </p>
         <div className=' flex '>
           {
-            child.variants.length > 1 ? 'Colores:' : 'Color:'
+            child.variants.length > 1 ? t('colors.text.colors') + ':' : t('colors.text.color') + ':'
           }
           <div className=' flex gap-1 items-center ml-1'>
             {
             child.variants.map((variant) => (
               <p key={variant.color.toString() + variant.id.toString()}>
-                {variant.color}{child.variants.length > 1 && variant !== child.variants[child.variants.length - 1] ? ',' : ''}
+                {
+                  t(variant.color)
+                }{child.variants.length > 1 && variant !== child.variants[child.variants.length - 1] ? ',' : ''}
               </p>
             ))
             }

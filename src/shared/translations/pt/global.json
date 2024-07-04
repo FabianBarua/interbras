@@ -1,4 +1,23 @@
 {
+  "header":{
+    "whereWeAre": {
+      "title": "Onde estamos",
+      "line1": "Nas melhores lojas",
+      "line2": "do ",
+      "line3":"Paraguai! "
+    },
+    "products": {
+      "title": "Produtos",
+      "text": "Nossos produtos"
+    },
+    "home": "Início",
+    "whoWeAre": {
+      "title": "Quem somos",
+      "line1": "Somos uma empresa paraguaia",
+      "line2": "apaixonada por melhorar a vida no",
+      "line3": "lar."
+    }
+},
   "home":{
     "title":{
       "primary": "Sua marca",

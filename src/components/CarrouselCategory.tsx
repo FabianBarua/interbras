@@ -2,10 +2,12 @@ import { useDataStore } from '../shared/stores/useData'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
 export const CarrouselCategory: React.FC = () => {
   const { categories } = useDataStore()
+  const { t } = useTranslation('products')
 
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true
@@ -19,7 +21,11 @@ export const CarrouselCategory: React.FC = () => {
 
   return (
     <>
-      <h3 className=' text-center text-3xl mt-12 mb-8 text-black/80 font-light'>Tambien te puede interesar</h3>
+      <h3 className=' text-center text-3xl mt-12 mb-8 text-black/80 font-light'>
+        {
+          t('youMayAlsoBeInteresed')
+        }
+      </h3>
       <div
         ref={emblaRef}
         className={

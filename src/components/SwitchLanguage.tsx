@@ -90,7 +90,7 @@ export const SwitchLanguage: React.FC<SwitchLanguageProps> = ({ theme }) => {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className=' relative'>
+    <div className=' relative z-40'>
       <div className=' '>
         <LanguageButton
           theme={selectedTheme}

@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 export const QuienesSomos: React.FC = () => {
+  const { t } = useTranslation('global')
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
@@ -11,12 +14,12 @@ export const QuienesSomos: React.FC = () => {
       <div className='  justify-center text-center  text-3xl flex flex-col-reverse lg:flex-row items-center h-full gap-16 lg:gap-7'>
         <p className=' text-left w-full max-w-xl leading-8 font-light'>
           <strong className=' font-bold'>
-            Somos una empresa paraguaya
+            {t('header.whoWeAre.line1')}
           </strong>
           <br />
-          apasionada por mejorar la vida en el
+          {t('header.whoWeAre.line2')}
           <br />
-          hogar.
+          {t('header.whoWeAre.line3')}
         </p>
 
         <svg

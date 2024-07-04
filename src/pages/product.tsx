@@ -8,6 +8,7 @@ import { motion } from 'framer-motion'
 import { PhotoViewer } from '../components/PhotoView'
 import { NotFound } from '../components/NotFound'
 import { ProductCard } from '../components/ProductCard'
+import { useTranslation } from 'react-i18next'
 
 export const ProductPage: React.FC = () => {
   const { id } = useParams<{ id: string }>()
@@ -46,6 +47,11 @@ export const ProductPage: React.FC = () => {
     return photos
   }
 
+  const { t } = useTranslation('products')
+
+  const name = t(productSelected.name)
+  const description = t(productSelected.description)
+
   return (
     <>
       <motion.main
@@ -58,7 +64,7 @@ export const ProductPage: React.FC = () => {
           <div className=' no-select '>
 
             <PhotoViewer
-              name={productSelected.name}
+              name={name}
               photos={
               getAllPhotosOfAllVariants()
               }
@@ -67,17 +73,21 @@ export const ProductPage: React.FC = () => {
           </div>
           <div className='  flex-1 w-full '>
             <h1 className=' text-4xl font-semibold'>
-              {productSelected.name}
+              {name}
             </h1>
             <p className=' text-lg  mt-1 font-light leading-5'>
-              {productSelected.description.split('\n').map((line, index) => (
+              {description.split('\n').map((line, index) => (
                 <span key={index}>
                   {line}
                   <br />
                 </span>
               ))}
             </p>
-            <h3 className=' mt-4  text-lg font-medium text-black/3'>¿Que modelo deseas?</h3>
+            <h3 className=' mt-4  text-lg font-medium text-black/3'>
+              {
+              t('whatDoYouWant')
+            }
+            </h3>
             <div className=' relative mt-3'>
               <div
                 style={
@@ -125,7 +135,7 @@ export const ProductPage: React.FC = () => {
                 className=' z-20  transition-all  text-nowrap flex gap-3 justify-center items-center text-lg rounded-full absolute  left-1/2 -translate-x-1/2  border-2 bg-interbrasGreen-200 border-interbrasGreen-500 h-9  px-5  text-interbrasGreen-500'
               >
 
-                Mostrar {isOpenShowMore ? 'menos' : 'más'}
+                {t('showMore.show')} {isOpenShowMore ? t('showMore.showMore') : t('showMore.showLess')}
 
                 <DownArrow
                   className='  size-8 inline transition-all fill-interbrasGreen-500'

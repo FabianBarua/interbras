@@ -13,6 +13,7 @@ import { Navigation } from './Navigation'
 
 import './style.css'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -43,6 +44,8 @@ export const Header: React.FC = (): JSX.Element => {
     setSelected
   } = useHeader()
 
+  const { t } = useTranslation('global')
+
   const [isOpen, toggleOpen] = useCycle(false, true)
   const containerRef = useRef(null)
   const { height } = useDimensions(containerRef)
@@ -69,15 +72,14 @@ export const Header: React.FC = (): JSX.Element => {
           `
         }
       >
-
         <nav className='w-full flex'>
           <div className='flex-1 lg:block  hidden' />
           <ul className='flex mx-auto justify-center items-center gap-14'>
             <li ref={dondeEstamosRef} className='  lg:block hidden'>
-              <button>Donde estamos</button>
+              <button>{t('header.whereWeAre.title')}</button>
             </li>
             <li ref={productosRef} className='  lg:block hidden'>
-              <button>Productos</button>
+              <button>{t('header.products.title')}</button>
             </li>
             <li>
               <Link className=' cursor-pointer' to='/'>
@@ -85,17 +87,23 @@ export const Header: React.FC = (): JSX.Element => {
               </Link>
             </li>
             <li className='  lg:block hidden'>
-              <Link to='/'>Inicio</Link>
+              <Link to='/'>
+                <p>
+                  {t('header.home')}
+                </p>
+              </Link>
             </li>
             <li ref={quienesSomosRef} className=' lg:block hidden'>
-              <button>Quienes somos</button>
+              <button>
+                {t('header.whoWeAre.title')}
+              </button>
             </li>
           </ul>
 
           <div className='items-center lg:flex hidden flex-1 justify-end pr-12'>
             <div className=' lg:flex justify-end hidden'>
               <SwitchLanguage
-                theme='green'
+                theme='white'
               />
             </div>
           </div>
