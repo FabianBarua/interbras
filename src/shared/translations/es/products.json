@@ -110,7 +110,7 @@
     "children": {
       "1": {
         "id": "itb-12000iv",
-        "name": "ITB 12000IV",
+        "name": "ITB 12000IV Inverter (Brasil 50Hz)" ,
         "popular": false,
         "info": {
           "review": "El aire acondicionado ITB 12000IV de 12000 BTU es perfecto para mantener tu hogar fresco y confortable todo el año.\nGracias a su tecnología Inverter, ajusta el uso de energía para máxima eficiencia, ayudándote a reducir costos. ",
@@ -127,7 +127,7 @@
       },
       "2": {
         "id": "itp-12000iv",
-        "name": "ITP 12000IV",
+        "name": "ITP 12000IV Inverter (Paraguay 60Hz)",
         "popular": false,
         "info": {
           "review": "El ITP 12000IV es un aire acondicionado de 12000 BTU que ofrece una climatización eficiente y confortable para cualquier espacio. \nSu tecnología Inverter permite  un ajuste preciso de la temperatura, asegurando un  ambiente agradable todo el año.",
@@ -147,7 +147,7 @@
       },
       "3": {
         "id": "itb-12000of",
-        "name": "ITB 12000OF",
+        "name": "ITB 12000OF On/Off (Brasil 50Hz)",
         "popular": false,
         "info": {
           "review": "El aire acondicionado ITB 12000OF, con capacidad de 12000 BTU,\nes una excelente opción para quienes buscan una solución de climatización eficiente y directa.\nSu diseño On/Off proporciona un control simple y efectivo, ideal para aquellos que valoran la practicidad.\nCon un funcionamiento silencioso y un diseño elegante, es perfecto para áreas de 13 a 27 m2.\nAdemás, su tecnología avanzada asegura un enfriamiento rápido y uniforme, \nmientras que su modo de ahorro de energía contribuye a reducir los costos de electricidad.\nEste aire acondicionado también cuenta con un filtro de aire lavable que mejora la calidad del aire interior,\nhaciendo que el ambiente sea más saludable y confortable.\nSu instalación es sencilla y su mantenimiento, mínimo, lo que lo convierte en una opción práctica y conveniente para cualquier hogar.",
@@ -167,7 +167,7 @@
       },
       "4": {
         "id": "itp-12000of",
-        "name": "ITP 12000OF",
+        "name": "ITP 12000OF On/Off (Paraguay 60Hz)",
         "popular": false,
         "info": {
           "review": "El aire acondicionado ITP 12000OF de 12000 BTU es ideal para quienes necesitan una climatización efectiva y sin complicaciones.\nCon su sistema On/Off, proporciona una experiencia de uso sencilla y directa, manteniendo tu espacio a la temperatura deseada tanto en verano como en invierno.\nEste modelo es perfecto para aquellos que buscan comodidad y eficiencia, ya que su tecnología avanzada asegura un enfriamiento rápido y uniforme.\nAdemás, su modo de ahorro de energía ayuda a reducir los costos de electricidad, convirtiéndolo en una opción económica y sostenible.\nEl diseño elegante y discreto del ITP 12000OF se adapta a cualquier decoración, mientras que su funcionamiento silencioso garantiza un ambiente tranquilo y confortable.\nIdeal para habitaciones de tamaño mediano a grande, este aire acondicionado es fácil de instalar y mantener, lo que lo hace una opción práctica y conveniente para el hogar o la oficina.",
@@ -187,7 +187,7 @@
       },
       "5": {
         "id": "itb-18000iv",
-        "name": "ITB 18000IV",
+        "name": "ITB 18000IV Inverter (Brasil 50Hz)",
         "popular": false,
         "info": {
           "review": "El modelo ITB 18000IV, con una capacidad de 18000 BTU, combina eficiencia y rendimiento para ofrecerte un ambiente siempre confortable. \nSu tecnología Inverter asegura un uso eficiente de la energía, mientras que su diseño elegante facilita la instalación y mantenimiento.",
@@ -207,7 +207,7 @@
       },
       "6": {
         "id": "itp-24000iv",
-        "name": "ITP 24000IV",
+        "name": "ITP 24000IV Inverter (Paraguay 60Hz)",
         "popular": false,
         "info": {
           "review": "Descripción: El ITB 24000IV es un aire acondicionado potente con 24000 BTU, diseñado para mantener grandes espacios frescos y cómodos. \nLa tecnología Inverter ajusta el uso de energía para mayor eficiencia y ahorro.",

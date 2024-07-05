@@ -110,7 +110,7 @@
     "children": {
       "1": {
         "id": "itb-12000iv",
-        "name": "ITB 12000IV",
+        "name": "ITB 12000IV Inverter (Brasil 50Hz)" ,
         "popular": false,
         "info": {
           "review": "O ar condicionado ITB 12000IV de 12000 BTU é perfeito para manter sua casa fresca e confortável o ano todo.\nGraças à sua tecnologia Inverter, ajusta o uso de energia para máxima eficiência, ajudando a reduzir custos.",
@@ -127,7 +127,7 @@
       },
       "2": {
         "id": "itp-12000iv",
-        "name": "ITP 12000IV",
+        "name": "ITP 12000IV Inverter (Paraguai 60Hz)",
         "popular": false,
         "info": {
           "review": "O ITP 12000IV é um ar condicionado de 12000 BTU que oferece uma climatização eficiente e confortável para qualquer espaço. \nSua tecnologia Inverter permite um ajuste preciso da temperatura, garantindo um ambiente agradável o ano todo.",
@@ -147,7 +147,7 @@
       },
       "3": {
         "id": "itb-12000of",
-        "name": "ITB 12000OF",
+        "name": "ITB 12000OF On/Off (Brasil 50Hz)",
         "popular": false,
         "info": {
           "review": "O ar condicionado ITB 12000OF, com capacidade de 12000 BTU,\né uma excelente opção para quem procura uma solução de climatização eficiente e direta.\nSeu design On/Off proporciona um controle simples e eficaz, ideal para aqueles que valorizam a praticidade.\nCom um funcionamento silencioso e um design elegante, é perfeito para áreas de 13 a 27 m2.\nAlém disso, sua tecnologia avançada garante um resfriamento rápido e uniforme,\nenquanto seu modo de economia de energia ajuda a reduzir os custos de eletricidade.\nEste ar condicionado também possui um filtro de ar lavável que melhora a qualidade do ar interno,\ntornando o ambiente mais saudável e confortável.\nSua instalação é simples e sua manutenção, mínima, o que o torna uma opção prática e conveniente para qualquer casa.",
@@ -167,7 +167,7 @@
       },
       "4": {
         "id": "itp-12000of",
-        "name": "ITP 12000OF",
+        "name": "ITP 12000OF On/Off (Paraguai 60Hz)",
         "popular": false,
         "info": {
           "review": "O ar condicionado ITP 12000OF de 12000 BTU é ideal para quem precisa de uma climatização eficaz e sem complicações. Com seu sistema On/Off, oferece uma experiência de uso simples e direta, mantendo seu espaço na temperatura desejada tanto no verão quanto no inverno. Este modelo é perfeito para quem busca conforto e eficiência, pois sua tecnologia avançada garante um resfriamento rápido e uniforme. Além disso, seu modo de economia de energia ajuda a reduzir os custos de eletricidade, tornando-o uma opção econômica e sustentável. O design elegante e discreto do ITP 12000OF se adapta a qualquer decoração, enquanto seu funcionamento silencioso garante um ambiente tranquilo e confortável. Ideal para cômodos de tamanho médio a grande, este ar condicionado é fácil de instalar e manter, tornando-o uma opção prática e conveniente para casa ou escritório.",
@@ -187,7 +187,7 @@
       },
       "5": {
         "id": "itb-18000iv",
-        "name": "ITB 18000IV",
+        "name": "ITB 18000IV Inverter (Brasil 50Hz)",
         "popular": false,
         "info": {
           "review": "O modelo ITB 18000IV, com uma capacidade de 18000 BTU, combina eficiência e desempenho para oferecer um ambiente sempre confortável. Sua tecnologia Inverter assegura um uso eficiente da energia, enquanto seu design elegante facilita a instalação e manutenção.",
@@ -217,7 +217,7 @@
         "variants": [
           {
             "id": "itp-24000iv-1",
-            "name": "ITP 24000IV - 1",
+            "name": "ITP 24000IV Inverter (Paraguai 60Hz)",
             "color": "Branco",
             "photos": [
               "/product/aires/general.webp"
