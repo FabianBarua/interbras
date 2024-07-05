@@ -27,7 +27,7 @@ const products: ProductItemHome[][] =
 [
   [
     {
-      name: 'airfyer',
+      name: 'airfryer',
       url: '/product/airfryer',
       photo: '/home/5.webp',
       isMagic: false
@@ -41,13 +41,13 @@ const products: ProductItemHome[][] =
   ],
   [
     {
-      name: 'airfyer',
+      name: 'airfryer',
       url: '/product/airfryer',
       photo: '/home/6.webp',
       isMagic: false
     },
     {
-      name: 'airfyer',
+      name: 'airfryer',
       url: '/product/airfryer',
       photo: '/home/3.webp',
       isMagic: false
@@ -61,8 +61,8 @@ const products: ProductItemHome[][] =
   ],
   [
     {
-      name: 'airfyer',
-      url: '/product/airfyer',
+      name: 'airfryer',
+      url: '/product/airfryer',
       photo: '/home/2.webp',
       isMagic: false
     },
@@ -94,7 +94,7 @@ const products: ProductItemHome[][] =
       isMagic: true
     },
     {
-      name: 'airfyer',
+      name: 'airfryer',
       url: '/product/airfryer',
       photo: '/home/4.webp',
       isMagic: false
@@ -114,7 +114,7 @@ const products: ProductItemHome[][] =
       isMagic: false
     },
     {
-      name: 'airfyer',
+      name: 'airfryer',
       url: '/product/airfryer',
       photo: '/home/1.webp',
       isMagic: false
@@ -122,7 +122,7 @@ const products: ProductItemHome[][] =
   ],
   [
     {
-      name: 'airfyer',
+      name: 'airfryer',
       url: '/product/airfryer',
       photo: '/home/3.webp',
       isMagic: false
@@ -134,7 +134,7 @@ const products: ProductItemHome[][] =
       isMagic: false
     },
     {
-      name: 'airfyer',
+      name: 'airfryer',
       url: '/product/airfryer',
       photo: '/home/6.webp',
       isMagic: false
@@ -148,7 +148,7 @@ const products: ProductItemHome[][] =
       isMagic: false
     },
     {
-      name: 'airfyer',
+      name: 'airfryer',
       url: '/product/airfryer',
       photo: '/home/1.webp',
       isMagic: false

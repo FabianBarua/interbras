@@ -39,6 +39,7 @@ export const ProductosHeader: React.FC<ProductosHeaderProps> = ({
   const { urls } = useDataStore()
 
   const { t } = useTranslation('global')
+  const { t: t2 } = useTranslation('products')
 
   return (
     <motion.div
@@ -58,9 +59,9 @@ export const ProductosHeader: React.FC<ProductosHeaderProps> = ({
                 urls.slice(0, 8).map(url => (
                   <LinkItem
                     clicked={clicked} to={url.url}
-                    key={'id-header-' + url.name}
+                    key={'id-header-' + t2(url.name)}
                   >
-                    {url.name}
+                    {t2(url.name)}
                   </LinkItem>
                 ))
               }

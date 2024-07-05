@@ -1,6 +1,6 @@
 import { ShowMore } from './ShowMore'
-import 'react-photo-view/dist/react-photo-view.css'
-import { PhotoProvider, PhotoView } from 'react-photo-view'
+import '@fabianbarua/react-photo-view/dist/react-photo-view.css'
+import { PhotoProvider, PhotoView } from '@fabianbarua/react-photo-view'
 import { useRef } from 'react'
 
 interface PhotoViewProps {
@@ -25,7 +25,6 @@ export const PhotoViewer: React.FC<PhotoViewProps> = ({
   return (
     <>
       <PhotoProvider>
-
         <PhotoView
           key={
             photos[0] + '-main-photo'

@@ -244,7 +244,7 @@ const aires: Category = {
         {
           id: 'itb-12000iv-1',
           name: 'ITB 12000IV - 1',
-          color: 'Blanco',
+          color: 'colors.white',
           photos: [
             '/product/aires/general.webp'
           ]
@@ -264,7 +264,7 @@ const aires: Category = {
         {
           id: 'itp-12000iv-1',
           name: 'ITP 12000IV - 1',
-          color: 'Blanco',
+          color: 'colors.white',
           photos: [
             '/product/aires/general.webp'
           ]
@@ -284,7 +284,7 @@ const aires: Category = {
         {
           id: 'itp-12000iv-1',
           name: 'ITB 12000OF - 1',
-          color: 'Blanco',
+          color: 'colors.white',
           photos: [
             '/product/aires/general.webp'
           ]
@@ -304,7 +304,7 @@ const aires: Category = {
         {
           id: 'itp-12000iv-1',
           name: 'ITP 12000OF - 1',
-          color: 'Blanco',
+          color: 'colors.white',
           photos: [
             '/product/aires/general.webp'
           ]
@@ -324,7 +324,7 @@ const aires: Category = {
         {
           id: 'itb-18000iv-1',
           name: 'ITP 12000OF - 1',
-          color: 'Blanco',
+          color: 'colors.white',
           photos: [
             '/product/aires/general.webp'
           ]
@@ -344,7 +344,7 @@ const aires: Category = {
         {
           id: 'itp-24000iv-1',
           name: 'ITP 24000IV - 1',
-          color: 'Blanco',
+          color: 'colors.white',
           photos: [
             '/product/aires/general.webp'
           ]
@@ -356,24 +356,24 @@ const aires: Category = {
 
 const tvs: Category = {
   id: 'tvs',
-  name: 'Televisores',
-  description: 'La mejor calidad de imagen y sonido.',
-  shortDescription: 'Eficientes y elegantes.',
+  name: 'tvs.name',
+  description: 'tvs.description',
+  shortDescription: 'tvs.shortDescription',
   children: [
     {
       id: 'IN3200TV',
-      name: 'Tv IN3200TV',
+      name: 'tvs.children.1.name',
       popular: false,
       info: {
-        review: 'La Smart TV de 32 pulgadas modelo IN3200TV QLED HD de Interbras es la elección perfecta para quienes buscan una experiencia de entretenimiento completa en un tamaño compacto.\nCon su pantalla QLED HD, ofrece colores vibrantes y detalles nítidos, transformando cualquier espacio en un centro de entretenimiento.',
+        review: 'tvs.children.1.info.review',
         included: null,
-        specs: 'Tamaño de pantalla: 32 pulgadas\nResolución: QLED HD\nFunciones adicionales:\nAcceso a una vasta biblioteca de películas y series con\nXplus Prime y Cinema Prime\nConectividad: HDMI, USB, WiFi, Bluetooth\nServicios de streaming compatibles: Netflix, YouTube, \nHBO Max, Prime Video, Spotify, YouTube Kids\nSistema operativo: Android\nTecnología de imagen: Frameless (sin marco), \nTrue Colors, Smart\nSintonizador: ISDB-T'
+        specs: 'tvs.children.1.info.specs'
       },
       variants: [
         {
           id: 'IN3200TV-1',
           name: 'IN3200TV - 1',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/tvs/IN3200TV-1.webp',
             '/product/tvs/IN3200TV-2.webp',
@@ -384,18 +384,18 @@ const tvs: Category = {
     },
     {
       id: 'IN4300TV',
-      name: 'Tv IN4300TV',
+      name: 'tvs.children.2.name',
       popular: false,
       info: {
-        review: 'La Smart TV de 43 pulgadas modelo IN4300TV QLED FHD de Interbras te ofrece una experiencia visual superior con su pantalla QLED Full HD.\nDisfruta de colores intensos y detalles precisos, convirtiendo tu hogaren un cine personal.\nCon acceso a plataformas de streaming como Netflix y YouTube, tienes entretenimientoilimitado al alcance de tu mano. Su diseño estilizado y sin marco complementacualquier espacio, brindando un toque de modernidad y elegancia.',
+        review: 'tvs.children.2.info.review',
         included: null,
-        specs: 'Tamaño de pantalla: 43 pulgadas\nResolución: QLED FHD\nFunciones adicionales:\nAcceso a una vasta biblioteca de películas y series \ncon Xplus Prime y Cinema Prime\nConectividad: HDMI, USB, WiFi, Bluetooth\nServicios de streaming compatibles: Netflix, YouTube,\nHBO Max, Prime Video, Spotify, YouTube Kids\nSistema operativo: Android\nTecnología de imagen: Frameless (sin marco), \nTrue Colors, Smart\nSintonizador: ISDB-T'
+        specs: 'tvs.children.2.info.specs'
       },
       variants: [
         {
           id: 'IN4300TV-1',
           name: 'IN4300TV - 1',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/tvs/IN4300TV-1.webp',
             '/product/tvs/IN4300TV-2.webp',
@@ -407,18 +407,18 @@ const tvs: Category = {
     },
     {
       id: 'IN5000TV',
-      name: 'Tv IN5000TV',
+      name: 'tvs.children.3.name',
       popular: false,
       info: {
-        review: 'La Smart TV de 50 pulgadas modelo IN5000TV QLED de Interbras es ideal para aquellos que desean una pantalla grande con una calidad de imagen excepcional. Con tecnología QLED, disfrutarás de colores vivos y contrastes profundos.\nAccede fácilmente a tus contenidos favoritos en plataformas como Netflix y HBO Max, y transforma tu sala en un centro de entretenimiento.\nSu diseño elegante y sin marco se integra perfectamente en cualquier entorno, ofreciendo una experiencia visual amplia e inmersiva.',
+        review: 'tvs.children.3.info.review',
         included: null,
-        specs: 'Tamaño de pantalla: 50 pulgadas\nResolución: QLED\nFunciones adicionales:\nAcceso a una vasta biblioteca de películas y series \ncon Xplus Prime y Cinema Prime\nConectividad: HDMI, USB, WiFi, Bluetooth\nServicios de streaming compatibles: Netflix, YouTube,\nHBO Max, Prime Video, Spotify, YouTube Kids\nSistema operativo: Android\nTecnología de imagen: Frameless (sin marco),\nTrue Colors, Smart\nSintonizador: ISDB-T'
+        specs: 'tvs.children.3.info.specs'
       },
       variants: [
         {
           id: 'IN5000TV-1',
           name: 'IN5000TV - 1',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/tvs/IN5000TV-1.webp',
             '/product/tvs/IN5000TV-2.webp',
@@ -430,18 +430,18 @@ const tvs: Category = {
     },
     {
       id: 'IN5500TV',
-      name: 'Tv IN5500TV',
+      name: 'tvs.children.4.name',
       popular: false,
       info: {
-        review: 'La Smart TV de 55 pulgadas modelo IN5500TV QLED de Interbras lleva el entretenimiento en casa a un nuevo nivel.\nCon su pantalla QLED, ofrece una calidad de imagen impresionante con colores vibrantes y detalles nítidos.\nDisfruta de acceso ilimitado a una variedad de servicios de  streaming, incluyendo Netflix y YouTube, para nunca quedarte sin opciones de entretenimiento. \nSu diseño sin marco añade un toque sofisticado a cualquier espacio, creando una experiencia visual más inmersiva y moderna.',
+        review: 'tvs.children.4.info.review',
         included: null,
-        specs: 'Tamaño de pantalla: 55 pulgadas\nResolución: QLED\nFunciones adicionales: Acceso a una vasta biblioteca\nde películas y series con Xplus Prime y Cinema Prime\nConectividad: HDMI, USB, WiFi, Bluetooth\nServicios de streaming compatibles: Netflix, YouTube,\nHBO Max, Prime Video, Spotify, YouTube Kids\nSistema operativo: Android\nTecnología de imagen: Frameless (sin marco), \nTrue Colors, Smart\nSintonizador: ISDB-T'
+        specs: 'tvs.children.4.info.specs'
       },
       variants: [
         {
           id: 'IN5500TV-1',
           name: 'IN5500TV - 1',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/tvs/IN5500TV-1.webp',
             '/product/tvs/IN5500TV-2.webp',
@@ -453,18 +453,18 @@ const tvs: Category = {
     },
     {
       id: 'IN6500TV',
-      name: 'Tv IN6500TV',
+      name: 'tvs.children.5.name',
       popular: false,
       info: {
-        review: 'La Smart TV de 65 pulgadas modelo IN6500TV SQLED de Interbras es ideal para quienes buscan una experiencia visual envolvente en una pantalla grande. Gracias a su tecnología SQLED, disfrutarás de colores intensos y una claridad impresionante.\nEsta TV te permite acceder fácilmente a tus plataformas destreaming favoritas como Netflix y HBO Max, transformando tu sala en un centro de entretenimiento.\nCon su diseño sin marco, no solo aporta modernidad, sino que también se integra armoniosamente en cualquier espacio.',
+        review: 'tvs.children.5.info.review',
         included: null,
-        specs: 'Tamaño de pantalla: 65 pulgadas\nResolución: SQLED\nFunciones adicionales: Acceso a una vasta biblioteca \nde películas y series con Xplus Prime y Cinema Prime\nConectividad: HDMI, USB, WiFi, Bluetooth\nServicios de streaming compatibles: Netflix, YouTube, \nHBO Max, Prime Video, Spotify, YouTube Kids\nSistema operativo: Android\nTecnología de imagen: Frameless (sin marco), \nTrue Colors, Smart\nSintonizador: ISDB-T'
+        specs: 'tvs.children.5.info.specs'
       },
       variants: [
         {
           id: 'IN6500TV-1',
           name: 'IN6500TV - 1',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/tvs/IN6500TV-1.webp',
             '/product/tvs/IN6500TV-2.webp',
@@ -476,18 +476,18 @@ const tvs: Category = {
     },
     {
       id: 'IN7500TV',
-      name: 'Tv IN7500TV',
+      name: 'tvs.children.6.name',
       popular: false,
       info: {
-        review: 'La Smart TV de 85 pulgadas modelo IN8500TV SQLED de Interbras lleva el entretenimiento en casa a otro nivel con su gran tamaño y calidad de imagen superior. La tecnología SQLED garantiza colores vibrantes y detalles nítidos, ideales para una experiencia cinematográfica. \nCon acceso a plataformas de streaming como Netflix y Prime Video, tendrás todo el contenido que amas al alcance de un botón. \nSu diseño elegante y sin marco  aporta un toque de sofisticación a cualquier sala.',
+        review: 'tvs.children.6.info.review',
         included: null,
-        specs: 'Tamaño de pantalla: 85 pulgadas\nResolución: SQLED\nFunciones adicionales: Acceso a una vasta biblioteca\nde películas y series con Xplus Prime y Cinema Prime\nConectividad: HDMI, USB, WiFi, Bluetooth\nServicios de streaming compatibles: Netflix, YouTube,\nHBO Max, Prime Video, Spotify, YouTube Kids\nSistema operativo: Android\nTecnología de imagen: Frameless (sin marco),\nTrue Colors, Smart\nSintonizador: ISDB-T'
+        specs: 'tvs.children.6.info.specs'
       },
       variants: [
         {
           id: 'IN7500TV-1',
           name: 'IN7500TV - 1',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/tvs/IN7500TV-1.webp',
             '/product/tvs/IN7500TV-2.webp',
@@ -499,18 +499,18 @@ const tvs: Category = {
     },
     {
       id: 'IN8500TV',
-      name: 'Tv IN8500TV',
+      name: 'tvs.children.7.name',
       popular: false,
       info: {
-        review: 'La Smart TV de 85 pulgadas modelo IN8500TV SQLED de Interbras lleva el entretenimiento en casa a otro nivel con su gran tamaño y calidad de imagen superior. La tecnología SQLED garantiza colores vibrantes y detalles nítidos, ideales para una experiencia cinematográfica. \nCon acceso a plataformas de streaming como Netflix y Prime Video, tendrás todo el contenido que amas al alcance de un botón. \nSu diseño elegante y sin marco  aporta un toque de sofisticación a cualquier sala.',
+        review: 'tvs.children.7.info.review',
         included: null,
-        specs: 'Tamaño de pantalla: 85 pulgadas\nResolución: SQLED\nFunciones adicionales: Acceso a una vasta biblioteca\nde películas y series con Xplus Prime y Cinema Prime\nConectividad: HDMI, USB, WiFi, Bluetooth\nServicios de streaming compatibles: Netflix, YouTube,\nHBO Max, Prime Video, Spotify, YouTube Kids\nSistema operativo: Android\nTecnología de imagen: Frameless (sin marco),\nTrue Colors, Smart\nSintonizador: ISDB-T'
+        specs: 'tvs.children.7.info.specs'
       },
       variants: [
         {
           id: 'IN8500TV-1',
           name: 'IN8500TV - 1',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/tvs/IN8500TV-1.webp',
             '/product/tvs/IN8500TV-2.webp',
@@ -541,7 +541,7 @@ const mixteras: Category = {
         {
           id: 'G10',
           name: 'G10',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/mixteras/G10-1.webp'
           ]
@@ -561,7 +561,7 @@ const mixteras: Category = {
         {
           id: 'G20',
           name: 'G20',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/mixteras/G20-1.webp'
           ]
@@ -580,7 +580,7 @@ const mixteras: Category = {
         {
           id: 'G30',
           name: 'G30',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/mixteras/G30-1.webp'
           ]
@@ -599,7 +599,7 @@ const mixteras: Category = {
         {
           id: 'G40',
           name: 'G40',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/mixteras/G40-1.webp'
           ]
@@ -618,7 +618,7 @@ const mixteras: Category = {
         {
           id: 'G50',
           name: 'G50',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/mixteras/G50-1.webp'
           ]
@@ -647,7 +647,7 @@ const cocinas: Category = {
         {
           id: 'C10',
           name: 'C10',
-          color: 'Blanco',
+          color: 'colors.white',
           photos: [
             '/product/cocinas/C10-1.webp'
           ]
@@ -667,7 +667,7 @@ const cocinas: Category = {
         {
           id: 'C20',
           name: 'C20',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/cocinas/C20-1.webp'
           ]
@@ -687,7 +687,7 @@ const cocinas: Category = {
         {
           id: 'C30',
           name: 'C30',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/cocinas/C30-1.webp'
           ]
@@ -735,7 +735,7 @@ const hervidoras: Category = {
         {
           id: 'T20',
           name: 'T20',
-          color: 'Blanco',
+          color: 'colors.white',
           photos: [
             '/product/hervidoras/T20-1.webp'
           ]
@@ -754,7 +754,7 @@ const hervidoras: Category = {
         {
           id: 'T30',
           name: 'T30',
-          color: ' Negro',
+          color: ' colors.black',
           photos: [
             '/product/hervidoras/T30-1.webp'
           ]
@@ -812,7 +812,7 @@ const planchas: Category = {
         {
           id: 'F10',
           name: 'F10',
-          color: 'Rojo - Negro',
+          color: 'Rojo - colors.black',
           photos: [
             '/product/planchas/F10-1.webp'
           ]
@@ -831,7 +831,7 @@ const planchas: Category = {
         {
           id: 'F20',
           name: 'F20',
-          color: 'Rojo - Negro',
+          color: 'Rojo - colors.black',
           photos: [
             '/product/planchas/F20-1.webp'
           ]
@@ -850,7 +850,7 @@ const planchas: Category = {
         {
           id: 'F30',
           name: 'F30',
-          color: 'Azul - Blanco',
+          color: 'Azul - colors.white',
           photos: [
             '/product/planchas/F30-1.webp'
           ]
@@ -888,7 +888,7 @@ const planchas: Category = {
         {
           id: 'F50',
           name: 'F50',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/planchas/F50-1.webp'
           ]
@@ -917,7 +917,7 @@ const licuadoras: Category = {
         {
           id: 'L10',
           name: 'L10',
-          color: 'Blanco',
+          color: 'colors.white',
           photos: [
             '/product/licuadoras/L10-1.webp'
           ]
@@ -937,7 +937,7 @@ const licuadoras: Category = {
         {
           id: 'L20',
           name: 'L20',
-          color: 'Blanco',
+          color: 'colors.white',
           photos: [
             '/product/licuadoras/L20-1.webp',
             '/product/licuadoras/L20-2.webp',
@@ -959,7 +959,7 @@ const licuadoras: Category = {
         {
           id: 'L30',
           name: 'L30',
-          color: 'Blanco',
+          color: 'colors.white',
           photos: [
             '/product/licuadoras/L30-1.webp'
           ]
@@ -979,7 +979,7 @@ const licuadoras: Category = {
         {
           id: 'L40',
           name: 'L40',
-          color: 'Blanco',
+          color: 'colors.white',
           photos: [
             '/product/licuadoras/L40-1.webp',
             '/product/licuadoras/L40-2.webp',
@@ -1011,7 +1011,7 @@ const beauty: Category = {
         {
           id: '603D',
           name: '603D',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/beauty/603D-1.webp'
           ]
@@ -1031,7 +1031,7 @@ const beauty: Category = {
         {
           id: 'HB40',
           name: 'HB40',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/beauty/HB40-1.webp'
           ]
@@ -1051,7 +1051,7 @@ const beauty: Category = {
         {
           id: 'HD008',
           name: 'HD008',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/beauty/HD008-1.webp'
           ]
@@ -1100,7 +1100,7 @@ const batidoras: Category = {
         {
           id: 'B10',
           name: 'B10',
-          color: 'Negro y Blanco',
+          color: 'colors.black y colors.white',
           photos: [
             '/product/batidoras/B10-1.webp'
           ]
@@ -1120,7 +1120,7 @@ const batidoras: Category = {
         {
           id: 'B20',
           name: 'B20',
-          color: 'Negro y Gris',
+          color: 'colors.black y Gris',
           photos: [
             '/product/batidoras/B20-1.webp'
           ]
@@ -1140,7 +1140,7 @@ const batidoras: Category = {
         {
           id: 'B30',
           name: 'B30',
-          color: 'Negro',
+          color: 'colors.black',
           photos: [
             '/product/batidoras/B30-1.webp'
           ]
@@ -1218,7 +1218,7 @@ const bebederos: Category = {
         {
           id: 'W10',
           name: 'W10',
-          color: 'Blanco',
+          color: 'colors.white',
           photos: [
             '/product/bebederos/W10-1.webp'
           ]

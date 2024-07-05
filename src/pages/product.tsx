@@ -68,6 +68,7 @@ export const ProductPage: React.FC = () => {
               photos={
               getAllPhotosOfAllVariants()
               }
+
             />
 
           </div>
