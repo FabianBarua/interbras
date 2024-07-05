@@ -23,14 +23,14 @@ const OtherProductCard: React.FC<OtherProductCardProps> = ({ name, image, url, d
         hidden: { opacity: 0, y: 40 }
       }}
       transition={{ duration: 0.5, delay: delay !== undefined ? delay : 0.5 }}
-      className=' w-full relative h-[30rem] overflow-hidden rounded-[40px]'
+      className=' w-full relative lg:h-[30rem] h-[20rem] overflow-hidden rounded-[40px]'
     >
       <img src={image} alt={name} className=' h-full w-full object-cover' />
 
       <div className='text-center w-full flex flex-col  absolute bottom-5 lg:bottom-10  '>
-        <h2 className=' text-white text-2xl md:text-4xl  mb-2 font-semibold '>
+        <h2 className=' text-white line-clamp-1 text-xl md:text-4xl  lg:mb-2 mb-1 font-semibold  leading-5'>
           {
-            t(name)
+            t(name).split(' ')[0]
           }
         </h2>
         <div className=' w-min mx-auto'>

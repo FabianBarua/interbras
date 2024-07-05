@@ -229,7 +229,7 @@
   },
   "tvs": {
     "id": "tvs",
-    "name": "Televisores",
+    "name": "Televisões",
     "description": "La mejor calidad de imagen y sonido.",
     "shortDescription": "Eficientes y elegantes.",
     "children": {
@@ -397,55 +397,55 @@
   },
   "mixteras": {
     "id": "mixteras",
-    "name": "Mixteras",
+    "name": "Sanduicheiras",
     "description": "Sanduíches perfeitos, sem esforço.",
     "shortDescription": "Sanduíches, sem esforço.",
     "children": {
       "G10": {
         "id": "G10",
-        "name": "Mixtera G10",
+        "name": "Sanduicheira G10",
         "info": {
-          "review": "A Mixtera G10 da Interbras é ideal para transformar ingredientes simples em lanches incríveis. Perfeita para preparar sanduíches deliciosos de forma rápida e prática, garantindo resultados crocantes e saborosos a cada uso.",
+          "review": "A Sanduicheira G10 da Interbras é ideal para transformar ingredientes simples em lanches incríveis. Perfeita para preparar sanduíches deliciosos de forma rápida e prática, garantindo resultados crocantes e saborosos a cada uso.",
           "included": null,
           "specs": "Potência: 750W\nIndicadores: de Ligado e Pronto\nTamanho: Compacta e Fácil de Armazenar\nDesign: Acabamento Elegante"
         }
       },
       "G20": {
         "id": "G20",
-        "name": "Mixtera G20",
+        "name": "Sanduicheira G20",
         "popular": false,
         "info": {
-          "review": "A Mixtera G20 da Interbras é projetada para quem busca conveniência na preparação de sanduíches. Oferece um aquecimento rápido e uniforme para resultados dourados e crocantes, com operação fácil e armazenamento compacto.",
+          "review": "A Sanduicheira G20 da Interbras é projetada para quem busca conveniência na preparação de sanduíches. Oferece um aquecimento rápido e uniforme para resultados dourados e crocantes, com operação fácil e armazenamento compacto.",
           "included": null,
           "specs": "Potência: 750W\nIndicadores: Ligado e Pronto\nTamanho: Compacta e Fácil de Armazenar\nDesign: Acabamento Elegante"
         }
       },
       "G30": {
         "id": "G30",
-        "name": "Mixtera G30",
+        "name": "Sanduicheira G30",
         "popular": false,
         "info": {
-          "review": "A Mixtera G30 da Interbras é perfeita para preparar sanduíches crocantes e quentes rapidamente. Seu design compacto e elegante facilita o uso e armazenamento, proporcionando resultados deliciosos com facilidade.",
+          "review": "A Sanduicheira G30 da Interbras é perfeita para preparar sanduíches crocantes e quentes rapidamente. Seu design compacto e elegante facilita o uso e armazenamento, proporcionando resultados deliciosos com facilidade.",
           "included": null,
           "specs": "Potência: 1400W\nIndicadores: Ligado e Pronto\nTamanho: Compacta e Fácil de Armazenar\nDesign: Acabamento Elegante"
         }
       },
       "G40": {
         "id": "G40",
-        "name": "Mixtera G40",
+        "name": "Sanduicheira G40",
         "popular": false,
         "info": {
-          "review": "A Mixtera 3 em 1 G40 da Interbras é a escolha perfeita para quem busca versatilidade na cozinha. Inclui 3 placas intercambiáveis para preparar diferentes tipos de alimentos: grill, sanduíche e waffle. Ideal para variar suas receitas e obter sempre resultados deliciosos.",
+          "review": "A Sanduicheira 3 em 1 G40 da Interbras é a escolha perfeita para quem busca versatilidade na cozinha. Inclui 3 placas intercambiáveis para preparar diferentes tipos de alimentos: grill, sanduíche e waffle. Ideal para variar suas receitas e obter sempre resultados deliciosos.",
           "included": null,
           "specs": "Potência: 800W\nIndicadores: Ligado e Pronto\nTamanho: Compacta e Fácil de Guardar\nFuncionalidade: 3 em 1: grill, sanduíche e waffle"
         }
       },
       "G50": {
         "id": "G50",
-        "name": "Mixtera G50",
+        "name": "Sanduicheira G50",
         "popular": false,
         "info": {
-          "review": "A Mixtera 4 em 1, G50 da Interbras oferece uma versatilidade inigualável na preparação de lanches. Com 4 placas intercambiáveis, permite preparar diferentes tipos de alimentos: grill, sanduíche, nutty e waffle, garantindo sempre um resultado perfeito e saboroso.",
+          "review": "A Sanduicheira 4 em 1, G50 da Interbras oferece uma versatilidade inigualável na preparação de lanches. Com 4 placas intercambiáveis, permite preparar diferentes tipos de alimentos: grill, sanduíche, nutty e waffle, garantindo sempre um resultado perfeito e saboroso.",
           "included": null,
           "specs": "Potência: 800W\nIndicadores: Ligado e Pronto\nTamanho: Compacta e Fácil de Guardar\nFuncionalidade: 4 em 1: grill, sanduíche, nutty e waffle"
         }
@@ -454,10 +454,10 @@
   },
   "cocinas": {
     "id": "cocinas",
-    "name": "Cocinas",
+    "name": "Cozinhas",
     "description": "Inovação compacta para sua cozinha na mesa.",
     "shortDescription": "Inovação compacta.",
-    "children": [
+    "children": {"C10":
       {
         "id": "C10",
         "name": "Cozinha elétrica C10",
@@ -478,6 +478,7 @@
           }
         ]
       },
+      "C20":
       {
         "id": "C20",
         "name": "Cozinha elétrica C20",
@@ -498,6 +499,7 @@
           }
         ]
       },
+      "C30":
       {
         "id": "C30",
         "name": "Cozinha elétrica C30",
@@ -518,20 +520,20 @@
           }
         ]
       }
-    ]
+    }
   },
   "hervidoras": {
     "id": "hervidoras",
-    "name": "Hervidoras",
+    "name": "Chaleiras",
     "description": "Ideais para qualquer cozinha moderna.",
     "shortDescription": "Seguras e fáceis de usar.",
     "children": {
       "T10": {
         "id": "T10",
-        "name": "Hervidora T10",
+        "name": "Chaleira T10",
         "popular": false,
         "info": {
-          "review": "A Hervidora Elétrica Clássica da Interbras com capacidade de 1.8 litros e 1500W de potência é ideal para qualquer cozinha moderna. Seu design ergonômico e funcional permite um manuseio fácil e seguro. Aquece a água rapidamente, perfeita para preparar chá, café e outras bebidas quentes.",
+          "review": "A Chaleira Elétrica Clássica da Interbras com capacidade de 1.8 litros e 1500W de potência é ideal para qualquer cozinha moderna. Seu design ergonômico e funcional permite um manuseio fácil e seguro. Aquece a água rapidamente, perfeita para preparar chá, café e outras bebidas quentes.",
           "included": null,
           "specs": "Capacidade: 1.8L\nPotência: 1500W\nRápida\nPrática\nVersátil"
         },
@@ -548,10 +550,10 @@
       },
       "T20": {
         "id": "T20",
-        "name": "Hervidora T20",
+        "name": "Chaleira T20",
         "popular": false,
         "info": {
-          "review": "A Hervidora Elétrica T20 da Interbras oferece uma solução rápida e eficiente para aquecer água. Com capacidade de 1.8 litros e potência de 1500W, esta hervidora se destaca por sua durabilidade e design elegante. Mantém o calor por mais tempo, o que a torna perfeita para qualquer lar ou escritório.",
+          "review": "A Chaleira Elétrica T20 da Interbras oferece uma solução rápida e eficiente para aquecer água. Com capacidade de 1.8 litros e potência de 1500W, esta hervidora se destaca por sua durabilidade e design elegante. Mantém o calor por mais tempo, o que a torna perfeita para qualquer lar ou escritório.",
           "included": null,
           "specs": "Capacidade: 1.8L\nPotência: 1500W\nRápida\nPrática\nVersátil\nMantém o calor"
         },
@@ -568,10 +570,10 @@
       },
       "T30": {
         "id": "T30",
-        "name": "Hervidora T30",
+        "name": "Chaleira T30",
         "popular": false,
         "info": {
-          "review": "A Hervidora Elétrica T30 da Interbras oferece uma solução rápida e eficiente para aquecer água. Com capacidade de 1.8 litros e potência de 1500W, esta hervidora se destaca por sua durabilidade e design elegante. Mantém o calor por mais tempo, o que a torna perfeita para qualquer lar ou escritório.",
+          "review": "A Chaleira Elétrica T30 da Interbras oferece uma solução rápida e eficiente para aquecer água. Com capacidade de 1.8 litros e potência de 1500W, esta hervidora se destaca por sua durabilidade e design elegante. Mantém o calor por mais tempo, o que a torna perfeita para qualquer lar ou escritório.",
           "included": null,
           "specs": "Capacidade: 1.8L\nPotência: 1500W\nRápida\nPrática\nVersátil\nMantém o calor"
         },
@@ -618,16 +620,16 @@
   },
   "planchas": {
     "id": "planchas",
-    "name": "Planchas",
-    "description": "Passar roupas perfeito em cada peça.",
-    "shortDescription": "Passar roupas perfeito.",
+    "name": "Ferros de passar",
+    "description": "Passar roupas perfeitas em cada peça.",
+    "shortDescription": "Passar roupas perfeitas.",
     "children": {
       "F10": {
         "id": "F10",
-        "name": "Plancha F10",
+        "name": "Ferro de passar F10",
         "popular": false,
         "info": {
-          "review": "A Plancha a Vapor Elétrica F10 da Interbras foi projetada para facilitar o seu dia a dia. Com um reservatório de água de 270 ml, esta ferro de passar oferece desempenho confiável e eficaz para todas as suas necessidades de passadoria. Sua base de cerâmica garante um deslizamento suave e uniforme, enquanto a função de vapor vertical permite eliminar rugas de roupas penduradas.",
+          "review": "Ferro de passar a Vapor Elétrica F10 da Interbras foi projetada para facilitar o seu dia a dia. Com um reservatório de água de 270 ml, esta ferro de passar oferece desempenho confiável e eficaz para todas as suas necessidades de passadoria. Sua base de cerâmica garante um deslizamento suave e uniforme, enquanto a função de vapor vertical permite eliminar rugas de roupas penduradas.",
           "included": null,
           "specs": "Potência: 1200W\nReservatório de água: 270 ml\nBase: Cerâmica\nFunções: Spray de água, vapor vertical"
         },
@@ -644,10 +646,10 @@
       },
       "F20": {
         "id": "F20",
-        "name": "Plancha F20",
+        "name": "Ferro de passar F20",
         "popular": false,
         "info": {
-          "review": "A Plancha a Vapor Elétrica F20 da Interbras é ideal para quem busca eficiência e conforto ao passar roupas. Com capacidade de reservatório de 270 ml e base de cerâmica, este ferro proporciona resultados excepcionais. Sua função de vapor vertical é perfeita para eliminar rugas em roupas penduradas, oferecendo versatilidade no uso.",
+          "review": "Ferro de passar a Vapor Elétrica F20 da Interbras é ideal para quem busca eficiência e conforto ao passar roupas. Com capacidade de reservatório de 270 ml e base de cerâmica, este ferro proporciona resultados excepcionais. Sua função de vapor vertical é perfeita para eliminar rugas em roupas penduradas, oferecendo versatilidade no uso.",
           "included": null,
           "specs": "Potência: 1200W\nReservatório de água: 270 ml\nBase: Cerâmica\nFunções: Spray de água, vapor vertical"
         },
@@ -664,10 +666,10 @@
       },
       "F30": {
         "id": "F30",
-        "name": "Plancha F30",
+        "name": "Ferro de passar F30",
         "popular": false,
         "info": {
-          "review": "A Plancha a Vapor Elétrica F30 da Interbras oferece um desempenho excepcional com a força do vapor. Com controle de vapor variável, permite ajustar a quantidade de vapor conforme suas necessidades. Seu reservatório de água de 270 ml e a base de cerâmica garantem um deslizamento suave e resultados de alta qualidade em cada passada.",
+          "review": "Ferro de passar a Vapor Elétrica F30 da Interbras oferece um desempenho excepcional com a força do vapor. Com controle de vapor variável, permite ajustar a quantidade de vapor conforme suas necessidades. Seu reservatório de água de 270 ml e a base de cerâmica garantem um deslizamento suave e resultados de alta qualidade em cada passada.",
           "included": null,
           "specs": "Potência: 1200W\nReservatório de água: 270 ml\nBase: Cerâmica\nFunções: Controle de vapor variável, spray de água, vapor vertical"
         },
@@ -684,10 +686,10 @@
       },
       "F40": {
         "id": "F40",
-        "name": "Plancha F40",
+        "name": "Ferro de passar F40",
         "popular": false,
         "info": {
-          "review": "A Plancha a Vapor Elétrica F40 da Interbras é equipada com uma base de cerâmica de alta qualidade que proporciona um deslizamento suave e eficiente. Seu design ergonômico e a função de vapor vertical permitem um uso confortável e versátil. Com potência de 2200W, este ferro oferece um desempenho superior para todas as suas necessidades de passadoria.",
+          "review": "Ferro de passar a Vapor Elétrica F40 da Interbras é equipada com uma base de cerâmica de alta qualidade que proporciona um deslizamento suave e eficiente. Seu design ergonômico e a função de vapor vertical permitem um uso confortável e versátil. Com potência de 2200W, este ferro oferece um desempenho superior para todas as suas necessidades de passadoria.",
           "included": null,
           "specs": "Potência: 2200W\nReservatório de água: 330 ml\nBase: Cerâmica com ponta de precisão dupla\nFunções: Spray de água, vapor vertical, golpe de vapor"
         },
@@ -704,10 +706,10 @@
       },
       "F50": {
         "id": "F50",
-        "name": "Plancha F50",
+        "name": "Ferro de passar F50",
         "popular": false,
         "info": {
-          "review": "A Plancha a Vapor Elétrica F50 da Interbras é perfeita para quem busca um desempenho excepcional ao passar roupas. Com um reservatório de água de 270 ml e base de cerâmica, este ferro garante um deslizamento suave e resultados impecáveis. Sua capacidade de vapor contínuo e funções avançadas tornam-no ideal para eliminar rugas de forma eficiente.",
+          "review": "Ferro de passar a Vapor Elétrica F50 da Interbras é perfeita para quem busca um desempenho excepcional ao passar roupas. Com um reservatório de água de 270 ml e base de cerâmica, este ferro garante um deslizamento suave e resultados impecáveis. Sua capacidade de vapor contínuo e funções avançadas tornam-no ideal para eliminar rugas de forma eficiente.",
           "included": null,
           "specs": "Potência: 2200W\nReservatório de água: 270 ml\nBase: Cerâmica\nFunções: Spray de água, vapor vertical, vapor contínuo"
         },
