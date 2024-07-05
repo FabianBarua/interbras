@@ -71,8 +71,14 @@
   "primaryButton":{ 
     "text": "Ver más"
   },
+  "moreProducts": "Más productos",
   "footer":{
     "copy": "Copyright © 2024 Interbras. Todos los derechos reservados."
+  },
+  "productPage":{
+    "review": "Descripcion",
+    "whatAreIncluded": "¿Que hay en la caja?",
+    "specs": "Especificaciones"
   }
 }
 

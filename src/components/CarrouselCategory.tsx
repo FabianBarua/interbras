@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 export const CarrouselCategory: React.FC = () => {
   const { categories } = useDataStore()
   const { t } = useTranslation('products')
-
+  const { t: t2 } = useTranslation('global')
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true
   }, [Autoplay()])
@@ -71,7 +71,7 @@ export const CarrouselCategory: React.FC = () => {
             `
           }
           >
-            {item.name}
+            {t(item.name)}
           </h1>
           <p className={
             `
@@ -82,7 +82,7 @@ export const CarrouselCategory: React.FC = () => {
             `
           }
           >
-            {item.shortDescription}
+            {t(item.shortDescription)}
           </p>
           <Link
             to={`/product/${item.id}`}
@@ -100,8 +100,9 @@ export const CarrouselCategory: React.FC = () => {
                 `
               }
           >
-            Más información
-
+            {
+            t2('moreProducts')
+            }
           </Link>
         </div>
 

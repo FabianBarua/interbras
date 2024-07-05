@@ -73,7 +73,7 @@ export const ProductosHeader: React.FC<ProductosHeaderProps> = ({
                     clicked={clicked} to={url.url}
                     key={'id-header-' + url.name}
                   >
-                    {url.name}
+                    {t2(url.name)}
                   </LinkItem>
                 ))
               }
