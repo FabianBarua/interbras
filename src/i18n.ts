@@ -13,7 +13,7 @@ i18next.init({
     es: { global: es, products: productsEs },
     pt: { global: pt, products: productsPt }
   },
-  lng: 'es'
+  lng: 'pt'
 })
 
 export default i18next
