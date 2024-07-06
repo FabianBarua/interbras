@@ -9,6 +9,7 @@ import { PhotoViewer } from '../components/PhotoView'
 import { NotFound } from '../components/NotFound'
 import { ProductCard } from '../components/ProductCard'
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet'
 
 export const ProductPage: React.FC = () => {
   const { id } = useParams<{ id: string }>()
@@ -54,6 +55,41 @@ export const ProductPage: React.FC = () => {
 
   return (
     <>
+
+      <Helmet>
+
+        <title>{name + ' - Interbras'}</title>
+        <meta name='description' content={description} />
+        <meta property='og:title' content={name + ' - Interbras'} />
+        <meta property='og:description' content={description} />
+        <meta property='og:url' content={window.location.href} />
+        <meta property='og:type' content='website' />
+        <meta property='og:site_name' content='Interbras' />
+        <meta property='og:locale' content='pt_BR' />
+        <meta property='og:locale:alternate' content='en_US' />
+        <meta property='og:locale:alternate' content='es_ES' />
+        <meta property='og:locale:alternate' content='fr_FR' />
+        <meta property='og:locale:alternate' content='it_IT' />
+        <meta property='og:locale:alternate' content='de_DE' />
+        <meta property='og:locale:alternate' content='nl_NL' />
+        <meta property='og:locale:alternate' content='ru_RU' />
+        <meta property='og:locale:alternate' content='ja_JP' />
+        <meta property='og:locale:alternate' content='ko_KR' />
+        <meta property='og:locale:alternate' content='zh_CN' />
+        <meta property='og:locale:alternate' content='zh_TW' />
+        <meta property='og:locale:alternate' content='hi_IN' />
+        <meta property='og:locale:alternate' content='ar_SA' />
+        <meta property='og:locale:alternate' content='he_IL' />
+        <meta property='og:locale:alternate' content='id_ID' />
+        <meta property='og:locale:alternate' content='th_TH' />
+        <meta property='og:locale:alternate' content='tr_TR' />
+        <meta property='og:locale:alternate' content='vi_VN' />
+        <meta property='og:locale:alternate' content='pl_PL' />
+        <meta property='og:locale:alternate' content='cs_CZ' />
+        <meta property='og:locale:alternate' content='sk_SK' />
+        <meta property='og:locale:alternate' content='hu_HU' />
+      </Helmet>
+
       <motion.main
         className=' w-full flex flex-col mx-auto flex-1 pt-16'
         initial={{ opacity: 0 }}
@@ -76,14 +112,14 @@ export const ProductPage: React.FC = () => {
             <h1 className=' text-4xl font-semibold'>
               {name}
             </h1>
-            <p className=' text-lg  mt-1 font-light leading-5'>
+            <h2 className=' text-lg  mt-1 font-light leading-5'>
               {description.split('\n').map((line, index) => (
                 <span key={index}>
                   {line}
                   <br />
                 </span>
               ))}
-            </p>
+            </h2>
             <h3 className=' mt-4  text-lg font-medium text-black/3'>
               {
               t('whatDoYouWant')

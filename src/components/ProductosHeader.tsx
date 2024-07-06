@@ -50,9 +50,9 @@ export const ProductosHeader: React.FC<ProductosHeaderProps> = ({
       <div className=' mt-5 lg:mt-auto mx-3  lg:mx-0 text-white flex lg:my-auto lg:flex-row flex-col gap-6 '>
         <img src='/productosHeader.webp' className='  h-64 ' alt='Arrow' />
         <div className=' flex flex-col items-left'>
-          <h1 className='text-lg  font-bold'>
+          <h3 className='text-lg  font-bold'>
             {t('header.products.text')}
-          </h1>
+          </h3>
           <div className=' flex gap-16 mt-2'>
             <div className=' flex-col flex'>
               {

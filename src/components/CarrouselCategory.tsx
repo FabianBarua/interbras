@@ -36,10 +36,10 @@ export const CarrouselCategory: React.FC = () => {
           `
         }
       >
-        <div className=' flex w-full'>
+        <ul className=' flex w-full'>
           {
     categories.map((item, index) => (
-      <div
+      <li
         key={item.id.toString() + index.toString()}
         className={
           `
@@ -62,7 +62,7 @@ export const CarrouselCategory: React.FC = () => {
         }
         >
 
-          <h1 className={
+          <p className={
             `
              text-2xl transition-colors font-medium text-center 
              ${
@@ -72,7 +72,7 @@ export const CarrouselCategory: React.FC = () => {
           }
           >
             {t(item.name)}
-          </h1>
+          </p>
           <p className={
             `
             ${
@@ -106,11 +106,11 @@ export const CarrouselCategory: React.FC = () => {
           </Link>
         </div>
 
-      </div>
+      </li>
     )
     )
     }
-        </div>
+        </ul>
 
       </div>
     </>
