@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { PrimaryButton } from './PrimaryButton'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 const mixers = [
   {
@@ -58,8 +59,8 @@ export const MixSection: React.FC = () => {
         </div>
         <div className=' scale-50 xl:scale-100 relative  w-[200%]  xl:w-full -translate-y-5   h-full'>
           {mixers.map((mixer) => (
-            <a
-              href={mixer.url}
+            <Link
+              to={mixer.url}
               key={mixer.id} className={
               `
               absolute transition-all rounded-[40px]  shadow-xl  flex justify-center items-center size-64 bg-white hover:bg-interbrasGreen-500 
@@ -73,7 +74,7 @@ export const MixSection: React.FC = () => {
                 alt={mixer.tittle}
                 className=' rounded-[40px] '
               />
-            </a>
+            </Link>
           ))}
         </div>
       </motion.section>
