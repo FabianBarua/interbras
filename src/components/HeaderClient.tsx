@@ -82,7 +82,10 @@ export const Header: React.FC = (): JSX.Element => {
               <button>{t('header.products.title')}</button>
             </li>
             <li>
-              <Link className=' cursor-pointer' to='/'>
+              <Link
+                aria-label='Logo Interbras'
+                className=' cursor-pointer' to='/'
+              >
                 <Logo />
               </Link>
             </li>

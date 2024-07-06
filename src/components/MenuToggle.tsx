@@ -15,7 +15,10 @@ const Path = (props: any): JSX.Element => (
 )
 
 export const MenuToggle = ({ toggle }: MenuToggleProps): JSX.Element => (
-  <button className='left-[20px] top-[20px] size-[40px] flex justify-center items-center rounded-full   absolute  ' onClick={toggle}>
+  <button
+    aria-label='Toggle Menu'
+    className='left-[20px] top-[20px] size-[40px] flex justify-center items-center rounded-full   absolute  ' onClick={toggle}
+  >
     <svg className=' translate-y-[1px]' width='19' height='19' viewBox='0 0 23 23'>
       <Path
         variants={{
