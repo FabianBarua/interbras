@@ -10,7 +10,6 @@ import { NotFound } from '../components/NotFound'
 import { ProductCard } from '../components/ProductCard'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet'
-import { useTranslateStore } from '../shared/stores/useTranslate'
 
 export const ProductPage: React.FC = () => {
   const { id } = useParams<{ id: string }>()
@@ -29,7 +28,6 @@ export const ProductPage: React.FC = () => {
   const [childSelected, setChildSelected] = useState<Children>(productSelected.children[0])
 
   const location = useLocation()
-  const lang = useTranslateStore((state) => state.lang)
 
   useEffect(() => {
     setIsOpenShowMore(false)
@@ -67,18 +65,6 @@ export const ProductPage: React.FC = () => {
         <meta property='og:url' content={window.location.href} />
         <meta property='og:type' content='website' />
         <meta property='og:site_name' content='Interbras' />
-        {
-          // lang on html tag
-        }
-        <html lang={
-          lang
-        }
-        />
-        <meta
-          property='og:locale' content={
-          lang === 'es' ? 'es_ES' : lang === 'pt' ? 'pt_BR' : 'en_US'
-        }
-        />
         <meta property='og:locale:alternate' content='en_US' />
         <meta property='og:locale:alternate' content='es_ES' />
         <meta property='og:locale:alternate' content='fr_FR' />
