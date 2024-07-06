@@ -33,7 +33,7 @@ export const PhotoViewer: React.FC<PhotoViewProps> = ({
         >
           <img
             ref={ref as React.LegacyRef<HTMLImageElement>}
-            src={photos[0]} alt={name} className=' object-contain p-7  size-[400px] w-full min-w-[400px] lg:w-[402px]  bg-white rounded-3xl'
+            src={photos[0]} alt={name} className=' object-contain p-7  size-[400px] w-full lg:min-w-[400px] lg:w-[402px]  bg-white rounded-3xl'
           />
         </PhotoView>
 
