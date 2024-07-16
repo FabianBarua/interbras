@@ -15,7 +15,6 @@ export const PhotoViewer: React.FC<PhotoViewProps> = ({
   const ref = useRef<HTMLDivElement>(null)
   // make onlcick to show more photos
   const handleClick = (): void => {
-    console.log('show more photos')
     ref.current?.click()
   }
 

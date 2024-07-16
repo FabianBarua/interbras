@@ -171,7 +171,7 @@ export const ProductPage: React.FC = () => {
                 className=' z-20  transition-all  text-nowrap flex gap-3 justify-center items-center text-lg rounded-full absolute  left-1/2 -translate-x-1/2  border-2 bg-interbrasGreen-200 border-interbrasGreen-500 h-9  px-5  text-interbrasGreen-500'
               >
 
-                {t('showMore.show')} {isOpenShowMore ? t('showMore.showMore') : t('showMore.showLess')}
+                {t('showMore.show')} {!isOpenShowMore ? t('showMore.showMore') : t('showMore.showLess')}
 
                 <DownArrow
                   className='  size-8 inline transition-all fill-interbrasGreen-500'
