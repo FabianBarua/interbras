@@ -79,5 +79,15 @@
     "review": "Descrição",
     "whatAreIncluded": "O que há na caixa?",
     "specs": "Especificações"
+  },
+  "alert": {
+    "info": {
+      "download": "Baixar aplicativo",
+      "no": "Não, obrigado"
+    },
+    "scooters": {
+      "title": "Baixar o aplicativo",
+      "message": "Você está tentando baixar o aplicativo de scooters? O app está disponível para versões 8.5 e 10.5."
+    }
   }
 }
