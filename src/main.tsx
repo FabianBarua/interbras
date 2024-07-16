@@ -11,6 +11,7 @@ import i18next from './i18n.ts'
 import { useTranslateStore } from './shared/stores/useTranslate.ts'
 import { ProductPage } from './pages/product.tsx'
 import { AnimatePresence } from 'framer-motion'
+import { NotFound } from './components/NotFound.tsx'
 
 const AllRoutes: React.FC = () => {
   const location = useLocation()
@@ -30,6 +31,10 @@ const AllRoutes: React.FC = () => {
         <Route element={<ClientLayout />}>
           <Route element={<ProductPage />} path='/product/:id' />
           <Route element={<Home />} path='/' />
+          <Route
+            path='*'
+            element={<NotFound />}
+          />
         </Route>
       </Routes>
     </AnimatePresence>

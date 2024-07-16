@@ -89,5 +89,11 @@
       "title": "Baixar o aplicativo",
       "message": "Você está tentando baixar o aplicativo de scooters? O app está disponível para versões 8.5 e 10.5."
     }
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "message": "Desculpe, a página que você procura não existe. Aqui estão alguns links que podem ajudar:",
+    "goBack": "Voltar",
+    "home": "Ir para o início"
   }
 }
