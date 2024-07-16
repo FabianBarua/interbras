@@ -5,6 +5,7 @@ import { DondeEstamos } from './DondeEstamos'
 import { ProductosHeader } from './ProductosHeader'
 import { QuienesSomos } from './QuienesSomos'
 import { SwitchLanguage } from './SwitchLanguage'
+import { useTranslation } from 'react-i18next'
 
 const variants = {
   open: {
@@ -39,7 +40,7 @@ const variantsItems = {
 
 export const Navigation: React.FC<NavigationProps> = ({ isOpen, toggleOpen }) => {
   const [selected, setSelected] = React.useState<string | null>(itemIds[0].id)
-
+  const { t } = useTranslation('global')
   return (
     <>
       <motion.div
@@ -50,12 +51,14 @@ export const Navigation: React.FC<NavigationProps> = ({ isOpen, toggleOpen }) =>
   }
         className=' absolute top-16 left-4 w-[calc(100dvw-2rem)]  flex flex-col items-center justify-center h-auto ' variants={variants}
       >
-        <ul className=' flex gap-3 text-xl w-96 h-min flex-wrap items-center justify-center'>
+        <ul className=' flex gap-3 text-xl w-80 h-min flex-wrap items-center justify-center'>
           {itemIds.map(i => (
             <MenuItem
               key={i.id}
               selected={selected === i.id}
-              title={i.title}
+              title={
+                t(i.title)
+              }
               variants={variantsItems}
               onClick={
                 () => setSelected(i.id)
@@ -104,12 +107,12 @@ export const Navigation: React.FC<NavigationProps> = ({ isOpen, toggleOpen }) =>
 const itemIds = [
   {
     id: 'headerSectionMobile1',
-    title: 'Donde estamos',
+    title: 'header.whereWeAre.title',
     Component: DondeEstamos
   },
   {
     id: 'headerSectionMobile2',
-    title: 'Productos',
+    title: 'header.products.title',
     Component: ({ toggle }: { toggle: Cycle }) => {
       return (
         <ProductosHeader
@@ -124,7 +127,7 @@ const itemIds = [
   },
   {
     id: 'headerSectionMobile3',
-    title: 'Quienes somos',
+    title: 'header.whoWeAre.title',
     Component: QuienesSomos
   }
 ]
