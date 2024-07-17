@@ -10,6 +10,8 @@ import { NotFound } from '../components/NotFound'
 import { ProductCard } from '../components/ProductCard'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet'
+import { DownloadAlert } from '../components/DownloadAlert'
+import { isApple, ScooterAndroidUrl, ScooterIosUrl } from '../shared/utils/constants'
 
 export const ProductPage: React.FC = () => {
   const { id } = useParams<{ id: string }>()
@@ -49,12 +51,45 @@ export const ProductPage: React.FC = () => {
   }
 
   const { t } = useTranslation('products')
+  const { t: t2 } = useTranslation('global')
 
   const name = t(productSelected.name)
   const description = t(productSelected.description)
 
+  const isScooterPage = id === 'scooters'
+
   return (
     <>
+
+      {
+        isScooterPage
+          ? (
+            <DownloadAlert
+              Title={() => (
+                <p className=' flex items-center gap-3'>
+                  <img
+                    src='/emojis/scooter.png'
+                    alt='Download App'
+                    className=' size-5 '
+                  />
+                  {
+                  t2('alert.scooters.title')
+                }
+                </p>
+              )}
+              message={
+              t2('alert.scooters.message')
+            }
+              link={
+              (isApple())
+                ? ScooterIosUrl
+                : ScooterAndroidUrl
+            }
+            />
+
+            )
+          : null
+      }
 
       <Helmet>
 

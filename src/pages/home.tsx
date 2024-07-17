@@ -11,19 +11,12 @@ import { motion } from 'framer-motion'
 import { DownloadAlert } from '../components/DownloadAlert.tsx'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet'
+import { isApple, ScooterAndroidUrl, ScooterIosUrl } from '../shared/utils/constants.ts'
 
 // verify Android or iOS
 
 export const Home: React.FC = () => {
-  const isApple: () => boolean = () => {
-    const ua = navigator.userAgent.toLowerCase()
-    return ua.includes('iphone') || ua.includes('ipad') || ua.includes('ipod') || ua.includes('mac')
-  }
-
   const { t } = useTranslation('global')
-
-  const AndroidUrl = 'https://html5.zhouchangshu.com/apk/huihao.apk'
-  const IosUrl = 'https://apps.apple.com/es/app/id1509887773'
 
   return (
     <>
@@ -56,8 +49,8 @@ export const Home: React.FC = () => {
           }
           link={
             (isApple())
-              ? IosUrl
-              : AndroidUrl
+              ? ScooterIosUrl
+              : ScooterAndroidUrl
           }
         />
 
