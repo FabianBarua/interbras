@@ -10,6 +10,7 @@ import { OtherProductsSection } from '../components/OtherProductsSection.tsx'
 import { motion } from 'framer-motion'
 import { DownloadAlert } from '../components/DownloadAlert.tsx'
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet'
 
 // verify Android or iOS
 
@@ -25,6 +26,11 @@ export const Home: React.FC = () => {
 
   return (
     <>
+
+      <Helmet>
+        <title>Interbras</title>
+      </Helmet>
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
