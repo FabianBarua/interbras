@@ -30,6 +30,7 @@ export const DownloadAlert: React.FC<DownloadAlertProps> = ({
       <div className='flex items-center justify-end mt-4 gap-x-4 shrink-0'>
         <a
           href={link}
+          about='_blank'
           className='text-xs text-gray-800 underline transition-colors duration-300  hover:text-gray-600 focus:outline-none'
         >
           {

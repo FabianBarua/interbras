@@ -15,13 +15,14 @@ import { Helmet } from 'react-helmet'
 // verify Android or iOS
 
 export const Home: React.FC = () => {
-  const isAndroid: () => boolean = () => {
+  const isApple: () => boolean = () => {
     const ua = navigator.userAgent.toLowerCase()
-    return ua.includes('android')
+    return ua.includes('iphone') || ua.includes('ipad') || ua.includes('ipod') || ua.includes('mac')
   }
+
   const { t } = useTranslation('global')
 
-  const AndroidUrl = 'http://html5.zhouchangshu.com/apk/huihao.apk'
+  const AndroidUrl = 'https://html5.zhouchangshu.com/apk/huihao.apk'
   const IosUrl = 'https://apps.apple.com/es/app/id1509887773'
 
   return (
@@ -54,9 +55,9 @@ export const Home: React.FC = () => {
             t('alert.scooters.message')
           }
           link={
-            (isAndroid())
-              ? AndroidUrl
-              : IosUrl
+            (isApple())
+              ? IosUrl
+              : AndroidUrl
           }
         />
 
