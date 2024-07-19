@@ -3,5 +3,5 @@ export const isApple: () => boolean = () => {
   return ua.includes('iphone') || ua.includes('ipad') || ua.includes('ipod') || ua.includes('mac')
 }
 
-export const ScooterAndroidUrl = 'https://github.com/kingston-developer/interbrasApps/raw/main/scooter.apk'
+export const ScooterAndroidUrl = 'https://github.com/kingston-developer/interbrasApps/raw/main/scooter-interbras.apk'
 export const ScooterIosUrl = 'https://apps.apple.com/es/app/id1509887773'
