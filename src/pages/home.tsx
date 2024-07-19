@@ -57,9 +57,9 @@ export const Home: React.FC = () => {
         <ProductsAnimated />
         <main className='  sm:w-[80%] w-[90%] flex flex-col gap-6 mx-auto'>
 
-          <AirFryersSection />
-
           <AnimatedSection />
+
+          <AirFryersSection />
 
           <MixSection />
 
