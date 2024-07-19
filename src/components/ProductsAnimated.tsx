@@ -73,9 +73,9 @@ const products: ProductItemHome[][] =
       isMagic: false
     },
     {
-      name: 'licuadora',
-      url: '/product/licuadoras',
-      photo: '/home/7.webp',
+      name: 'scooters',
+      url: '/product/scooters',
+      photo: '/home/14.webp',
       isMagic: false
     }
   ],
@@ -83,8 +83,8 @@ const products: ProductItemHome[][] =
 
     {
       name: 'hervidoras',
-      url: '/product/hervidoras',
-      photo: '/home/13.webp',
+      url: '/product/aires',
+      photo: '/home/15.webp',
       isMagic: false
     },
     {
@@ -122,9 +122,9 @@ const products: ProductItemHome[][] =
   ],
   [
     {
-      name: 'airfryer',
-      url: '/product/airfryer',
-      photo: '/home/3.webp',
+      name: 'beauty',
+      url: '/product/beauty',
+      photo: '/home/17.webp',
       isMagic: false
     },
     {
@@ -134,9 +134,9 @@ const products: ProductItemHome[][] =
       isMagic: false
     },
     {
-      name: 'airfryer',
-      url: '/product/airfryer',
-      photo: '/home/6.webp',
+      name: 'cocinas',
+      url: '/product/cocinas',
+      photo: '/home/18.webp',
       isMagic: false
     }
   ],
@@ -149,8 +149,8 @@ const products: ProductItemHome[][] =
     },
     {
       name: 'airfryer',
-      url: '/product/airfryer',
-      photo: '/home/1.webp',
+      url: '/product/tvs',
+      photo: '/home/16.webp',
       isMagic: false
     }
   ]
