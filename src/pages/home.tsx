@@ -10,8 +10,6 @@ import { OtherProductsSection } from '../components/OtherProductsSection.tsx'
 import { motion } from 'framer-motion'
 import { Helmet } from 'react-helmet'
 
-// verify Android or iOS
-
 export const Home: React.FC = () => {
   return (
     <>

@@ -60,7 +60,6 @@ export const Header: React.FC = (): JSX.Element => {
 
   return (
     <>
-
       <header
         id='header-client'
         className={
@@ -90,9 +89,9 @@ export const Header: React.FC = (): JSX.Element => {
               </Link>
             </li>
             <li className='  lg:block hidden'>
-              <Link to='/'>
+              <Link to='/downloads'>
                 <p>
-                  {t('header.home')}
+                  {t('header.download')}
                 </p>
               </Link>
             </li>

@@ -59,9 +59,16 @@ export const Navigation: React.FC<NavigationProps> = ({ isOpen, toggleOpen }) =>
               title={
                 t(i.title)
               }
+              link={i.link}
               variants={variantsItems}
               onClick={
-                () => setSelected(i.id)
+                () => {
+                  if (i.link !== undefined) {
+                    toggleOpen()
+                  }
+
+                  setSelected(i.id)
+                }
               }
             />
           ))}
@@ -87,9 +94,10 @@ export const Navigation: React.FC<NavigationProps> = ({ isOpen, toggleOpen }) =>
                     transition={{ duration: 0.3 }}
                     key={i.id}
                   >
-                    <i.Component
-                      toggle={toggleOpen}
-                    />
+
+                    {
+                      (i.Component != null) && <i.Component toggle={toggleOpen} />
+}
 
                   </motion.div>
                 )
@@ -129,5 +137,10 @@ const itemIds = [
     id: 'headerSectionMobile3',
     title: 'header.whoWeAre.title',
     Component: QuienesSomos
+  },
+  {
+    id: 'headerSectionMobile4',
+    title: 'header.download',
+    link: '/downloads'
   }
 ]
