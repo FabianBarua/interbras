@@ -83,6 +83,14 @@
   html::-webkit-scrollbar, body::-webkit-scrollbar {
     display: none;  /* Chrome, Safari y Opera */
   }
+
+  .hideScrollBar {
+    -ms-overflow-style: none;  /* IE y Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+  .hideScrollBar::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari y Opera */
+  }
   
   .mask {
 		mask-image: linear-gradient(transparent 10%, black 100%);

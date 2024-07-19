@@ -11,7 +11,11 @@ import { ProductCard } from '../components/ProductCard'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet'
 import { DownloadAlert } from '../components/DownloadAlert'
-import { isApple, ScooterAndroidUrl, ScooterIosUrl } from '../shared/utils/constants'
+import {
+  isApple,
+  ScooterAndroidUrl,
+  ScooterIosUrl
+} from '../shared/utils/constants'
 
 export const ProductPage: React.FC = () => {
   const { id } = useParams<{ id: string }>()
@@ -26,14 +30,17 @@ export const ProductPage: React.FC = () => {
     return <NotFound />
   }
 
-  const [isOpenShowMore, setIsOpenShowMore] = useState<boolean>(false)
-  const [childSelected, setChildSelected] = useState<Children>(productSelected.children[0])
+  interface scroll {
+    scrollY: number
+  }
 
-  const location = useLocation()
+  const [scrolling, setScrolling] = useState<scroll>({
+    scrollY: 0
+  })
 
-  useEffect(() => {
-    setIsOpenShowMore(false)
-  }, [location])
+  const [childSelected, setChildSelected] = useState<Children>(
+    productSelected.children[0]
+  )
 
   useEffect(() => {
     setChildSelected(productSelected.children[0])
@@ -45,8 +52,7 @@ export const ProductPage: React.FC = () => {
       variant.photos.forEach((photo) => {
         photos.push(photo)
       })
-    }
-    )
+    })
     return photos
   }
 
@@ -60,39 +66,26 @@ export const ProductPage: React.FC = () => {
 
   return (
     <>
-
-      {
-        isScooterPage
-          ? (
-            <DownloadAlert
-              Title={() => (
-                <p className=' flex items-center gap-3'>
-                  <img
-                    src='/emojis/scooter.png'
-                    alt='Download App'
-                    className=' size-5 '
-                  />
-                  {
-                  t2('alert.scooters.title')
-                }
-                </p>
-              )}
-              message={
-              t2('alert.scooters.message')
-            }
-              link={
-              (isApple())
-                ? ScooterIosUrl
-                : ScooterAndroidUrl
-            }
-            />
-
-            )
-          : null
-      }
+      {isScooterPage
+        ? (
+          <DownloadAlert
+            Title={() => (
+              <p className=' flex items-center gap-3'>
+                <img
+                  src='/emojis/scooter.png'
+                  alt='Download App'
+                  className=' size-5 '
+                />
+                {t2('alert.scooters.title')}
+              </p>
+            )}
+            message={t2('alert.scooters.message')}
+            link={isApple() ? ScooterIosUrl : ScooterAndroidUrl}
+          />
+          )
+        : null}
 
       <Helmet>
-
         <title>{name + ' - Interbras'}</title>
         <meta name='description' content={description} />
         <meta property='og:title' content={name + ' - Interbras'} />
@@ -132,21 +125,14 @@ export const ProductPage: React.FC = () => {
       >
         <div className=' sm:w-[60%] w-[90%] flex lg:flex-row flex-col justify-center gap-10  mx-auto '>
           <div className=' no-select '>
-
             <PhotoViewer
               key={childSelected.name}
               name={name}
-              photos={
-              getAllPhotosOfAllVariants()
-              }
-
+              photos={getAllPhotosOfAllVariants()}
             />
-
           </div>
           <div className='  flex-1 w-full '>
-            <h1 className=' text-4xl font-semibold'>
-              {name}
-            </h1>
+            <h1 className=' text-4xl font-semibold'>{name}</h1>
             <h2 className=' text-lg  mt-1 font-light leading-5'>
               {description.split('\n').map((line, index) => (
                 <span key={index}>
@@ -156,64 +142,49 @@ export const ProductPage: React.FC = () => {
               ))}
             </h2>
             <h3 className=' mt-4  text-lg font-medium text-black/3'>
-              {
-              t('whatDoYouWant')
-            }
+              {t('whatDoYouWant')}
             </h3>
-            <div className=' relative mt-3'>
-              <div
-                style={
-              {
-                height: isOpenShowMore
-                  ? (105 * productSelected.children.length).toString() + 'px'
-                  : '23rem',
-                overflow: 'hidden'
-              }
-            }
-                className=' transition-all w-full  flex flex-col gap-1 relative'
-              >
-                {
-              productSelected.children.map((child, index) => (
 
-                <ProductCard
-                  child={child} key={index}
-                  active={childSelected === child}
-                  change={(child) => {
-                    setChildSelected(child)
-                  }}
-                />
-              ))
-            }
-                <div
-                  style={
-                {
-                  height: isOpenShowMore ? '0px' : '80px'
+            <div className='  relative mt-3'>
+              <div
+                onScrollCapture={
+                  (e) => {
+                    setScrolling({
+                      scrollY: e.currentTarget.scrollTop
+                    })
+                  }
                 }
-              }
-                  className=' w-full h-20 mask bottom-0 absolute transition-all z-10 pointer-events-none bg-[#f2f2f2]'
-                />
+                style={{
+                  height: '23rem',
+                  overflow: 'auto'
+                }}
+                className='hideScrollBar transition-all w-full  flex flex-col gap-1 relative'
+              >
+                {productSelected.children.map((child, index) => (
+                  <ProductCard
+                    child={child}
+                    key={index}
+                    active={childSelected === child}
+                    change={(child) => {
+                      setChildSelected(child)
+                    }}
+                  />
+                ))}
               </div>
 
-              <button
-                onClick={
-                () => setIsOpenShowMore(!isOpenShowMore)
-              }
-                style={
-                {
-                  bottom: isOpenShowMore ? '-3rem' : '0rem',
-                  display: productSelected.children.length > 3 ? 'block' : 'none'
-                }
-              }
-                className=' z-20  transition-all  text-nowrap flex gap-3 justify-center items-center text-lg rounded-full absolute  left-1/2 -translate-x-1/2  border-2 bg-interbrasGreen-200 border-interbrasGreen-500 h-9  px-5  text-interbrasGreen-500'
-              >
+              <div
+                style={{
+                  height: scrolling.scrollY < 348 ? '40px' : '0px'
+                }}
+                className=' w-full h-20 mask  bottom-0 absolute transition-all z-10 pointer-events-none bg-[#f2f2f2] '
+              />
+              <div
+                style={{
+                  height: scrolling.scrollY > 0 ? '40px' : '0px'
 
-                {t('showMore.show')} {!isOpenShowMore ? t('showMore.showMore') : t('showMore.showLess')}
-
-                <DownArrow
-                  className='  size-8 inline transition-all fill-interbrasGreen-500'
-                  style={{ transform: isOpenShowMore ? 'rotate(180deg)' : '' }}
-                />
-              </button>
+                }}
+                className=' w-full h-20 mask top-0 absolute transition-all z-10 rotate-180 pointer-events-none bg-[#f2f2f2]'
+              />
             </div>
           </div>
         </div>
