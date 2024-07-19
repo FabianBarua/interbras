@@ -134,6 +134,7 @@ export const ProductPage: React.FC = () => {
           <div className=' no-select '>
 
             <PhotoViewer
+              key={childSelected.name}
               name={name}
               photos={
               getAllPhotosOfAllVariants()
