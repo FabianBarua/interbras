@@ -36,29 +36,35 @@ export const PhotoViewer: React.FC<PhotoViewProps> = ({
           />
         </PhotoView>
 
-        <div className=' flex gap-[6px] overflow-hidden w-full mt-2'>
+        <div className=' flex gap-[6px] overflow-auto w-full mt-2'>
           {
             viewPhotos?.slice(0, 3)
               .map((photo, index) => (
-                <PhotoView
-                  key={
+                <div
+                  key={index}
+                  className=' cursor-pointer size-24 justify-center items-center flex bg-white rounded-3xl border-2 hover:bg-neutral-200 text-neutral-500 p-2'
+                >
+
+                  <PhotoView
+                    key={
                     photos[0] + '-photo-' + index.toString()
                   }
-                  src={photo}
-                >
-                  <img
                     src={photo}
-                    alt={name}
-                    className='object-contain p-2 size-24 rounded-3xl border-2 bg-white hover:bg-neutral-200 transition-colors cursor-pointer '
-                  />
-                </PhotoView>
+                  >
+                    <img
+                      src={photo}
+                      alt={name}
+                      className=' size-24 object-contain'
+                    />
+                  </PhotoView>
+                </div>
               ))
         }
 
           <div
             onClick={
               handleClick
-            } className=' cursor-pointer size-24 bg-white rounded-3xl border-2 hover:bg-neutral-200 text-neutral-500 p-6'
+            } className=' cursor-pointer size-24 justify-center items-center flex bg-white rounded-3xl border-2 hover:bg-neutral-200 text-neutral-500 p-6'
           >
             <ShowMore />
           </div>

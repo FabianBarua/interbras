@@ -5,6 +5,7 @@ import { EmblaCarouselType, EmblaOptionsType } from 'embla-carousel'
 import { useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { useMediaQuery } from '@uidotdev/usehooks'
 
 interface ProductItemCardProps {
   active: boolean
@@ -166,6 +167,8 @@ export const AnimatedSection: React.FC = () => {
   const { selectedIndex, onCardClick } = useSlides(emblaApi, onNavButtonClick)
   const { t } = useTranslation('global')
 
+  const isSmallDevice = useMediaQuery('only screen and (max-width : 768px)')
+
   return (
     <>
 
@@ -181,7 +184,9 @@ export const AnimatedSection: React.FC = () => {
             hidden: { opacity: 0, y: 40 }
           }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className=' h-[20rem] md:h-[30rem] w-full  bg-interbrasGray flex justify-center items-center rounded-[40px]  overflow-hidden' ref={emblaRef}
+          className={` h-[20rem] md:h-[30rem] w-full ${
+              isSmallDevice ? ' pointer-events-none' : ' pointer-events-auto'
+            }  bg-interbrasGray flex justify-center items-center rounded-[40px]  overflow-hidden`} ref={emblaRef}
         >
           <div className=' size-full '>
 

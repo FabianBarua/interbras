@@ -15,7 +15,13 @@ export const ProductCard: React.FC<{ child: Children, active: boolean, change: (
       onClick={() => change(child)}
     >
       <img
-        src={child.variants[0].photos[0]} className=' size-20 p-3 object-contain rounded-3xl ' alt=''
+        src={child.variants[0].photos[0]}
+        style={
+          {
+            opacity: active ? 1 : 0.5
+          }
+        }
+        className=' size-20 p-3 object-contain rounded-3xl ' alt=''
       />
 
       <div className={

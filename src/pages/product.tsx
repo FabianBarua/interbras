@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { Children, getProductsByCategory } from '../shared/utils/data'
-import { DownArrow } from '../components/DownArrow'
 import { ProductInfo } from '../components/ProductInfo'
 import { CarrouselCategory } from '../components/CarrouselCategory'
 import { motion } from 'framer-motion'

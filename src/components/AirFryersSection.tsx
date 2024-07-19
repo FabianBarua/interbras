@@ -101,7 +101,7 @@ export const AirFryersSection: React.FC = () => {
 
       </div>
 
-      <div className=' sm:hidden flex gap-2 h-24'>
+      <div className=' sm:hidden  flex gap-2 h-24'>
         <motion.img
           initial='hidden'
           whileInView='visible'
