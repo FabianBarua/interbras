@@ -104,7 +104,7 @@
   },
   "aires": {
     "id": "aires",
-    "name": "Aires",
+    "name": "Ar condicionado",
     "description": "Eficientes, silenciosos e elegantes.\nPerfeitos para climatizar sua casa ou escritório.",
     "shortDescription": "Eficientes e elegantes.",
     "children": {
@@ -235,7 +235,7 @@
     "children": {
       "1": {
         "id": "IN3200TV",
-        "name": "Tv 32'' - IN3200TV",
+        "name": "TV 32'' - IN3200TV",
         "popular": false,
         "info": {
           "review": "A Smart TV de 32 polegadas modelo IN3200TV QLED HD da Interbras é a escolha perfeita para quem busca uma experiência completa de entretenimento em um tamanho compacto. \nCom sua tela QLED HD, oferece cores vibrantes e detalhes nítidos, transformando qualquer espaço em um centro de entretenimento.",
@@ -257,7 +257,7 @@
       },
       "2": {
         "id": "IN4300TV",
-        "name": "Tv 43'' - IN4300TV",
+        "name": "TV 43'' - IN4300TV",
         "popular": false,
         "info": {
           "review": "A Smart TV de 43 polegadas modelo IN4300TV QLED FHD da Interbras oferece uma experiência visual superior com sua tela QLED Full HD. \nDesfrute de cores intensas e detalhes precisos, transformando sua casa em um cinema pessoal. \nCom acesso a plataformas de streaming como Netflix e YouTube, você tem entretenimento ilimitado ao seu alcance. \nSeu design estilizado e sem moldura complementa qualquer espaço, proporcionando um toque de modernidade e elegância.",
@@ -280,7 +280,7 @@
       },
       "3": {
         "id": "IN5000TV",
-        "name": "Tv 50'' - IN5000TV",
+        "name": "TV 50'' - IN5000TV",
         "popular": false,
         "info": {
           "review": "A Smart TV de 50 polegadas modelo IN5000TV QLED da Interbras é ideal para aqueles que desejam uma tela grande com uma qualidade de imagem excepcional. \nCom tecnologia QLED, você desfrutará de cores vivas e contrastes profundos. \nAcesse facilmente seus conteúdos favoritos em plataformas como Netflix e HBO Max, transformando sua sala em um centro de entretenimento. \nSeu design elegante e sem moldura integra-se perfeitamente em qualquer ambiente, oferecendo uma experiência visual ampla e imersiva.",
@@ -303,7 +303,7 @@
       },
       "4": {
         "id": "IN5500TV",
-        "name": "Tv 55'' - IN5500TV",
+        "name": "TV 55'' - IN5500TV",
         "popular": false,
         "info": {
           "review": "A Smart TV de 55 polegadas modelo IN5500TV QLED da Interbras leva o entretenimento em casa a um novo nível. \nCom sua tela QLED, oferece uma qualidade de imagem impressionante com cores vibrantes e detalhes nítidos. \nDesfrute de acesso ilimitado a uma variedade de serviços de streaming, incluindo Netflix e YouTube, para nunca ficar sem opções de entretenimento. \nSeu design sem moldura adiciona um toque sofisticado a qualquer espaço, criando uma experiência visual mais imersiva e moderna.",
@@ -326,7 +326,7 @@
       },
       "5": {
         "id": "IN6500TV",
-        "name": "Tv 65'' - IN6500TV",
+        "name": "TV 65'' - IN6500TV",
         "popular": false,
         "info": {
           "review": "A Smart TV de 65 polegadas modelo IN6500TV SQLED da Interbras é ideal para quem busca uma experiência visual envolvente em uma tela grande. \nGraças à sua tecnologia SQLED, você desfrutará de cores intensas e uma clareza impressionante. \nEsta TV permite acesso fácil às suas plataformas de streaming favoritas como Netflix e HBO Max, transformando sua sala em um centro de entretenimento. \nCom seu design sem moldura, não só aporta modernidade, mas também se integra harmoniosamente em qualquer espaço.",
@@ -349,7 +349,7 @@
       },
       "6": {
         "id": "IN7500TV",
-        "name": "Tv 75'' - IN7500TV",
+        "name": "TV 75'' - IN7500TV",
         "popular": false,
         "info": {
           "review": "A Smart TV de 75 polegadas modelo IN7500TV SQLED da Interbras leva o entretenimento em casa a outro nível com seu grande tamanho e qualidade de imagem superior. \nA tecnologia SQLED garante cores vibrantes e detalhes nítidos, ideais para uma experiência cinematográfica. \nCom acesso a plataformas de streaming como Netflix e Prime Video, você terá todo o conteúdo que ama ao alcance de um botão. \nSeu design elegante e sem moldura aporta um toque de sofisticação a qualquer sala.",
@@ -372,7 +372,7 @@
       },
       "7": {
         "id": "IN8500TV",
-        "name": "Tv 85'' - IN8500TV",
+        "name": "TV 85'' - IN8500TV",
         "popular": false,
         "info": {
           "review": "A Smart TV de 85 polegadas modelo IN8500TV SQLED da Interbras leva o entretenimento em casa a outro nível com seu grande tamanho e qualidade de imagem superior. \nA tecnologia SQLED garante cores vibrantes e detalhes nítidos, ideais para uma experiência cinematográfica. \nCom acesso a plataformas de streaming como Netflix e Prime Video, você terá todo o conteúdo que ama ao alcance de um botão. \nSeu design elegante e sem moldura aporta um toque de sofisticação a qualquer sala.",
