@@ -4,7 +4,6 @@ import React from 'react'
 import { DondeEstamos } from './DondeEstamos'
 import { ProductosHeader } from './ProductosHeader'
 import { QuienesSomos } from './QuienesSomos'
-import { SwitchLanguage } from './SwitchLanguage'
 import { useTranslation } from 'react-i18next'
 
 const variants = {
@@ -72,12 +71,6 @@ export const Navigation: React.FC<NavigationProps> = ({ isOpen, toggleOpen }) =>
               }
             />
           ))}
-          <motion.div
-            variants={variantsItems}
-            className=' fixed top-5 right-5'
-          >
-            <SwitchLanguage theme='white' />
-          </motion.div>
         </ul>
         <motion.div
           variants={variantsItems}

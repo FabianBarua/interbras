@@ -7,7 +7,7 @@ export const Footer: React.FC = (): JSX.Element => {
   const { t } = useTranslation('global')
 
   return (
-    <footer className='  flex sm:justify-between justify-center sm:gap-0 gap-5 h-40 items-center sm:px-52 px-5 flex-col-reverse sm:flex-row text-center border-t-2 mt-16 '>
+    <footer className='  flex sm:justify-between justify-center sm:gap-0 gap-5 h-40 items-center sm:px-52 px-5 flex-col-reverse sm:flex-row text-center border-t-2  '>
       <p>
         {t('footer.copy')}
       </p>

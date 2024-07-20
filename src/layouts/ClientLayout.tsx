@@ -23,7 +23,7 @@ export const ClientLayout: React.FC = () => {
       </Helmet>
       <div className='  font-interbras bg-[#F2F2F2] flex flex-col min-h-dvh'>
         <Header />
-        <main className=' flex-1 mt-20 flex flex-col'>
+        <main className=' h-full flex-1  mt-20 flex flex-col'>
           <Outlet />
         </main>
         <Footer />

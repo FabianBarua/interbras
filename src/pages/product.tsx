@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Children, getProductsByCategory } from '../shared/utils/data'
 import { ProductInfo } from '../components/ProductInfo'
@@ -9,6 +9,7 @@ import { NotFound } from '../components/NotFound'
 import { ProductCard } from '../components/ProductCard'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet'
+import { useMediaQuery } from '@uidotdev/usehooks'
 
 export const ProductPage: React.FC = () => {
   const { id } = useParams<{ id: string }>()
@@ -35,6 +36,10 @@ export const ProductPage: React.FC = () => {
     productSelected.children[0]
   )
 
+  const contaiterRef = useRef<HTMLDivElement>(null)
+
+  const height = (contaiterRef.current != null) ? contaiterRef.current.scrollHeight - contaiterRef.current.clientHeight - 20 : 0
+
   useEffect(() => {
     setChildSelected(productSelected.children[0])
   }, [productSelected])
@@ -53,6 +58,8 @@ export const ProductPage: React.FC = () => {
 
   const name = t(productSelected.name)
   const description = t(productSelected.description)
+
+  const isSmallDevice = useMediaQuery('only screen and (max-width : 768px)')
 
   return (
     <>
@@ -90,7 +97,7 @@ export const ProductPage: React.FC = () => {
       </Helmet>
 
       <motion.main
-        className=' w-full flex flex-col mx-auto flex-1 pt-16'
+        className=' w-full flex flex-col mx-auto flex-1 py-16 '
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -127,9 +134,17 @@ export const ProductPage: React.FC = () => {
                   }
                 }
                 style={{
-                  height: '23rem',
+                  height: isSmallDevice ? 'auto' : '23rem',
                   overflow: 'auto'
                 }}
+                onClick={
+                  () => {
+                    if (isSmallDevice) {
+                      window.scrollTo(0, 0)
+                    }
+                  }
+                }
+                ref={contaiterRef}
                 className='hideScrollBar transition-all w-full  flex flex-col gap-1 relative'
               >
                 {productSelected.children.map((child, index) => (
@@ -146,14 +161,15 @@ export const ProductPage: React.FC = () => {
 
               <div
                 style={{
-                  height: scrolling.scrollY < 348 ? '40px' : '0px'
+                  height: scrolling.scrollY < height ? '40px' : '0px',
+                  display: isSmallDevice ? 'none' : 'block'
                 }}
                 className=' w-full h-20 mask  bottom-0 absolute transition-all z-10 pointer-events-none bg-[#f2f2f2] '
               />
               <div
                 style={{
-                  height: scrolling.scrollY > 0 ? '40px' : '0px'
-
+                  height: scrolling.scrollY > 0 ? '40px' : '0px',
+                  display: isSmallDevice ? 'none' : 'block'
                 }}
                 className=' w-full h-20 mask top-0 absolute transition-all z-10 rotate-180 pointer-events-none bg-[#f2f2f2]'
               />

@@ -6,6 +6,8 @@ import { ClientLayout } from './layouts/ClientLayout'
 
 import './index.css'
 import { Home } from './pages/home'
+import { Downloads } from './pages/downloads'
+
 import { I18nextProvider, useTranslation } from 'react-i18next'
 import i18next from './i18n.ts'
 import { useTranslateStore } from './shared/stores/useTranslate.ts'
@@ -31,6 +33,7 @@ const AllRoutes: React.FC = () => {
         <Route element={<ClientLayout />}>
           <Route element={<ProductPage />} path='/product/:id' />
           <Route element={<Home />} path='/' />
+          <Route element={<Downloads />} path='/downloads' />
           <Route
             path='*'
             element={<NotFound />}

@@ -71,15 +71,23 @@ export const Header: React.FC = (): JSX.Element => {
           `
         }
       >
-        <nav className='w-full flex'>
-          <div className='flex-1 lg:block  hidden' />
-          <ul className='flex mx-auto justify-center items-center gap-14'>
-            <li ref={dondeEstamosRef} className='  lg:block hidden'>
-              <button>{t('header.whereWeAre.title')}</button>
-            </li>
-            <li ref={productosRef} className='  lg:block hidden'>
-              <button>{t('header.products.title')}</button>
-            </li>
+        <nav className='w-full flex relative'>
+
+          <div className=' absolute right-3 lg:right-8 top-1/2 -translate-y-1/2'>
+            <SwitchLanguage
+              theme='white'
+            />
+          </div>
+
+          <ul className='flex mx-auto justify-center text-nowrap items-center gap-14 w-full'>
+            <div className=' w-full flex max-w-96 justify-end gap-8'>
+              <li ref={dondeEstamosRef} className='  lg:block hidden'>
+                <button>{t('header.whereWeAre.title')}</button>
+              </li>
+              <li ref={productosRef} className='  lg:block hidden'>
+                <button>{t('header.products.title')}</button>
+              </li>
+            </div>
             <li>
               <Link
                 aria-label='Logo Interbras'
@@ -88,27 +96,22 @@ export const Header: React.FC = (): JSX.Element => {
                 <Logo />
               </Link>
             </li>
-            <li className='  lg:block hidden'>
-              <Link to='/downloads'>
-                <p>
-                  {t('header.download')}
-                </p>
-              </Link>
-            </li>
-            <li ref={quienesSomosRef} className=' lg:block hidden'>
-              <button>
-                {t('header.whoWeAre.title')}
-              </button>
-            </li>
+            <div className=' w-full flex max-w-96 justify-start gap-8'>
+              <li className='  lg:block hidden'>
+                <Link to='/downloads'>
+                  <p>
+                    {t('header.download')}
+                  </p>
+                </Link>
+              </li>
+              <li ref={quienesSomosRef} className=' lg:block hidden'>
+                <button>
+                  {t('header.whoWeAre.title')}
+                </button>
+              </li>
+            </div>
           </ul>
 
-          <div className='items-center lg:flex hidden flex-1 justify-end pr-12'>
-            <div className=' lg:flex justify-end hidden'>
-              <SwitchLanguage
-                theme='white'
-              />
-            </div>
-          </div>
         </nav>
         <div className='  flex-1'>
           {
