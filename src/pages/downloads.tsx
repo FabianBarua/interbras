@@ -3,50 +3,60 @@ import { motion } from 'framer-motion'
 import { VelocityScroll } from '../components/VelocityScroll'
 import AvatarCircles from '../components/AvatarCircles'
 import { MagicCard } from '../components/MagicCard'
+import { Ripple } from '../components/Ripple'
+import { Modal, ModalBody, ModalContent, ModalFooter, ModalTrigger } from '../components/AnimatedModal'
 
-interface RippleProps {
-  mainCircleSize?: number
-  mainCircleOpacity?: number
-  numCircles?: number
-}
-
-const Ripple = React.memo(function Ripple ({
-  mainCircleSize = 210,
-  mainCircleOpacity = 0.24,
-  numCircles = 8
-}: RippleProps) {
+const DownloadCard = (): JSX.Element => {
   return (
-    <div className='absolute inset-0 flex items-center justify-center bg-white/5 [mask-image:linear-gradient(to_bottom,white,transparent)]'>
-      {Array.from({ length: numCircles }, (_, i) => {
-        const size = mainCircleSize + i * 70
-        const opacity = mainCircleOpacity - i * 0.03
-        const animationDelay = `${i * 0.06}s`
-        const borderStyle = i === numCircles - 1 ? 'dashed' : 'solid'
-        const borderOpacity = 5 + i * 5
-
-        return (
-          <div
-            key={i}
-            className={`absolute animate-ripple rounded-full bg-foreground/25 shadow-xl border top-1/2 left-1/2 translate-x-1/2 translate-y-1/2 [--i:${i}]`}
-            style={{
-              width: `${size}px`,
-              height: `${size}px`,
-              opacity,
-              animationDelay,
-              borderStyle,
-              borderWidth: '1px',
-              borderColor: `rgba(var(--foreground-rgb), ${borderOpacity / 100})`
-            }}
-          />
+    <Modal>
+      <MagicCard
+        className='w-full max-w-[90%] lg:max-w-64 flex flex-col bg-white  p-5 rounded-2xl border-2 border-interbrasGray/65'
+      >
+        <AvatarCircles avatarUrls={['/downloads/apple-icon.png', '/downloads/google-icon.png']} pricipalIcon='/home/slideSection/3.svg' />
+        <p className=' text-lg font-semibold mt-2'>Scooters Interbras</p>
+        <div className=' flex gap-2 h-min '>
+          {
+        ['10.5', '8.5 pro'].map((model, index) => (
+          <div key={index} className=''>
+            <p className=' leading-4 font-light text-black/70'>{model}</p>
+          </div>
         )
-      })}
-    </div>
+        )
+      }
+        </div>
+
+        <ModalTrigger className=' w-min text-lg text-interbrasGreen-500 leading-4 mt-3'>
+          Descargar
+        </ModalTrigger>
+
+      </MagicCard>
+      <ModalBody>
+        <ModalContent>
+          <h4 className='text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center mb-8'>
+            Selecciona el{' '}
+            <span className='px-1 py-0.5 rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200'>
+              Archivo
+            </span>
+          </h4>
+        </ModalContent>
+        <ModalFooter className='gap-4'>
+          <button className='px-2 py-1 bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28'>
+            Cancelar
+          </button>
+          <button className='bg-black text-white dark:bg-white dark:text-black text-sm px-2 py-1 rounded-md border border-black w-28'>
+            Book Now
+          </button>
+        </ModalFooter>
+      </ModalBody>
+    </Modal>
+
   )
-})
+}
 
 export const Downloads: React.FC = () => {
   return (
     <>
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -55,7 +65,7 @@ export const Downloads: React.FC = () => {
       >
         <main className=' w-full h-full flex-1 lg:flex-row flex-col-reverse flex  items-center lg:mt-16'>
 
-          <div className=' px-5 flex h-[30rem] flex-col justify-end flex-1 mt-12 lg:mt-0'>
+          <div className=' lg:px-5 px-7 flex h-[30rem] w-full lg:w-auto flex-col justify-end flex-1 mt-12 lg:mt-0'>
 
             <div className=' relative mb-6  flex'>
               <img src='/home/slideSection/3.svg' className=' size-24 p-4 bg-interbrasGreen-500 rounded-3xl shadow-2xl rotate-[-15deg] z-10' alt='' />
@@ -117,23 +127,7 @@ export const Downloads: React.FC = () => {
           </div>
         </div>
         <div className=' w-full flex-wrap flex gap-3   lg:justify-start justify-center ' id='apps'>
-          <MagicCard
-            className='w-full max-w-[90%] lg:max-w-64 flex flex-col bg-white  p-5 rounded-2xl border-2 border-interbrasGray/65'
-          >
-            <AvatarCircles avatarUrls={['/downloads/apple-icon.png', '/downloads/google-icon.png']} pricipalIcon='/home/slideSection/3.svg' />
-            <p className=' text-lg font-semibold mt-2'>Scooters Interbras</p>
-            <div className=' flex gap-2 h-min '>
-              {
-                  ['10.5', '8.5 pro'].map((model, index) => (
-                    <div key={index} className=''>
-                      <p className=' leading-4 font-light text-black/70'>{model}</p>
-                    </div>
-                  )
-                  )
-                }
-            </div>
-            <button className=' w-min text-lg text-interbrasGreen-500 leading-4 mt-3'>Descargar</button>
-          </MagicCard>
+          <DownloadCard />
         </div>
       </motion.div>
     </>
