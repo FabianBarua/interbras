@@ -31,7 +31,6 @@ export const ModalProvider = ({ children }: { children: ReactNode }): JSX.Elemen
 
 export const useModal = () => {
   const context = useContext(ModalContext)
-  const a = 1
   if (context == null) {
     throw new Error('useModal must be used within a ModalProvider')
   }
