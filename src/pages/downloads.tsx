@@ -61,13 +61,13 @@ export const Downloads: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
-        className=' h-full  flex w-full lg:w-[70%] mx-auto  flex-col  mb-12  '
+        className=' h-full  flex w-full lg:w-[80%] xl:w-[70%] mx-auto  flex-col  mb-12  '
       >
         <main className=' w-full h-full flex-1 lg:flex-row flex-col-reverse flex  items-center lg:mt-16'>
 
-          <div className=' lg:px-5 px-7 flex h-[30rem] w-full lg:w-auto flex-col justify-end flex-1 mt-12 lg:mt-0'>
+          <div className=' lg:min-w-[400px] text-center lg:text-left lg:px-5 px-7 flex h-[30rem] w-full lg:w-auto flex-col justify-end flex-1 mt-12 lg:mt-0'>
 
-            <div className=' relative mb-6  flex'>
+            <div className='mx-auto lg:mx-0  relative mb-6  flex'>
               <img src='/home/slideSection/3.svg' className=' size-24 p-4 bg-interbrasGreen-500 rounded-3xl shadow-2xl rotate-[-15deg] z-10' alt='' />
               <img src='/home/slideSection/1.svg' className=' size-24 p-4 bg-interbrasGreen-800 rounded-3xl shadow-2xl rotate-[5deg] -translate-y-3 -translate-x-5' alt='' />
             </div>
@@ -83,7 +83,7 @@ export const Downloads: React.FC = () => {
 
             <a
               href='#apps'
-              className=' w-min mt-10 bg-interbrasGreen-500 text-white inline-flex items-center justify-center whitespace-nowrap text-base font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary shadow hover:bg-primary/90 h-9 px-12 py-2 translate-y-[-1rem] animate-fade-in gap-1 rounded-lg  ease-in-out [--animation-delay:600ms]'
+              className=' mx-auto lg:mx-0 w-min  mt-10 bg-interbrasGreen-500 text-white inline-flex items-center justify-center whitespace-nowrap text-base font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary shadow hover:bg-primary/90 h-9 px-12 py-2 translate-y-[-1rem] animate-fade-in gap-1 rounded-lg  ease-in-out [--animation-delay:600ms]'
             >
               <span>Ver aplicaciones</span>
               <svg
@@ -104,9 +104,17 @@ export const Downloads: React.FC = () => {
             </a>
 
           </div>
-          <div className=' lg:rounded-[3rem] rounded-b-[3rem] h-[20rem] lg:h-[30rem] w-full max-w-3xl bg-interbrasGreen-500 relative overflow-hidden flex flex-col justify-end'>
+          <div className={` 
+            2xl::max-w-3xl 
+            xl:max-w-2xl
+            lg:rounded-[3rem] lg:h-[30rem] lg:max-w-xl
+            
+            rounded-b-[3rem] h-[20rem]  w-full bg-interbrasGreen-500 relative overflow-hidden flex flex-col justify-end 
+             
+            `}
+          >
             <Ripple />
-            <img src='/downloads/phone.png' alt='phone' className=' lg:h-full lg:w-auto w-full h-auto z-10 mx-auto relative ' />
+            <img src='/downloads/phone.png' alt='phone' className='  object-cover h-full w-auto z-10 mx-auto relative ' />
           </div>
         </main>
 
