@@ -1,10 +1,13 @@
+import { useTranslation } from 'react-i18next'
 import { VelocityScroll } from './VelocityScroll'
 
 export const DownloadSeparate = (): JSX.Element => {
+  const { t } = useTranslation('global')
+
   return (
     <div className=' text-5xl lg:my-32 my-10 relative'>
       <VelocityScroll
-        text='Descargar archivos'
+        text={t('downloads.scroll')}
       />
       <div className=' flex rotate-180 justify-center items-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 size-20 bg-interbrasGreen-500 rounded-[2rem] shadow-custom'>
         <svg

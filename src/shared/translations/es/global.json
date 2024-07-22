@@ -101,6 +101,7 @@
     "title": " Archivos de\ndescarga",
     "p1": "Bienvenido a nuestra sección de descargas.\nAquí encontrará una selección de archivos.",
     "callToAction": "Ver aplicaciones",
+    "scroll" : "Descargar archivos",
     "close": "Salir",
     "selectFile": "Selecciona el archivo",
     "files":{
