@@ -95,5 +95,16 @@
     "message": "Desculpe, a página que você procura não existe. Aqui estão alguns links que podem ajudar:",
     "goBack": "Voltar",
     "home": "Ir para o início"
+  },
+  "downloads":{
+    "download" : "Baixar",
+    "close": "Fechar",
+    "selectFile": "Selecione o arquivo",
+    "files":{
+      "scooter105y85": {
+        "1": "Arquivo .Apk",
+        "2": "App para Iphone"
+      }
+    }
   }
 }

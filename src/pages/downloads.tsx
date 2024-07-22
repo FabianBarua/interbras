@@ -7,6 +7,7 @@ import { DownloadHero } from '../components/DownloadHero'
 import { DownloadSeparate } from '../components/DownloadSeparate'
 import { ScooterAndroidUrl, ScooterIosUrl } from '../shared/utils/constants'
 import { Helmet } from 'react-helmet'
+import { useTranslation } from 'react-i18next'
 
 interface DownloadCardProps {
   onClick: () => void
@@ -19,6 +20,7 @@ interface DownloadCardProps {
 const DownloadCard: React.FC<DownloadCardProps> = (
   { onClick, title, models, avatarUrls, pricipalIcon }
 ) => {
+  const { t } = useTranslation('global')
   return (
     <MagicCard
       className='w-full max-w-[90%] lg:max-w-64 flex flex-col bg-white  p-5 rounded-2xl border-2 border-interbrasGray/65'
@@ -44,7 +46,7 @@ const DownloadCard: React.FC<DownloadCardProps> = (
         onClick={onClick}
         className=' w-min text-lg text-interbrasGreen-500 leading-4 mt-3'
       >
-        Descargar
+        {t('downloads.download')}
       </button>
 
     </MagicCard>
@@ -78,6 +80,8 @@ const DownloadModalCard: React.FC<DownloadModalCardProps> = (
     name, models, imageCard, url
   }
 ) => {
+  const { t } = useTranslation('global')
+
   return (
     <div className=' w-full lg:h-20 rounded-xl flex flex-col lg:flex-row gap-2 bg-gray-100 border p-2 '>
       <div className=' flex '>
@@ -103,7 +107,7 @@ const DownloadModalCard: React.FC<DownloadModalCardProps> = (
         className=' p-2 w-full lg:w-auto my-auto h-full justify-center items-center flex ml-auto transition-colors text-black/70 hover:text-black/90 bg-black/10 hover:bg-black/20 rounded-lg px-5 gap-2'
         rel='noreferrer'
       >
-        Descargar
+        {t('downloads.download')}
         <svg
           xmlns='http://www.w3.org/2000/svg'
           id='Layer_1'
@@ -127,6 +131,7 @@ export const DownloadPage: React.FC = () => {
     pricipalIcon: string
     files: React.FC[]
   }
+  const { t } = useTranslation('global')
 
   const files = [
     {
@@ -138,14 +143,18 @@ export const DownloadPage: React.FC = () => {
         () => {
           return (
             <DownloadModalCard
-              name='Archivo APK' models={['10.5', '8.5 pro']} imageCard='/downloads/google-icon.png' url={ScooterAndroidUrl}
+              name={
+                t('downloads.files.scooter105y85.1')
+              } models={['10.5', '8.5 pro']} imageCard='/downloads/google-icon.png' url={ScooterAndroidUrl}
             />
           )
         },
         () => {
           return (
             <DownloadModalCard
-              name='Aplicacion para Ios' models={['10.5', '8.5 pro']} imageCard='/downloads/apple-icon.png' url={ScooterIosUrl}
+              name={
+                t('downloads.files.scooter105y85.2')
+              } models={['10.5', '8.5 pro']} imageCard='/downloads/apple-icon.png' url={ScooterIosUrl}
             />
           )
         }
@@ -198,7 +207,7 @@ export const DownloadPage: React.FC = () => {
           <ModalBody>
             <ModalContent>
               <h4 className='text-lg md:text-2xl text-neutral-600 font-bold text-center  my-4 lg:my-6'>
-                Selecciona el Archivo
+                {t('downloads.download')} {selected?.name}
               </h4>
             </ModalContent>
             <div className=' h-full flex-1 px-5 flex flex-col gap-2 lg:justify-start justify-center'>
@@ -214,7 +223,7 @@ export const DownloadPage: React.FC = () => {
               <ModalTrigger
                 className='px-2 py-1 bg-interbrasGreen-500 text-white  border border-gray-300 rounded-md text-base w-28'
               >
-                Cerrar
+                {t('downloads.close')}
               </ModalTrigger>
             </ModalFooter>
           </ModalBody>
