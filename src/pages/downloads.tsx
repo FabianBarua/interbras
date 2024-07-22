@@ -1,59 +1,160 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { VelocityScroll } from '../components/VelocityScroll'
 import AvatarCircles from '../components/AvatarCircles'
 import { MagicCard } from '../components/MagicCard'
-import { Ripple } from '../components/Ripple'
-import { Modal, ModalBody, ModalContent, ModalFooter, ModalTrigger } from '../components/AnimatedModal'
+import { Modal, ModalBody, ModalContent, ModalFooter, ModalTrigger, useModal } from '../components/AnimatedModal'
+import { DownloadHero } from '../components/DownloadHero'
+import { DownloadSeparate } from '../components/DownloadSeparate'
+import { ScooterAndroidUrl, ScooterIosUrl } from '../shared/utils/constants'
 
-const DownloadCard = (): JSX.Element => {
+interface DownloadCardProps {
+  onClick: () => void
+  title: string
+  models: string[]
+  avatarUrls: string[]
+  pricipalIcon: string
+}
+
+const DownloadCard: React.FC<DownloadCardProps> = (
+  { onClick, title, models, avatarUrls, pricipalIcon }
+) => {
   return (
-    <Modal>
-      <MagicCard
-        className='w-full max-w-[90%] lg:max-w-64 flex flex-col bg-white  p-5 rounded-2xl border-2 border-interbrasGray/65'
-      >
-        <AvatarCircles avatarUrls={['/downloads/apple-icon.png', '/downloads/google-icon.png']} pricipalIcon='/home/slideSection/3.svg' />
-        <p className=' text-lg font-semibold mt-2'>Scooters Interbras</p>
-        <div className=' flex gap-2 h-min '>
-          {
-        ['10.5', '8.5 pro'].map((model, index) => (
+    <MagicCard
+      className='w-full max-w-[90%] lg:max-w-64 flex flex-col bg-white  p-5 rounded-2xl border-2 border-interbrasGray/65'
+    >
+      <AvatarCircles
+        avatarUrls={avatarUrls} pricipalIcon={
+        pricipalIcon
+      }
+      />
+      <p className=' text-lg font-semibold mt-2'>{title}</p>
+      <div className=' flex gap-2 h-min '>
+        {
+        models.map((model, index) => (
           <div key={index} className=''>
             <p className=' leading-4 font-light text-black/70'>{model}</p>
           </div>
         )
         )
       }
-        </div>
+      </div>
 
-        <ModalTrigger className=' w-min text-lg text-interbrasGreen-500 leading-4 mt-3'>
-          Descargar
-        </ModalTrigger>
+      <button
+        onClick={onClick}
+        className=' w-min text-lg text-interbrasGreen-500 leading-4 mt-3'
+      >
+        Descargar
+      </button>
 
-      </MagicCard>
-      <ModalBody>
-        <ModalContent>
-          <h4 className='text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center mb-8'>
-            Selecciona el{' '}
-            <span className='px-1 py-0.5 rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200'>
-              Archivo
-            </span>
-          </h4>
-        </ModalContent>
-        <ModalFooter className='gap-4'>
-          <button className='px-2 py-1 bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28'>
-            Cancelar
-          </button>
-          <button className='bg-black text-white dark:bg-white dark:text-black text-sm px-2 py-1 rounded-md border border-black w-28'>
-            Book Now
-          </button>
-        </ModalFooter>
-      </ModalBody>
-    </Modal>
+    </MagicCard>
 
   )
 }
 
 export const Downloads: React.FC = () => {
+  return (
+    <Modal>
+      <DownloadPage />
+    </Modal>
+  )
+}
+
+interface DownloadModalCardProps {
+  name: string
+  models: string[]
+  imageCard: string
+  url: string
+}
+
+const DownloadModalCard: React.FC<DownloadModalCardProps> = (
+  {
+    name, models, imageCard, url
+  }
+) => {
+  return (
+    <div className=' w-full lg:h-20 rounded-xl flex flex-col lg:flex-row gap-2 bg-gray-100 border p-2 '>
+      <div className=' flex '>
+        <img src={imageCard} className=' size-[48px] my-auto ml-2 rounded-xl border' alt='' />
+        <div className=' ml-3  my-auto'>
+          <h2 className=' text-xl font-medium'>
+            {name}
+          </h2>
+          <div className=' flex gap-2'>
+            {
+            models.map((model, index) => (
+              <p key={index} className=' text-black/70 bg-black/10 px-2 rounded-lg'>
+                {model}
+              </p>
+            ))
+          }
+          </div>
+        </div>
+      </div>
+      <a
+        href={url}
+        target='_blank'
+        className=' p-2 w-full lg:w-auto my-auto h-full justify-center items-center flex ml-auto transition-colors text-black/70 hover:text-black/90 bg-black/10 hover:bg-black/20 rounded-lg px-5 gap-2'
+        rel='noreferrer'
+      >
+        Descargar
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          id='Layer_1'
+          data-name='Layer 1'
+          viewBox='0 0 24 24'
+          className=' size-5'
+          fill='currentColor'
+        >
+          <path d='m19.949,5.536l-3.484-3.486c-1.323-1.322-3.081-2.05-4.95-2.05h-4.515C4.243,0,2,2.243,2,5v14c0,2.757,2.243,5,5,5h10c2.757,0,5-2.243,5-5v-8.515c0-1.871-.729-3.628-2.051-4.95Zm-1.414,1.415c.318.317.587.67.805,1.05h-4.341c-.552,0-1-.449-1-1V2.659c.38.218.733.487,1.051.805l3.484,3.486Zm1.465,12.05c0,1.654-1.346,3-3,3H7c-1.654,0-3-1.346-3-3V5c0-1.654,1.346-3,3-3h4.515c.163,0,.325.008.485.023v4.977c0,1.654,1.346,3,3,3h4.977c.015.16.023.322.023.485v8.515Zm-4.293-2.895c.391.39.391,1.023,0,1.414l-1.613,1.614c-.577.577-1.336.866-2.094.866s-1.517-.289-2.094-.866l-1.613-1.614c-.391-.391-.391-1.024,0-1.414.391-.391,1.023-.391,1.414,0l1.293,1.293v-4.398c0-.552.447-1,1-1s1,.448,1,1v4.398l1.293-1.293c.391-.391,1.023-.391,1.414,0Z' />
+        </svg>
+      </a>
+    </div>
+  )
+}
+
+export const DownloadPage: React.FC = () => {
+  interface FilesProps {
+    name: string
+    models: string[]
+    avatarUrls: string[]
+    pricipalIcon: string
+    files: React.FC[]
+  }
+
+  const files = [
+    {
+      name: 'Scooters Interbras',
+      models: ['10.5', '8.5 pro'],
+      avatarUrls: ['/downloads/apple-icon.png', '/downloads/google-icon.png'],
+      pricipalIcon: '/home/slideSection/3.svg',
+      files: [
+        () => {
+          return (
+            <DownloadModalCard
+              name='Archivo APK' models={['10.5', '8.5 pro']} imageCard='/downloads/google-icon.png' url={ScooterAndroidUrl}
+            />
+          )
+        },
+        () => {
+          return (
+            <DownloadModalCard
+              name='Aplicacion para Ios' models={['10.5', '8.5 pro']} imageCard='/downloads/apple-icon.png' url={ScooterIosUrl}
+            />
+          )
+        }
+      ]
+    }
+  ]
+  const [selected, setSelected] = useState<FilesProps | null>(null)
+
+  const { setOpen } = useModal()
+
+  useEffect(() => {
+    if (selected != null) {
+      setOpen(true)
+    }
+  }, [selected])
+
   return (
     <>
 
@@ -63,80 +164,56 @@ export const Downloads: React.FC = () => {
         transition={{ duration: 0.3 }}
         className=' h-full  flex w-full lg:w-[80%] xl:w-[70%] mx-auto  flex-col  mb-12  '
       >
-        <main className=' w-full h-full flex-1 lg:flex-row flex-col-reverse flex  items-center lg:mt-16'>
 
-          <div className=' lg:min-w-[400px] text-center lg:text-left lg:px-5 px-7 flex h-[30rem] w-full lg:w-auto flex-col justify-end flex-1 mt-12 lg:mt-0'>
+        <DownloadHero />
 
-            <div className='mx-auto lg:mx-0  relative mb-6  flex'>
-              <img src='/home/slideSection/3.svg' className=' size-24 p-4 bg-interbrasGreen-500 rounded-3xl shadow-2xl rotate-[-15deg] z-10' alt='' />
-              <img src='/home/slideSection/1.svg' className=' size-24 p-4 bg-interbrasGreen-800 rounded-3xl shadow-2xl rotate-[5deg] -translate-y-3 -translate-x-5' alt='' />
-            </div>
+        <DownloadSeparate />
 
-            <h1 className='text-5xl font-bold mt-0 lg:mt-5'>
-              Archivos de <br /> descarga
-            </h1>
-            <p className=' text-balance leading-5 text-black/65 mt-3'>
-              Bienvenido a nuestra sección de descargas.
-              <br />
-              Aquí encontrará una selección de archivos.
-            </p>
-
-            <a
-              href='#apps'
-              className=' mx-auto lg:mx-0 w-min  mt-10 bg-interbrasGreen-500 text-white inline-flex items-center justify-center whitespace-nowrap text-base font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary shadow hover:bg-primary/90 h-9 px-12 py-2 translate-y-[-1rem] animate-fade-in gap-1 rounded-lg  ease-in-out [--animation-delay:600ms]'
-            >
-              <span>Ver aplicaciones</span>
-              <svg
-                width={15}
-                height={15}
-                viewBox='0 0 15 15'
-                fill='none'
-                xmlns='http://www.w3.org/2000/svg'
-                className='ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1 rotate-90'
-              >
-                <path
-                  d='M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z'
-                  fill='currentColor'
-                  fillRule='evenodd'
-                  clipRule='evenodd'
-                />
-              </svg>
-            </a>
-
-          </div>
-          <div className={` 
-            2xl::max-w-3xl 
-            xl:max-w-2xl
-            lg:rounded-[3rem] lg:h-[30rem] lg:max-w-xl
-            
-            rounded-b-[3rem] h-[20rem]  w-full bg-interbrasGreen-500 relative overflow-hidden flex flex-col justify-end 
-             
-            `}
-          >
-            <Ripple />
-            <img src='/downloads/phone.png' alt='phone' className='  object-cover h-full w-auto z-10 mx-auto relative ' />
-          </div>
-        </main>
-
-        <div className=' text-5xl lg:my-32 my-10 relative'>
-          <VelocityScroll
-            text='Descargar archivos'
-          />
-          <div className=' flex rotate-180 justify-center items-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 size-20 bg-interbrasGreen-500 rounded-[2rem] shadow-custom'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              id='Bold'
-              viewBox='0 0 24 24'
-              className=' size-12  animate-jumpinfinite'
-              fill='#fff'
-            >
-              <path d='M18.061,9.525,14.475,5.939a3.585,3.585,0,0,0-4.95,0L5.939,9.525a1.5,1.5,0,0,0,2.122,2.121L10.5,9.207V19a1.5,1.5,0,0,0,3,0V9.207l2.439,2.439a1.5,1.5,0,0,0,2.122-2.121Z' />
-            </svg>
-          </div>
-        </div>
         <div className=' w-full flex-wrap flex gap-3   lg:justify-start justify-center ' id='apps'>
-          <DownloadCard />
+
+          {
+            files.map((file, index) => (
+              <DownloadCard
+                title={file.name}
+                models={file.models}
+                avatarUrls={file.avatarUrls}
+                pricipalIcon={file.pricipalIcon}
+                key={index}
+                onClick={
+                  () => {
+                    setSelected(file)
+                  }
+                }
+              />
+            ))
+            }
+
+          <ModalBody>
+            <ModalContent>
+              <h4 className='text-lg md:text-2xl text-neutral-600 font-bold text-center  my-4 lg:my-6'>
+                Selecciona el Archivo
+              </h4>
+            </ModalContent>
+            <div className=' h-full flex-1 px-5 flex flex-col gap-2 lg:justify-start justify-center'>
+              {
+                selected?.files.map((File, index) => (
+                  <File
+                    key={index}
+                  />
+                ))
+              }
+            </div>
+            <ModalFooter className='gap-4'>
+              <ModalTrigger
+                className='px-2 py-1 bg-interbrasGreen-500 text-white  border border-gray-300 rounded-md text-base w-28'
+              >
+                Cerrar
+              </ModalTrigger>
+            </ModalFooter>
+          </ModalBody>
+
         </div>
+
       </motion.div>
     </>
   )
