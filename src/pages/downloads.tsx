@@ -219,7 +219,7 @@ export const DownloadPage: React.FC = () => {
                 ))
               }
             </div>
-            <ModalFooter className='gap-4'>
+            <ModalFooter className='gap-4 mt-2'>
               <ModalTrigger
                 className='px-2 py-1 bg-interbrasGreen-500 text-white  border border-gray-300 rounded-md text-base w-28'
               >
