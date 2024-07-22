@@ -6,6 +6,7 @@ import { Modal, ModalBody, ModalContent, ModalFooter, ModalTrigger, useModal } f
 import { DownloadHero } from '../components/DownloadHero'
 import { DownloadSeparate } from '../components/DownloadSeparate'
 import { ScooterAndroidUrl, ScooterIosUrl } from '../shared/utils/constants'
+import { Helmet } from 'react-helmet'
 
 interface DownloadCardProps {
   onClick: () => void
@@ -53,9 +54,15 @@ const DownloadCard: React.FC<DownloadCardProps> = (
 
 export const Downloads: React.FC = () => {
   return (
-    <Modal>
-      <DownloadPage />
-    </Modal>
+    <>
+      <Helmet>
+        <title>Downloads - Interbras</title>
+        <meta name='description' content='Descarga los archivos de interbras en esta pagina!.' />
+      </Helmet>
+      <Modal>
+        <DownloadPage />
+      </Modal>
+    </>
   )
 }
 
