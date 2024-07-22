@@ -98,6 +98,9 @@
   },
   "downloads":{
     "download" : "Baixar",
+    "title": "Arquivos para\ndownload",
+    "p1": "Bem-vindo à nossa seção de downloads.\nAqui você encontrará uma seleção de arquivos.",
+    "callToAction": "Veja aplicativos",
     "close": "Fechar",
     "selectFile": "Selecione o arquivo",
     "files":{

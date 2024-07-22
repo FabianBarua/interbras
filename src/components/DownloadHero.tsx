@@ -1,6 +1,8 @@
+import { useTranslation } from 'react-i18next'
 import { Ripple } from './Ripple'
 
 export const DownloadHero = (): JSX.Element => {
+  const { t } = useTranslation('global')
   return (
     <main className=' w-full h-full flex-1 lg:flex-row flex-col-reverse flex  items-center lg:mt-16'>
 
@@ -12,19 +14,29 @@ export const DownloadHero = (): JSX.Element => {
         </div>
 
         <h1 className='text-5xl font-bold mt-0 lg:mt-5'>
-          Archivos de <br /> descarga
+          {
+            t('downloads.title').split('\n').map((line, index) => (
+              <span key={index} className='block'>
+                {line}
+              </span>
+            ))
+          }
         </h1>
         <p className=' text-balance leading-5 text-black/65 mt-3'>
-          Bienvenido a nuestra sección de descargas.
-          <br />
-          Aquí encontrará una selección de archivos.
+          {t('downloads.p1').split('\n').map((line, index) => (
+            <span key={index} className='block'>
+              {line}
+            </span>
+          ))}
         </p>
 
         <a
           href='#apps'
           className=' mx-auto lg:mx-0 w-min  mt-10 bg-interbrasGreen-500 text-white inline-flex items-center justify-center whitespace-nowrap text-base font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary shadow hover:bg-primary/90 h-9 px-12 py-2 translate-y-[-1rem] animate-fade-in gap-1 rounded-lg  ease-in-out [--animation-delay:600ms]'
         >
-          <span>Ver aplicaciones</span>
+          <span>
+            {t('downloads.callToAction')}
+          </span>
           <svg
             width={15}
             height={15}
