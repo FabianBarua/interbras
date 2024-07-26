@@ -332,7 +332,7 @@ const aires: Category = {
       ]
     },
     {
-      id: 'itp-24000iv',
+      id: 'itb-24000iv',
       name: 'aires.children.6.name',
       popular: false,
       info: {
@@ -342,8 +342,8 @@ const aires: Category = {
       },
       variants: [
         {
-          id: 'itp-24000iv-1',
-          name: 'ITP 24000IV - 1',
+          id: 'itb-24000iv-1',
+          name: 'ITB 24000IV - 1',
           color: 'colors.white',
           photos: [
             '/product/aires/general.webp'
