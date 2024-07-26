@@ -1232,10 +1232,10 @@ const bebederos: Category = {
 
 export const data: Root = {
   products: [
-    airfryer,
+    tvs,
     scooters,
     aires,
-    tvs,
+    airfryer,
     mixteras,
     cocinas,
     hervidoras,
