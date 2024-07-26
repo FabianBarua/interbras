@@ -31,6 +31,7 @@ export const ProductPage: React.FC = () => {
   const [scrolling, setScrolling] = useState<scroll>({
     scrollY: 0
   })
+  const [scrollY, setScrollY] = useState<number>(0)
 
   const [childSelected, setChildSelected] = useState<Children>(
     productSelected.children[0]
@@ -38,7 +39,16 @@ export const ProductPage: React.FC = () => {
 
   const contaiterRef = useRef<HTMLDivElement>(null)
 
-  const height = (contaiterRef.current != null) ? contaiterRef.current.scrollHeight - contaiterRef.current.clientHeight - 20 : 0
+  useEffect(() => {
+    setScrollY(
+      prev => {
+        if (contaiterRef.current != null) {
+          return contaiterRef.current.scrollHeight - contaiterRef.current.clientHeight - 20
+        }
+        return prev
+      }
+    )
+  }, [])
 
   useEffect(() => {
     setChildSelected(productSelected.children[0])
@@ -161,7 +171,7 @@ export const ProductPage: React.FC = () => {
 
               <div
                 style={{
-                  height: scrolling.scrollY < height ? '40px' : '0px',
+                  height: scrolling.scrollY < scrollY ? '40px' : '0px',
                   display: isSmallDevice ? 'none' : 'block'
                 }}
                 className=' w-full h-20 mask  bottom-0 absolute transition-all z-10 pointer-events-none bg-[#f2f2f2] '
