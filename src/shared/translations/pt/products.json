@@ -524,16 +524,16 @@
   },
   "hervidoras": {
     "id": "hervidoras",
-    "name": "Chaleiras",
+    "name": "Jarra Elétrica",
     "description": "Ideais para qualquer cozinha moderna.",
     "shortDescription": "Seguras e fáceis de usar.",
     "children": {
       "T10": {
         "id": "T10",
-        "name": "Chaleira T10",
+        "name": "Jarra Elétrica T10",
         "popular": false,
         "info": {
-          "review": "A Chaleira Elétrica Clássica da Interbras com capacidade de 1.8 litros e 1500W de potência é ideal para qualquer cozinha moderna. \nSeu design ergonômico e funcional permite um manuseio fácil e seguro. \nAquece a água rapidamente, perfeita para preparar chá, café e outras bebidas quentes.",
+          "review": "A Jarra Elétrica Elétrica Clássica da Interbras com capacidade de 1.8 litros e 1500W de potência é ideal para qualquer cozinha moderna. \nSeu design ergonômico e funcional permite um manuseio fácil e seguro. \nAquece a água rapidamente, perfeita para preparar chá, café e outras bebidas quentes.",
           "included": null,
           "specs": "Capacidade: 1.8L\nPotência: 1500W\nRápida\nPrática\nVersátil"
         },
@@ -550,10 +550,10 @@
       },
       "T20": {
         "id": "T20",
-        "name": "Chaleira T20",
+        "name": "Jarra Elétrica T20",
         "popular": false,
         "info": {
-          "review": "A Chaleira Elétrica T20 da Interbras oferece uma solução rápida e eficiente para aquecer água. \nCom capacidade de 1.8 litros e potência de 1500W, esta hervidora se destaca por sua durabilidade e design elegante. \nMantém o calor por mais tempo, o que a torna perfeita para qualquer lar ou escritório.",
+          "review": "A Jarra Elétrica Elétrica T20 da Interbras oferece uma solução rápida e eficiente para aquecer água. \nCom capacidade de 1.8 litros e potência de 1500W, esta hervidora se destaca por sua durabilidade e design elegante. \nMantém o calor por mais tempo, o que a torna perfeita para qualquer lar ou escritório.",
           "included": null,
           "specs": "Capacidade: 1.8L\nPotência: 1500W\nRápida\nPrática\nVersátil\nMantém o calor"
         },
@@ -570,10 +570,10 @@
       },
       "T30": {
         "id": "T30",
-        "name": "Chaleira T30",
+        "name": "Jarra Elétrica T30",
         "popular": false,
         "info": {
-          "review": "A Chaleira Elétrica T30 da Interbras oferece uma solução rápida e eficiente para aquecer água. \nCom capacidade de 1.8 litros e potência de 1500W, esta hervidora se destaca por sua durabilidade e design elegante. \nMantém o calor por mais tempo, o que a torna perfeita para qualquer lar ou escritório.",
+          "review": "A Jarra Elétrica Elétrica T30 da Interbras oferece uma solução rápida e eficiente para aquecer água. \nCom capacidade de 1.8 litros e potência de 1500W, esta hervidora se destaca por sua durabilidade e design elegante. \nMantém o calor por mais tempo, o que a torna perfeita para qualquer lar ou escritório.",
           "included": null,
           "specs": "Capacidade: 1.8L\nPotência: 1500W\nRápida\nPrática\nVersátil\nMantém o calor"
         },
