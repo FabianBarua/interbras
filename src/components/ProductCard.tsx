@@ -8,26 +8,21 @@ export const ProductCard: React.FC<{ child: Children, active: boolean, change: (
     <button
       className={
         `
-          w-full text-lg flex p-2 py-2 rounded-3xl transition-colors border-2
-        ${active ? '  bg-neutral-200' : 'hover:bg-neutral-200 '}
+          w-full text-lg flex p-2 py-2 rounded-3xl transition-colors border-2 
+        ${active ? '  bg-interbrasGreen-500' : 'bg-neutral-200 hover:bg-neutral-300 '}
         `
       }
       onClick={() => change(child)}
     >
       <img
         src={child.variants[0].photos[0]}
-        style={
-          {
-            opacity: active ? 1 : 0.5
-          }
-        }
         className=' size-20 p-3 object-contain rounded-3xl ' alt=''
       />
 
       <div className={
         `
         flex-1 ml-3 text-left my-auto
-        ${active ? 'text-black ' : 'text-black/50'}
+        ${active ? 'text-white ' : 'text-black'}
         `
       }
       >
