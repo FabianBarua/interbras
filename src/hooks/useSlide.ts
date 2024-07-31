@@ -1,0 +1,178 @@
+import { useMediaQuery } from '@uidotdev/usehooks'
+import { useEffect, useRef, useState } from 'react'
+
+interface Product {
+  id: string
+  productPhoto: string
+  icon?: string
+  name: string
+  to: string
+  position: {
+    x: number
+    y: number
+  }
+  lg: {
+    x: number
+    y: number
+    scale: number
+  }
+  sm: {
+    x: number
+    y: number
+    scale: number
+  }
+}
+
+const productsSlide: Product[] = [
+  {
+    id: 'productSlide1',
+    productPhoto: '/home/slideSection/1.png',
+    icon: '/home/slideSection/1.svg',
+    name: 'aires.name',
+    to: '/product/aires',
+    position: {
+      x: 1485,
+      y: 200
+    },
+    lg: {
+      x: 0,
+      y: 0,
+      scale: 3
+    },
+    sm: {
+      x: 8,
+      y: 30,
+      scale: 1.6
+    }
+  },
+  {
+    id: 'productSlide2',
+    productPhoto: '/home/slideSection/2.png',
+    icon: '/home/slideSection/2.svg',
+    name: 'tvs.name',
+    to: '/product/tvs',
+    position: {
+      x: 1456,
+      y: 650
+    },
+    lg: {
+      x: 0,
+      y: 280,
+      scale: 2
+    },
+    sm: {
+      x: 0,
+      y: 230,
+      scale: 1.7
+    }
+  },
+  {
+    id: 'productSlide3',
+    productPhoto: '/home/slideSection/3.png',
+    icon: '/home/slideSection/3.svg',
+    name: 'scooters.name',
+    to: '/product/scooters',
+    position: {
+      x: 1109,
+      y: 480
+    },
+    lg: {
+      x: 0,
+      y: 450,
+      scale: 1.4
+    },
+    sm: {
+      x: 0,
+      y: 350,
+      scale: 1.2
+    }
+  }
+]
+
+async function loadImage (src: string): Promise<HTMLImageElement> {
+  return await new Promise((resolve, reject) => {
+    const image = new Image()
+    image.src = src
+    image.onload = () => resolve(image)
+    image.onerror = reject
+  })
+}
+
+interface UseSlides {
+  canvasRef: React.RefObject<HTMLCanvasElement>
+  selectedProduct: Product | null
+  setSelectedProduct: React.Dispatch<React.SetStateAction<Product | null>>
+  productsSlide: Product[]
+}
+
+export const useSlides = (): UseSlides => {
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
+  const isLg = useMediaQuery('(min-width: 1024px)')
+
+  useEffect(() => {
+    const canvas = canvasRef.current
+    if (canvas != null) {
+      const ctx = canvas.getContext('2d')
+      if (ctx != null && selectedProduct != null) {
+        const canvasWidth = canvas.offsetWidth
+        canvas.style.transformOrigin = `${canvasWidth / 2 + (isLg ? selectedProduct.lg.x : selectedProduct.sm.x)}px ${isLg ? selectedProduct.lg.y : selectedProduct.sm.y}px`
+        canvas.style.transform = `scale(${isLg ? selectedProduct.lg.scale : selectedProduct.sm.scale})`
+      } else {
+        canvas.style.transform = 'scale(1)'
+        canvas.style.transformOrigin = 'center'
+      }
+      ctx?.clearRect(0, 0, canvas.width, canvas.height)
+      // eslint-disable-next-line @typescript-eslint/no-floating-promises
+      drawImages(productsSlide, ctx)
+    }
+  }, [canvasRef, selectedProduct])
+
+  async function drawImages (productsSlide: Product[], ctx: CanvasRenderingContext2D | null): Promise<void> {
+    if (ctx == null && canvasRef.current == null) {
+      return
+    }
+
+    for (const product of productsSlide) {
+      const image = await loadImage(product.productPhoto)
+      if (ctx == null) {
+        return
+      }
+      if (selectedProduct?.id === product.id) {
+        ctx?.drawImage(
+          image,
+          product.position.x,
+          product.position.y,
+          image.width, image.height
+        )
+        ctx?.save()
+      } else {
+        if (selectedProduct !== null) {
+          ctx.filter = 'blur(10px)'
+        }
+
+        ctx?.drawImage(
+          image,
+          product.position.x,
+          product.position.y,
+          image.width, image.height
+        )
+        ctx?.save()
+        ctx.filter = 'none'
+      }
+    }
+  }
+
+  useEffect(() => {
+    const canvas = canvasRef.current
+    const ctx = canvas?.getContext('2d')
+
+    if (ctx != null) {
+      // eslint-disable-next-line @typescript-eslint/no-floating-promises
+      drawImages(productsSlide, ctx)
+    }
+  }
+  , [canvasRef])
+
+  return { canvasRef, selectedProduct, setSelectedProduct, productsSlide }
+}

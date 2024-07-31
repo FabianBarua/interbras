@@ -24,7 +24,6 @@ export const Home: React.FC = () => {
         transition={{ duration: 0.3 }}
         className=' mb-16 '
       >
-
         <ProductsAnimated />
         <main className='  sm:w-[80%] w-[90%] flex flex-col gap-6 mx-auto'>
 
