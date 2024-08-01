@@ -116,7 +116,7 @@ interface UseSlides {
   selectedProduct: Product | null
   setSelectedProduct: React.Dispatch<React.SetStateAction<Product | null>>
   productsSlide: Product[]
-  stopInterval: ({ turn }: { turn: boolean }) => void
+  stopInterval: () => void
 }
 
 export const useSlides = (): UseSlides => {
@@ -199,7 +199,7 @@ export const useSlides = (): UseSlides => {
     }
   }, [])
 
-  const stopInterval = ({ turn }: { turn: boolean }): void => {
+  const stopInterval = (): void => {
     if (intervalId !== null) {
       clearInterval(intervalId)
     }

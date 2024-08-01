@@ -43,7 +43,7 @@ export const AnimatedSection: React.FC = () => {
                 key={product.id}
                 onMouseEnter={() => {
                   setSelectedProduct(product)
-                  stopInterval({ turn: true })
+                  stopInterval()
                 }}
                 className='text-white bg-zinc-800 p-3 rounded-xl relative  flex-col hover:bg-zinc-900 cursor-pointer active:bg-zinc-950 size-10 flex justify-center items-center'
               >
