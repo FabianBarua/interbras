@@ -28,7 +28,7 @@ export const AnimatedSection: React.FC = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
-          className=' focused-image h-full w-full object-cover  transition-all duration-1000'
+          className='h-full w-full object-cover  transition-all duration-1000'
         />
         <div className=' absolute z-10 left-1/2 -translate-x-1/2 bottom-2 bg-interbrasGray p-3 flex  gap-8 rounded-xl '>
           {

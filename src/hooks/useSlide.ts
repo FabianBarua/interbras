@@ -11,6 +11,11 @@ interface Product {
     x: number
     y: number
   }
+  xl: {
+    x: number
+    y: number
+    scale: number
+  }
   lg: {
     x: number
     y: number
@@ -34,9 +39,14 @@ const productsSlide: Product[] = [
       x: 1485,
       y: 200
     },
+    xl: {
+      x: 0,
+      y: 50,
+      scale: 3
+    },
     lg: {
       x: 0,
-      y: 0,
+      y: 50,
       scale: 3
     },
     sm: {
@@ -57,7 +67,12 @@ const productsSlide: Product[] = [
     },
     lg: {
       x: 0,
-      y: 380,
+      y: 360,
+      scale: 2
+    },
+    xl: {
+      x: 0,
+      y: 500,
       scale: 2
     },
     sm: {
@@ -75,6 +90,11 @@ const productsSlide: Product[] = [
     position: {
       x: 1109,
       y: 480
+    },
+    xl: {
+      x: 0,
+      y: 620,
+      scale: 2
     },
     lg: {
       x: 0,
@@ -123,6 +143,8 @@ export const useSlides = (): UseSlides => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [selectedProduct, setSelectedProduct] = useState<Product | null >(null)
   const isLg = useMediaQuery('(min-width: 1024px)')
+  const isXl = useMediaQuery('(min-width: 2000px)')
+
   const [images, setImages] = useState<HTMLImageElement[]>([])
   const [intervalId, setIntervalId] = useState<ReturnType<typeof setInterval> | null>(null)
 
@@ -132,7 +154,11 @@ export const useSlides = (): UseSlides => {
       const ctx = canvas.getContext('2d')
       if (ctx != null && selectedProduct != null) {
         const canvasWidth = canvas.offsetWidth
-        canvas.style.transformOrigin = `${canvasWidth / 2 + (isLg ? selectedProduct.lg.x : selectedProduct.sm.x)}px ${isLg ? selectedProduct.lg.y : selectedProduct.sm.y}px`
+        const transformY = isXl ? selectedProduct.xl.y : isLg ? selectedProduct.lg.y : selectedProduct.sm.y
+        const transformX = isXl ? selectedProduct.xl.x : isLg ? selectedProduct.lg.x : selectedProduct.sm.x
+        const x = canvasWidth / 2 + transformX
+        const y = transformY
+        canvas.style.transformOrigin = `${x}px ${y}px`
         canvas.style.transform = `scale(${isLg ? selectedProduct.lg.scale : selectedProduct.sm.scale})`
       } else {
         canvas.style.transform = 'scale(1)'
@@ -164,7 +190,8 @@ export const useSlides = (): UseSlides => {
           image,
           product.position.x,
           product.position.y,
-          image.width, image.height
+          image.width,
+          image.height
         )
         ctx?.save()
       } else {
@@ -189,7 +216,7 @@ export const useSlides = (): UseSlides => {
     const id = setInterval(() => {
       setSelectedProduct(productsSlide[index])
       index = index === productsSlide.length - 1 ? 0 : index + 1
-    }, 3000)
+    }, 5000)
     setIntervalId(id)
 
     return () => {
