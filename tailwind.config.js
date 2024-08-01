@@ -46,7 +46,7 @@ export default {
         interbrasGray: '#3F4545'
       },
       fontFamily: {
-        interbras: ['Inter', 'apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif']
+        interbras: ['Gilroy', 'apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif']
       }
     }
   },

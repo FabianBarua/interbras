@@ -64,7 +64,7 @@
   },
   "scooters": {
     "id": "scooters",
-    "name": "Scooters",
+    "name": "Patinetes",
     "description": "Movilidad urbana eficiente y ecológica.",
     "shortDescription": "Movilidad mas ecológica.",
     "children": {

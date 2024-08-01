@@ -39,7 +39,7 @@
       },
       "3":{
         "id": "productSlide3",
-        "name": "Scooters",
+        "name": "Patinetes Eletricos",
         "description": "A nova forma de mobilidade urbana."
       }
     },
@@ -87,7 +87,7 @@
     },
     "scooters": {
       "title": "Baixar o aplicativo",
-      "message": "Você está tentando baixar o aplicativo de scooters? O app está disponível para versões 8.5 e 10.5."
+      "message": "Você está tentando baixar o aplicativo de Patinetes Eletricos? O app está disponível para versões 8.5 e 10.5."
     }
   },
   "notFound": {
