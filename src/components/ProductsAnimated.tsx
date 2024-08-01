@@ -114,9 +114,9 @@ const products: ProductItemHome[][] =
       isMagic: false
     },
     {
-      name: 'airfryer',
-      url: '/product/airfryer',
-      photo: '/home/1.webp',
+      name: 'beauty',
+      url: '/product/beauty',
+      photo: '/home/20.webp',
       isMagic: false
     }
   ],
@@ -128,9 +128,9 @@ const products: ProductItemHome[][] =
       isMagic: false
     },
     {
-      name: 'arroceras',
-      url: '/product/arroceras',
-      photo: '/home/11.webp',
+      name: 'planchas',
+      url: '/product/planchas',
+      photo: '/home/19.webp',
       isMagic: false
     },
     {
