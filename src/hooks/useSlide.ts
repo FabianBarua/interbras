@@ -57,7 +57,7 @@ const productsSlide: Product[] = [
     },
     lg: {
       x: 0,
-      y: 280,
+      y: 380,
       scale: 2
     },
     sm: {
