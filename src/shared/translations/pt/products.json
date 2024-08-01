@@ -230,8 +230,8 @@
   "tvs": {
     "id": "tvs",
     "name": "Televisões",
-    "description": "La mejor calidad de imagen y sonido.",
-    "shortDescription": "Eficientes y elegantes.",
+    "description": "A melhor qualidade de imagem e som.",
+    "shortDescription": "A melhor qualidade.",
     "children": {
       "1": {
         "id": "IN3200TV",
@@ -976,7 +976,7 @@
   },
   "arroceras": {
     "id": "arroceras",
-    "name": "Arroceiras",
+    "name": "Panelas",
     "description": "Projetadas para tornar sua vida mais fácil e saborosa.",
     "shortDescription": "Cozinhar mais fácil.",
     "children": {

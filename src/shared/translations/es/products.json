@@ -231,7 +231,7 @@
     "id": "tvs",
     "name": "Televisores",
     "description": "La mejor calidad de imagen y sonido.",
-    "shortDescription": "Eficientes y elegantes.",
+    "shortDescription": "La mejor calidad.",
     "children": {
       "1": {
         "id": "IN3200TV",
