@@ -4,7 +4,11 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
 export const AnimatedSection: React.FC = () => {
-  const { canvasRef, setSelectedProduct, productsSlide, selectedProduct } = useSlides()
+  const { canvasRef, setSelectedProduct, productsSlide, selectedProduct } = useSlides({
+    autoplay: true
+  })
+
+  // haciendo stop interval
   const { t } = useTranslation('products')
   return (
     <>
@@ -13,7 +17,7 @@ export const AnimatedSection: React.FC = () => {
         onMouseLeave={
           () => setSelectedProduct(null)
         }
-        className=' h-[23rem] md:h-[30rem] w-full bg-interbrasGray flex justify-center items-center rounded-[40px]  overflow-hidden relative'
+        className=' h-[23rem] lg:h-auto w-full bg-interbrasGray flex justify-center items-center rounded-[40px]  overflow-hidden relative'
       >
         <canvas
           ref={canvasRef}
@@ -24,7 +28,7 @@ export const AnimatedSection: React.FC = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
-          className=' focused-image h-full w-full object-cover  transition-all'
+          className=' focused-image h-full w-full object-cover  transition-all duration-1000'
         />
         <div className=' absolute z-10 left-1/2 -translate-x-1/2 bottom-2 bg-interbrasGray p-3 flex  gap-8 rounded-xl '>
           {
@@ -37,7 +41,9 @@ export const AnimatedSection: React.FC = () => {
                 }
                 to={product.to}
                 key={product.id}
-                onMouseEnter={() => setSelectedProduct(product)}
+                onMouseEnter={() => {
+                  setSelectedProduct(product)
+                }}
                 className='text-white bg-zinc-800 p-3 rounded-xl relative  flex-col hover:bg-zinc-900 cursor-pointer active:bg-zinc-950 size-10 flex justify-center items-center'
               >
                 <img

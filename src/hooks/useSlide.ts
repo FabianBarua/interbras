@@ -89,11 +89,24 @@ const productsSlide: Product[] = [
   }
 ]
 
-async function loadImage (src: string): Promise<HTMLImageElement> {
+async function loadImage (
+  src: string,
+  setImages:
+  React.Dispatch<React.SetStateAction<HTMLImageElement[]>>,
+  index: number
+): Promise<HTMLImageElement> {
   return await new Promise((resolve, reject) => {
     const image = new Image()
     image.src = src
-    image.onload = () => resolve(image)
+    image.onload = () => {
+      setImages((prev) => {
+        const newImages = [...prev]
+        newImages[index] = image
+        return newImages
+      })
+
+      resolve(image)
+    }
     image.onerror = reject
   })
 }
@@ -105,10 +118,17 @@ interface UseSlides {
   productsSlide: Product[]
 }
 
-export const useSlides = (): UseSlides => {
+export const useSlides = (
+  {
+    autoplay
+  }: {
+    autoplay: boolean
+  }
+): UseSlides => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
+  const [selectedProduct, setSelectedProduct] = useState<Product | null >(null)
   const isLg = useMediaQuery('(min-width: 1024px)')
+  const [images, setImages] = useState<HTMLImageElement[]>([])
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -123,8 +143,8 @@ export const useSlides = (): UseSlides => {
         canvas.style.transformOrigin = 'center'
       }
       ctx?.clearRect(0, 0, canvas.width, canvas.height)
-      // eslint-disable-next-line @typescript-eslint/no-floating-promises
-      drawImages(productsSlide, ctx)
+
+      void drawImages(productsSlide, ctx)
     }
   }, [canvasRef, selectedProduct])
 
@@ -133,8 +153,13 @@ export const useSlides = (): UseSlides => {
       return
     }
 
-    for (const product of productsSlide) {
-      const image = await loadImage(product.productPhoto)
+    for (let i = 0; i < productsSlide.length; i++) {
+      const product = productsSlide[i]
+
+      const image = typeof images[i] !== 'undefined'
+        ? images[i]
+        : await loadImage(product.productPhoto, setImages, i)
+
       if (ctx == null) {
         return
       }
@@ -162,17 +187,6 @@ export const useSlides = (): UseSlides => {
       }
     }
   }
-
-  useEffect(() => {
-    const canvas = canvasRef.current
-    const ctx = canvas?.getContext('2d')
-
-    if (ctx != null) {
-      // eslint-disable-next-line @typescript-eslint/no-floating-promises
-      drawImages(productsSlide, ctx)
-    }
-  }
-  , [canvasRef])
 
   return { canvasRef, selectedProduct, setSelectedProduct, productsSlide }
 }
