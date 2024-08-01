@@ -118,13 +118,7 @@ interface UseSlides {
   productsSlide: Product[]
 }
 
-export const useSlides = (
-  {
-    autoplay
-  }: {
-    autoplay: boolean
-  }
-): UseSlides => {
+export const useSlides = (): UseSlides => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [selectedProduct, setSelectedProduct] = useState<Product | null >(null)
   const isLg = useMediaQuery('(min-width: 1024px)')

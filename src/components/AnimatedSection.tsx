@@ -4,9 +4,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
 export const AnimatedSection: React.FC = () => {
-  const { canvasRef, setSelectedProduct, productsSlide, selectedProduct } = useSlides({
-    autoplay: true
-  })
+  const { canvasRef, setSelectedProduct, productsSlide, selectedProduct } = useSlides()
 
   // haciendo stop interval
   const { t } = useTranslation('products')
