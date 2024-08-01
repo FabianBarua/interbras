@@ -116,7 +116,7 @@ interface UseSlides {
   selectedProduct: Product | null
   setSelectedProduct: React.Dispatch<React.SetStateAction<Product | null>>
   productsSlide: Product[]
-  toggleInterval: ({ turn }: { turn: boolean }) => void
+  stopInterval: ({ turn }: { turn: boolean }) => void
 }
 
 export const useSlides = (): UseSlides => {
@@ -189,7 +189,7 @@ export const useSlides = (): UseSlides => {
     const id = setInterval(() => {
       setSelectedProduct(productsSlide[index])
       index = index === productsSlide.length - 1 ? 0 : index + 1
-    }, 1000)
+    }, 3000)
     setIntervalId(id)
 
     return () => {
@@ -197,21 +197,13 @@ export const useSlides = (): UseSlides => {
         clearInterval(intervalId)
       }
     }
-  }, [intervalId])
+  }, [])
 
-  const toggleInterval = ({ turn }: { turn: boolean }): void => {
+  const stopInterval = ({ turn }: { turn: boolean }): void => {
     if (intervalId !== null) {
       clearInterval(intervalId)
-      if (!turn) {
-        let index = 0
-        const id = setInterval(() => {
-          setSelectedProduct(productsSlide[index])
-          index = index === productsSlide.length - 1 ? 0 : index + 1
-        }, 1000)
-        setIntervalId(id)
-      }
     }
   }
 
-  return { canvasRef, selectedProduct, setSelectedProduct, productsSlide, toggleInterval }
+  return { canvasRef, selectedProduct, setSelectedProduct, productsSlide, stopInterval }
 }

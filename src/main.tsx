@@ -47,12 +47,10 @@ const AllRoutes: React.FC = () => {
 document.addEventListener('DOMContentLoaded', function () {
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   ReactDOM.createRoot(document.getElementById('root')!).render(
-    <React.StrictMode>
-      <Router>
-        <I18nextProvider i18n={i18next}>
-          <AllRoutes />
-        </I18nextProvider>
-      </Router>
-    </React.StrictMode>
+    <Router>
+      <I18nextProvider i18n={i18next}>
+        <AllRoutes />
+      </I18nextProvider>
+    </Router>
   )
 } as EventListener)

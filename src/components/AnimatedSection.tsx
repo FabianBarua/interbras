@@ -4,23 +4,18 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
 export const AnimatedSection: React.FC = () => {
-  const { canvasRef, setSelectedProduct, productsSlide, selectedProduct, toggleInterval } = useSlides()
+  const { canvasRef, setSelectedProduct, productsSlide, selectedProduct, stopInterval } = useSlides()
 
   // haciendo stop interval
   const { t } = useTranslation('products')
   return (
     <>
 
-      <button
-        onClick={
-          () => toggleInterval({ turn: true })
-        }
-      >STOP
-      </button>
-
       <section
         onMouseLeave={
-          () => setSelectedProduct(null)
+          () => {
+            setSelectedProduct(null)
+          }
         }
         className=' h-[23rem] lg:h-auto w-full bg-interbrasGray flex justify-center items-center rounded-[40px]  overflow-hidden relative'
       >
@@ -48,6 +43,7 @@ export const AnimatedSection: React.FC = () => {
                 key={product.id}
                 onMouseEnter={() => {
                   setSelectedProduct(product)
+                  stopInterval({ turn: true })
                 }}
                 className='text-white bg-zinc-800 p-3 rounded-xl relative  flex-col hover:bg-zinc-900 cursor-pointer active:bg-zinc-950 size-10 flex justify-center items-center'
               >
