@@ -10,8 +10,15 @@ export const AnimatedSection: React.FC = () => {
   const { t } = useTranslation('products')
   return (
     <>
-
-      <section
+      <motion.section
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true }}
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: 40 }
+        }}
+        transition={{ duration: 0.5, delay: 0.2 }}
         onMouseLeave={
           () => {
             setSelectedProduct(null)
@@ -30,7 +37,7 @@ export const AnimatedSection: React.FC = () => {
           }}
           className='h-full w-full object-cover  transition-all duration-1000'
         />
-        <div className=' absolute z-10 left-1/2 -translate-x-1/2 bottom-2 bg-interbrasGray p-3 flex  gap-8 rounded-xl '>
+        <div className=' absolute z-10 left-1/2 -translate-x-1/2 bottom-4 bg-interbrasGray p-3 flex  gap-4 rounded-xl shadow-xl'>
           {
             productsSlide.map((product) => (
               <Link
@@ -45,7 +52,11 @@ export const AnimatedSection: React.FC = () => {
                   setSelectedProduct(product)
                   stopInterval()
                 }}
-                className='text-white bg-zinc-800 p-3 rounded-xl relative  flex-col hover:bg-zinc-900 cursor-pointer active:bg-zinc-950 size-10 flex justify-center items-center'
+                className={`text-white p-3 rounded-xl relative  flex-col  cursor-pointer  size-10 flex justify-center items-center
+                  ${
+                  selectedProduct?.id !== product.id
+                  ? 'bg-zinc-800 hover:bg-zinc-900 active:bg-zinc-950'
+                  : 'bg-interbrasGreen-500 hover:bg-interbrasGreen-600 active:bg-interbrasGreen-700'}`}
               >
                 <img
                   src={
@@ -69,7 +80,7 @@ export const AnimatedSection: React.FC = () => {
             ))
           }
         </div>
-      </section>
+      </motion.section>
 
     </>
   )
