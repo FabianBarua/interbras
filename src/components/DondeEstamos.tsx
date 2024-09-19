@@ -17,7 +17,7 @@ export const DondeEstamos: React.FC = () => {
         <p>
           {t('header.whereWeAre.line1')}
           <br />
-          {t('header.whereWeAre.line2')} <strong>{t('header.whereWeAre.line3')}</strong>! 🇵🇾
+          {t('header.whereWeAre.line2')} <strong>{t('header.whereWeAre.line3')}</strong> <img src='/paraguayFLAG.png' className=' -translate-y-1 w-auto h-8 inline' alt='Emoji' />
         </p>
       </div>
       <div className=' lg:flex hidden relative items-end h-full'>
