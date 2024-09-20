@@ -20,7 +20,15 @@
     "blackAndGray": "Blanco y Gris",
     "RedAndBlack" : "Rojo - Negro",
     "BlueAndWhite": "Blanco - Azul",
-    "GrayAndBronze" : "Gris - Bronce"
+    "GrayAndBronze" : "Gris - Bronce",
+    "grafite" : "Grafito",
+    "blueFire" : "Azul Fuego",
+    "redFire" : "Rojo Fuego",
+    "hiphop" : "Hip Hop" ,
+    "pinkCamouflage" : "Rosa camuflado",
+    "purple" : "Purpura Galaxia",
+    "blueCamouflage" : "Azul camuflado",
+    "rosePink" : "Rosa Pink"
   },
   "airfryer": {
     "id": "airfryer",
@@ -1053,6 +1061,176 @@
             "photos": [
               "/product/bebederos/W10-1.webp"
             ]
+          }
+        ]
+      }
+    }
+  },
+  "hoverboards": {
+    "id": "hoverboards",
+    "name": "Hoverboards",
+    "description": "Ideal para moverte con estilo y diversión.",
+    "shortDescription": "Estilo y diversión",
+    "children": {
+      "hoverboards1": {
+        "id": "hoverboards1",
+        "name": "Hoverboard Negro",
+        "popular": false,
+        "info": {
+          "review": "Combina estilo y funcionalidad, con un diseño robusto y ligero que garantiza una experiencia de conducción fluida y segura. Su tecnología de autoequilibrio facilita el control, mientras que las luces integradas añaden un toque moderno y atractivo.",
+          "included": null,
+          "specs": "Neumáticos: ruedas de fibra de carbono.\nMaterial: estructura de placas de aluminio.\nPlaca madre: control dual inteligente autoequilibrado.\nCapacidad de la batería: batería de 36V 2,4AH.\nAutonomía: 8-10 km.\nCapacidad de carga: 20-120 kg.\nVersión de Bluetooth: música Bluetooth 4Ω.\nLuces: luces de flash galopante.\nTamaño del producto: 61x21x21 cm.\nTamaño del paquete: 64x22,5x22,5 cm.\nPeso: 7 kg.\nTamaño de la rueda: 6,5 pulgadas."
+        },
+        "variants": [
+          {
+            "id": "hoverboards1",
+            "name": "hoverboards1",
+            "color": "colors.black",
+            "photos": []
+          }
+        ]
+      },
+      "hoverboards2": {
+        "id": "hoverboards2",
+        "name": "Hoverboard Grafito",
+        "popular": false,
+        "info": {
+          "review": "Combina estilo y funcionalidad, con un diseño robusto y ligero que garantiza una experiencia de conducción fluida y segura. Su tecnología de autoequilibrio facilita el control, mientras que las luces integradas añaden un toque moderno y atractivo.",
+          "included": null,
+          "specs": "Neumáticos: ruedas de fibra de carbono.\nMaterial: estructura de placas de aluminio.\nPlaca madre: control dual inteligente autoequilibrado.\nCapacidad de la batería: batería de 36V 2,4AH.\nAutonomía: 8-10 km.\nCapacidad de carga: 20-120 kg.\nVersión de Bluetooth: música Bluetooth 4Ω.\nLuces: luces de flash galopante.\nTamaño del producto: 61x21x21 cm.\nTamaño del paquete: 64x22,5x22,5 cm.\nPeso: 7 kg.\nTamaño de la rueda: 6,5 pulgadas."
+        },
+        "variants": [
+          {
+            "id": "hoverboards2",
+            "name": "hoverboards2",
+            "color": "colors.grafite",
+            "photos": []
+          }
+        ]
+      },
+      "hoverboards3": {
+        "id": "hoverboards3",
+        "name": "Hoverboard Azul Fuego",
+        "popular": false,
+        "info": {
+          "review": "Combina estilo y funcionalidad, con un diseño robusto y ligero que garantiza una experiencia de conducción fluida y segura. Su tecnología de autoequilibrio facilita el control, mientras que las luces integradas añaden un toque moderno y atractivo.",
+          "included": null,
+          "specs": "Neumáticos: ruedas de fibra de carbono.\nMaterial: estructura de placas de aluminio.\nPlaca madre: control dual inteligente autoequilibrado.\nCapacidad de la batería: batería de 36V 2,4AH.\nAutonomía: 8-10 km.\nCapacidad de carga: 20-120 kg.\nVersión de Bluetooth: música Bluetooth 4Ω.\nLuces: luces de flash galopante.\nTamaño del producto: 61x21x21 cm.\nTamaño del paquete: 64x22,5x22,5 cm.\nPeso: 7 kg.\nTamaño de la rueda: 6,5 pulgadas."
+        },
+        "variants": [
+          {
+            "id": "hoverboards3",
+            "name": "hoverboards3",
+            "color": "colors.blueFire",
+            "photos": []
+          }
+        ]
+      },
+      "hoverboards4": {
+        "id": "hoverboards4",
+        "name": "Hoverboard Rojo Fuego",
+        "popular": false,
+        "info": {
+          "review": "Combina estilo y funcionalidad, con un diseño robusto y ligero que garantiza una experiencia de conducción fluida y segura. Su tecnología de autoequilibrio facilita el control, mientras que las luces integradas añaden un toque moderno y atractivo.",
+          "included": null,
+          "specs": "Neumáticos: ruedas de fibra de carbono.\nMaterial: estructura de placas de aluminio.\nPlaca madre: control dual inteligente autoequilibrado.\nCapacidad de la batería: batería de 36V 2,4AH.\nAutonomía: 8-10 km.\nCapacidad de carga: 20-120 kg.\nVersión de Bluetooth: música Bluetooth 4Ω.\nLuces: luces de flash galopante.\nTamaño del producto: 61x21x21 cm.\nTamaño del paquete: 64x22,5x22,5 cm.\nPeso: 7 kg.\nTamaño de la rueda: 6,5 pulgadas."
+        },
+        "variants": [
+          {
+            "id": "hoverboards4",
+            "name": "hoverboards4",
+            "color": "colors.redFire",
+            "photos": []
+          }
+        ]
+      },
+      "hoverboards5": {
+        "id": "hoverboards5",
+        "name": "Hoverboard Hip Hop",
+        "popular": false,
+        "info": {
+          "review": "Combina estilo y funcionalidad, con un diseño robusto y ligero que garantiza una experiencia de conducción fluida y segura. Su tecnología de autoequilibrio facilita el control, mientras que las luces integradas añaden un toque moderno y atractivo.",
+          "included": null,
+          "specs": "Neumáticos: ruedas de fibra de carbono.\nMaterial: estructura de placas de aluminio.\nPlaca madre: control dual inteligente autoequilibrado.\nCapacidad de la batería: batería de 36V 2,4AH.\nAutonomía: 8-10 km.\nCapacidad de carga: 20-120 kg.\nVersión de Bluetooth: música Bluetooth 4Ω.\nLuces: luces de flash galopante.\nTamaño del producto: 61x21x21 cm.\nTamaño del paquete: 64x22,5x22,5 cm.\nPeso: 7 kg.\nTamaño de la rueda: 6,5 pulgadas."
+        },
+        "variants": [
+          {
+            "id": "hoverboards5",
+            "name": "hoverboards5",
+            "color": "colors.hiphop",
+            "photos": []
+          }
+        ]
+      },
+      "hoverboards6": {
+        "id": "hoverboards6",
+        "name": "Hoverboard Camuflaje Rosa",
+        "popular": false,
+        "info": {
+          "review": "Combina estilo y funcionalidad, con un diseño robusto y ligero que garantiza una experiencia de conducción fluida y segura. Su tecnología de autoequilibrio facilita el control, mientras que las luces integradas añaden un toque moderno y atractivo.",
+          "included": null,
+          "specs": "Neumáticos: ruedas de fibra de carbono.\nMaterial: estructura de placas de aluminio.\nPlaca madre: control dual inteligente autoequilibrado.\nCapacidad de la batería: batería de 36V 2,4AH.\nAutonomía: 8-10 km.\nCapacidad de carga: 20-120 kg.\nVersión de Bluetooth: música Bluetooth 4Ω.\nLuces: luces de flash galopante.\nTamaño del producto: 61x21x21 cm.\nTamaño del paquete: 64x22,5x22,5 cm.\nPeso: 7 kg.\nTamaño de la rueda: 6,5 pulgadas."
+        },
+        "variants": [
+          {
+            "id": "hoverboards6",
+            "name": "hoverboards6",
+            "color": "colors.pinkCamouflage",
+            "photos": []
+          }
+        ]
+      },
+      "hoverboards7": {
+        "id": "hoverboards7",
+        "name": "Hoverboard Púrpura Galaxia",
+        "popular": false,
+        "info": {
+          "review": "Combina estilo y funcionalidad, con un diseño robusto y ligero que garantiza una experiencia de conducción fluida y segura. Su tecnología de autoequilibrio facilita el control, mientras que las luces integradas añaden un toque moderno y atractivo.",
+          "included": null,
+          "specs": "Neumáticos: ruedas de fibra de carbono.\nMaterial: estructura de placas de aluminio.\nPlaca madre: control dual inteligente autoequilibrado.\nCapacidad de la batería: batería de 36V 2,4AH.\nAutonomía: 8-10 km.\nCapacidad de carga: 20-120 kg.\nVersión de Bluetooth: música Bluetooth 4Ω.\nLuces: luces de flash galopante.\nTamaño del producto: 61x21x21 cm.\nTamaño del paquete: 64x22,5x22,5 cm.\nPeso: 7 kg.\nTamaño de la rueda: 6,5 pulgadas."
+        },
+        "variants": [
+          {
+            "id": "hoverboards7",
+            "name": "hoverboards7",
+            "color": "colors.purple",
+            "photos": []
+          }
+        ]
+      },
+      "hoverboards8": {
+        "id": "hoverboards8",
+        "name": "Hoverboard Camuflaje Azul",
+        "popular": false,
+        "info": {
+          "review": "Combina estilo y funcionalidad, con un diseño robusto y ligero que garantiza una experiencia de conducción fluida y segura. Su tecnología de autoequilibrio facilita el control, mientras que las luces integradas añaden un toque moderno y atractivo.",
+          "included": null,
+          "specs": "Neumáticos: ruedas de fibra de carbono.\nMaterial: estructura de placas de aluminio.\nPlaca madre: control dual inteligente autoequilibrado.\nCapacidad de la batería: batería de 36V 2,4AH.\nAutonomía: 8-10 km.\nCapacidad de carga: 20-120 kg.\nVersión de Bluetooth: música Bluetooth 4Ω.\nLuces: luces de flash galopante.\nTamaño del producto: 61x21x21 cm.\nTamaño del paquete: 64x22,5x22,5 cm.\nPeso: 7 kg.\nTamaño de la rueda: 6,5 pulgadas."
+        },
+        "variants": [
+          {
+            "id": "hoverboards8",
+            "name": "hoverboards8",
+            "color": "colors.blueCamouflage",
+            "photos": []
+          }
+        ]
+      },
+      "hoverboards9": {
+        "id": "hoverboards9",
+        "name": "Hoverboard Rosa Pink",
+        "popular": false,
+        "info": {
+          "review": "Combina estilo y funcionalidad, con un diseño robusto y ligero que garantiza una experiencia de conducción fluida y segura. Su tecnología de autoequilibrio facilita el control, mientras que las luces integradas añaden un toque moderno y atractivo.",
+          "included": null,
+          "specs": "Neumáticos: ruedas de fibra de carbono.\nMaterial: estructura de placas de aluminio.\nPlaca madre: control dual inteligente autoequilibrado.\nCapacidad de la batería: batería de 36V 2,4AH.\nAutonomía: 8-10 km.\nCapacidad de carga: 20-120 kg.\nVersión de Bluetooth: música Bluetooth 4Ω.\nLuces: luces de flash galopante.\nTamaño del producto: 61x21x21 cm.\nTamaño del paquete: 64x22,5x22,5 cm.\nPeso: 7 kg.\nTamaño de la rueda: 6,5 pulgadas."
+        },
+        "variants": [
+          {
+            "id": "hoverboards9",
+            "name": "hoverboards9",
+            "color": "colors.rosePink",
+            "photos": []
           }
         ]
       }
