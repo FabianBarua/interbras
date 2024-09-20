@@ -17,5 +17,4 @@ jobs:
         run: |
           echo "FTP Server: ${{ secrets.FTP_SERVER }}"
           echo "FTP Username: ${{ secrets.FTP_USERNAME }}"
-          # No imprimimos la contraseña por seguridad
           echo "Password is set"
