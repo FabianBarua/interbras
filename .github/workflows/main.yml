@@ -30,5 +30,3 @@ jobs:
           server: ${{ secrets.server }}
           username: ${{ secrets.username }}
           password: ${{ secrets.password }}
-          local-dir: ./dist
-          server-dir: ./test
